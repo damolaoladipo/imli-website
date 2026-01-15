@@ -9,7 +9,6 @@ import OngoingProjectsSection from "@/components/blocks/events-others";
 import FoundersSection from "@/components/blocks/exec";
 import HeaderSection from "@/components/blocks/feature";
 import ContactUssSection from "@/components/blocks/form";
-import InclusiveCareHero from "@/components/blocks/hero-section";
 import SpecialNeedsServices from "@/components/blocks/needs";
 import OurJourneySection from "@/components/blocks/our-journey";
 import ProjectsSection from "@/components/blocks/projects";
@@ -27,8 +26,7 @@ import TeamSection1 from "@/components/team";
 export default function Preview() {
   return (
     <div className="">
-      <InclusiveCareHero />
-
+      
       <CrossCountryWorkSection />
 
       <AboutSection/>
