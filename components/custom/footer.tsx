@@ -48,7 +48,7 @@ export default function Footer() {
                   href="#"
                   className="block transition-colors hover:text-gray-300"
                 >
-                  Programs
+                  Programs & Events
                 </Link>
                 <Link
                   href="#"
@@ -67,7 +67,7 @@ export default function Footer() {
               {/* Social */}
               <div className="space-y-4">
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/company/assureus-club"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 transition-colors hover:text-gray-300"
@@ -77,7 +77,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/assureusclub"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 transition-colors hover:text-gray-300"
@@ -86,15 +86,6 @@ export default function Footer() {
                   <ArrowUpRight className="size-4" />
                 </Link>
 
-                <Link
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 transition-colors hover:text-gray-300"
-                >
-                  Twitter
-                  <ArrowUpRight className="size-4" />
-                </Link>
               </div>
             </div>
           </div>

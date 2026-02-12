@@ -32,7 +32,7 @@ const FeatureListItem: React.FC<{ text: string }> = ({ text }) => (
     className="flex items-center space-x-2"
     variants={itemVariants}
   >
-    <CheckCircle className="w-5 h-5 text-yellow-600 flex-shrink-0" weight="fill" />
+    <CheckCircle className="w-5 h-5 text-yellow-600 shrink-0" weight="fill" />
     <span className="text-gray-700">{text}</span>
   </motion.li>
 );
@@ -71,7 +71,7 @@ export default function BecomeMemberSection() {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex-shrink-0 relative w-full lg:w-1/2"
+            className="shrink-0 relative w-full lg:w-1/2"
           >
             {/* Using dummy paths for images - replace with your actual image paths */}
             <div className="relative flex flex-col sm:flex-row lg:flex-col gap-4">
@@ -82,7 +82,7 @@ export default function BecomeMemberSection() {
                         alt="Protesters holding signs for rights"
                         width={400}
                         height={600}
-                        className="rounded-lg shadow-xl object-cover w-full h-full aspect-[2/3] lg:aspect-[3/4]"
+                        className="rounded-lg shadow-xl object-cover w-full h-full aspect-2/3 lg:aspect-3/4"
                     />
                 </div>
                 
@@ -93,7 +93,7 @@ export default function BecomeMemberSection() {
                         alt="Group of members posing together"
                         width={400}
                         height={200}
-                        className="rounded-lg shadow-xl object-cover w-full aspect-[2/1]"
+                        className="rounded-lg shadow-xl object-cover w-full aspect-2/1"
                     />
                     {/* Image 3: Placeholder for walking image */}
                     <Image
@@ -101,7 +101,7 @@ export default function BecomeMemberSection() {
                         alt="People walking with signs"
                         width={400}
                         height={200}
-                        className="rounded-lg shadow-xl object-cover w-full aspect-[2/1]"
+                        className="rounded-lg shadow-xl object-cover w-full aspect-2/1"
                     />
                 </div>
             </div>

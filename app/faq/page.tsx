@@ -12,10 +12,10 @@ export default function FAQPage() {
             {/* Hero Content */}
             <div className="text-center">
               <h1 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">
-                FAQs
+                Frequently Asked Questions
               </h1>
               <p className="text-l text-gray-700">
-                Frequently Asked Questions about AssureUs Club and our initiatives.
+                Got questions about AssureUs Club? Find answers to common questions about our community, programs, and how to get involved.
               </p>
             
           </div>

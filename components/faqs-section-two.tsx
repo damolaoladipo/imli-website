@@ -7,28 +7,28 @@ export default function FAQs() {
     const faqItems = [
         {
             id: 'item-1',
-            question: 'How long does shipping take?',
-            answer: 'Standard shipping takes 3-5 business days, depending on your location. Express shipping options are available at checkout for 1-2 business day delivery.',
+            question: 'What is AssureUs Club?',
+            answer: 'AssureUs Club is a connected, celebratory, and growth-oriented community for international students, immigrants, and refugee youth across Canada. We help young people discover their unique strengths, develop leadership potential, and contribute meaningfully to society.',
         },
         {
             id: 'item-2',
-            question: 'What payment methods do you accept?',
-            answer: 'We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay. For enterprise customers, we also offer invoicing options.',
+            question: 'Who can join AssureUs Club?',
+            answer: 'AssureUs Club welcomes all international students, immigrants, and refugee youth looking to build meaningful connections, develop leadership skills, and engage with a supportive community. There are no barriers to entry—everyone is welcome.',
         },
         {
             id: 'item-3',
-            question: 'Can I change or cancel my order?',
-            answer: 'You can modify or cancel your order within 1 hour of placing it. After this window, please contact our customer support team who will assist you with any changes.',
+            question: 'What programs and events does the club offer?',
+            answer: 'We offer various programs including leadership development workshops, community service opportunities, social events, mentorship programs, and the AUC 100-hour Learning Challenge. Check our events page for upcoming initiatives and programs.',
         },
         {
             id: 'item-4',
-            question: 'Do you ship internationally?',
-            answer: "Yes, we ship to over 50 countries worldwide. International shipping typically takes 7-14 business days. Additional customs fees may apply depending on your country's import regulations.",
+            question: 'How can I get involved as a volunteer?',
+            answer: 'We\'re always looking for passionate volunteers! You can express interest through our volunteer signup form or contact us directly. Whether you want to help organize events, mentor youth, or contribute your skills, there\'s a role for everyone.',
         },
         {
             id: 'item-5',
-            question: 'What is your return policy?',
-            answer: 'We offer a 30-day return policy for most items. Products must be in original condition with tags attached. Some specialty items may have different return terms, which will be noted on the product page.',
+            question: 'Is there a membership fee?',
+            answer: 'No! AssureUs Club is free to join. We believe in making our community accessible to everyone. While participation is free, donations are always appreciated to help us expand our programs and reach more young people.',
         },
     ]
 

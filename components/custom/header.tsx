@@ -8,12 +8,13 @@ import { cn } from "@/lib/utils";
 import Logo from "@/components/custom/logo";
 
 const menuItems = [
-  { name: "Programs", href: "/programs" },
-  { name: "Events", href: "/events" },
+  // { name: "Programs & Events", href: "/programs" },
+  { name: "AUC Learning Challenge", href: "/auc-campaign" },
   { name: "About", href: "/about" },
-  { name: "Impact", href: "/impact" },
-  { name: "FAQ", href: "/faq" },
-  { name: "Contact", href: "/contact" },
+  // { name: "Impact", href: "/impact" },
+  // { name: "FAQ", href: "/faq" },
+  //{ name: "Contact", href: "/contact" },
+
 ];
 
 export const HeroHeader = () => {
