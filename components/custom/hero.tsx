@@ -36,9 +36,9 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.7 }}
-                    className="text-xl sm:text-4xl md:text-5xl font-bold mb-5 leading-tight"
+                    className="text-4xl  md:text-7xl font-bold mb-5 leading-tight"
                   >
-                    Join the Club today.
+                    Join the Club.
                   </motion.h2>
 
            <p className="mt-6 text-white text-base md:text-lg max-w-xl text-pretty">

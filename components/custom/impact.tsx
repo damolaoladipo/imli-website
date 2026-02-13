@@ -3,7 +3,7 @@ export default function Impact() {
         <section className="bg-[#FBAF4B] @container py-12 sm:py-16 md:py-24 lg:py-40">
             <div className="mx-auto max-w-4xl px-4 sm:px-6">
                 <div className="space-y-3 sm:space-y-4">
-                    <h2 className="text-balance text-3xl font-medium sm:text-4xl">Our Impact</h2>
+                    <h2 className="text-balance text-3xl font-medium sm:text-5xl">Our Impact</h2>
                     <p className="max-w-xl text-pretty text-base text-neutral-900 sm:text-lg">AssureUs Club is building a stronger, more connected community of young people across Canada who are discovering their potential and creating positive change.</p>
                 </div>
                 <div className="mt-8 grid grid-cols-1 gap-0 divide-y divide-neutral-900/25 sm:mt-12 @xl:mt-12 @xl:grid @xl:grid-cols-3 @xl:gap-0 @xl:divide-y-0 @xl:divide-x @xl:divide-neutral-900/25">

@@ -56,7 +56,7 @@ const Feature2 = ({
               </p>
             )}
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-              <Button asChild>
+              {/* <Button asChild>
                 <a href={buttonPrimary.href} target="_blank">
                   {buttonPrimary.text}
                 </a>
@@ -65,7 +65,7 @@ const Feature2 = ({
                 <a href={buttonSecondary.href} target="_blank">
                   {buttonSecondary.text}
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
