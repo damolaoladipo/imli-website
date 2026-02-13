@@ -1,6 +1,6 @@
 export default function Impact() {
     return (
-        <section className="bg-[#FBAF4B] @container py-12 sm:py-16 md:py-24 lg:py-40">
+        <section className="bg-[#FBAF4B] @container py-12 sm:py-16 md:py-24 lg:py-40 px-4 md:px-0">
             <div className="mx-auto max-w-4xl px-4 sm:px-6">
                 <div className="space-y-3 sm:space-y-4">
                     <h2 className="text-balance text-3xl font-medium sm:text-5xl">Our Impact</h2>
