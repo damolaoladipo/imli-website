@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Partners() {
     return (
         <section>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-40">
                 <div>
                     <p className="text-muted-foreground font-medium">Community partners :</p>
 
@@ -23,7 +23,7 @@ export default function Partners() {
                                 src="toyosi.png"
                                 alt="MWF Logo"
                                 height={60}
-                                width={420}
+                                width={120}
                                 className="object-contain"
                             />
                         </div>
@@ -61,7 +61,7 @@ export default function Partners() {
                                 src="/settle.png"
                                 alt="Pacepard Logo"
                                 height={60}
-                                width={120}
+                                width={150}
                                 className="object-contain"
                             />
                         </div>
@@ -80,7 +80,7 @@ export default function Partners() {
                                 src="/theglobalma.svg"
                                 alt="RLC Logo"
                                 height={80}
-                                width={120}
+                                width={420}
                                 className="object-contain"
                             />
                         </div>

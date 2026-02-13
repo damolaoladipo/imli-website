@@ -16,12 +16,12 @@ export default function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative w-full min-h-[40vh] sm:min-h-[80vh] flex items-center justify-center text-white overflow-hidden rounded-xl"
+        className="relative w-full min-h-[40vh] sm:min-h-[90vh] flex items-center justify-center text-white overflow-hidden rounded-md"
       >
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/blocks/new/humans.png"
+            src="/new/bg-hero.png"
             alt="Children with special needs"
             fill
             priority

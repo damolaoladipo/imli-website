@@ -39,29 +39,29 @@ export default function Footer() {
               {/* Navigation */}
               <nav className="space-y-4">
                 <Link
-                  href="#"
+                  href="/"
                   className="block transition-colors hover:text-gray-300"
                 >
                   Home
                 </Link>
                 <Link
-                  href="#"
+                  href="/auc-campaign"
                   className="block transition-colors hover:text-gray-300"
                 >
-                  Programs & Events
+                  AUC Learning Challenge
                 </Link>
                 <Link
-                  href="#"
+                  href="/about"
                   className="block transition-colors hover:text-gray-300"
                 >
                   About
                 </Link>
-                <Link
+                {/* <Link
                   href="#"
                   className="block transition-colors hover:text-gray-300"
                 >
                   Impact
-                </Link>
+                </Link> */}
               </nav>
 
               {/* Social */}

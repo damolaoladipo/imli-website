@@ -14,12 +14,12 @@ export default function CallToAction() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative w-full min-h-[35vh] sm:min-h-[50vh] flex items-center justify-center text-white overflow-hidden rounded-xl"
+        className="relative w-full min-h-[35vh] sm:min-h-[70vh] flex items-center justify-center text-white overflow-hidden rounded-xl"
       >
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/blocks/new/humans.png"
+            src="/new/humans.png"
             alt="Children with special needs"
             fill
             priority
