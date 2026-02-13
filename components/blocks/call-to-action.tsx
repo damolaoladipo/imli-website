@@ -9,12 +9,12 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function CallToAction() {
   return (
-    <div className="px-4 sm:px-8 md:px-20 py-10 md:py-20">
+    <div className="px-4 py-8 sm:px-8 sm:py-12 md:px-20 md:py-20">
       <motion.section
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative w-full min-h-[35vh] sm:min-h-[70vh] flex items-center justify-center text-white overflow-hidden rounded-xl"
+        className="relative flex min-h-[38vh] w-full items-center justify-center overflow-hidden rounded-xl text-white sm:min-h-[70vh]"
       >
         {/* Background Image */}
         <div className="absolute inset-0">
@@ -29,12 +29,12 @@ export default function CallToAction() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-4 sm:px-6 max-w-full sm:max-w-2xl mx-auto">
+        <div className="relative z-10 mx-auto max-w-full px-4 text-center sm:max-w-2xl sm:px-6">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="text-xl sm:text-4xl md:text-5xl font-bold mb-5 leading-tight"
+            className="mb-4 text-2xl font-bold leading-tight sm:mb-5 sm:text-4xl md:text-5xl"
           >
             Join AssureUs Club today.
           </motion.h2>
@@ -43,17 +43,17 @@ export default function CallToAction() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
-            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
+            className="mt-6 flex flex-row flex-wrap justify-center gap-2 sm:mt-8 sm:gap-4"
           >
             <Button
               asChild
               size="lg"
-              className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg  text-gray-900 rounded-full shadow-lg"
+              className="rounded-full px-6 py-4 text-base shadow-lg sm:px-8 sm:py-6 sm:text-lg"
             >
-              <Link href="#join-volunteer" 
-              className="group flex items-center justify-center mt-12  w-fit gap-2 bg-[#22c55e] hover:bg-[#16a34a] px-6 py-3 font-medium text-white transition-colors"
+              <Link
+                href="#join-volunteer"
+                className="group flex w-fit items-center justify-center gap-2 bg-[#22c55e] px-6 py-3.5 font-medium text-white transition-colors hover:bg-[#16a34a] sm:py-3"
               >
-                
                 Join club
                 <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
               </Link>
@@ -63,12 +63,12 @@ export default function CallToAction() {
               asChild
               size="lg"
               variant="outline"
-              className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg bg-accent hover:bg-gray-100 text-white border-none rounded-full shadow-lg"
+              className="rounded-full border-none bg-accent px-6 py-4 text-base shadow-lg hover:bg-gray-100 sm:px-8 sm:py-6 sm:text-lg"
             >
-               <Link href="#join-volunteer" 
-              className="group flex items-center justify-center mt-12  w-fit gap-2 bg-[#22c55e] hover:bg-[#16a34a] px-6 py-3 font-medium text-black transition-colors"
+              <Link
+                href="#join-volunteer"
+                className="group flex w-fit items-center justify-center gap-2 bg-[#22c55e] px-6 py-3.5 font-medium text-black transition-colors hover:bg-[#16a34a] sm:py-3"
               >
-                
                 Donate
                 <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
               </Link>

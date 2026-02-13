@@ -1,6 +1,11 @@
 import { Background } from "@/components/custom/background";
-import FAQs from "@/components/faqs-section-two";
-import { ArrowUpRight } from "lucide-react";
+import {
+  ArrowUpRight,
+  Calendar,
+  Clock,
+  MapPin,
+  Ticket,
+} from "lucide-react";
 import Script from "next/script";
 
 export default function AucCampaign() {
@@ -42,9 +47,15 @@ export default function AucCampaign() {
                 </div>
 
                 <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm text-indigo-100 w-full">
-                  <span className="w-full text-center sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/20 px-3 py-1">📅 Feb 20–21</span>
-                  <span className="w-full text-center sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/20 px-3 py-1">📍 Alberta — Virtual + In-person</span>
-                  <span className="w-full text-center sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/20 px-3 py-1">🎟 Registration required</span>
+                  <span className="w-full text-center sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/20 px-3 py-1">
+                    <Calendar className="size-3.5 shrink-0" aria-hidden /> Feb 20–21
+                  </span>
+                  <span className="w-full text-center sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/20 px-3 py-1">
+                    <MapPin className="size-3.5 shrink-0" aria-hidden /> Alberta — Virtual + In-person
+                  </span>
+                  <span className="w-full text-center sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/20 px-3 py-1">
+                    <Ticket className="size-3.5 shrink-0" aria-hidden /> Registration required
+                  </span>
                 </div>
               </div>
 
@@ -61,9 +72,12 @@ export default function AucCampaign() {
                     <div className="min-w-0 flex-1">
                       <h3 className="text-lg font-semibold text-gray-900">Day 1 — Thursday, February 20</h3>
                       <div className="mt-1 flex flex-wrap items-center gap-3 text-sm text-gray-600">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-2 py-0.5 sm:px-3 sm:py-1">🕡 6:30 PM MST</span>
-                        <span className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-2 py-0.5 sm:px-3 sm:py-1">📍 Virtual</span>
-                        
+                        <span className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-2 py-0.5 sm:px-3 sm:py-1">
+                          <Clock className="size-3.5 shrink-0" aria-hidden /> 6:30 PM MST
+                        </span>
+                        <span className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-2 py-0.5 sm:px-3 sm:py-1">
+                          <MapPin className="size-3.5 shrink-0" aria-hidden /> Virtual
+                        </span>
                       </div>
 
                       <p className="mt-3 text-base text-gray-600">Three Black female local authors — women from different generations — in honest conversation on post-secondary navigation, workforce, entrepreneurship, community leadership, and building wealth. Virtual live stream — access details sent after registration.</p>
@@ -79,10 +93,13 @@ export default function AucCampaign() {
 
                     <div className="min-w-0 flex-1">
                       <h3 className="text-lg font-semibold text-gray-900">Day 2 — Friday, February 21</h3>
-                      <div className="mt-1 flex flex-wrap items-center gap-3 text-sm text-gray-600">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-2 py-0.5 sm:px-3 sm:py-1">🕑 2:00 PM MST</span>
-                        <span className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-2 py-0.5 sm:px-3 sm:py-1">📍 In-Person</span>
-                        
+                      <div className="mt-1 flex flex-wrap itemsƒ-center gap-3 text-sm text-gray-600">
+                        <span className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-2 py-0.5 sm:px-3 sm:py-1">
+                          <Clock className="size-3.5 shrink-0" aria-hidden /> 2:00 PM MST
+                        </span>
+                        <span className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-2 py-0.5 sm:px-3 sm:py-1">
+                          <MapPin className="size-3.5 shrink-0" aria-hidden /> In-Person
+                        </span>
                       </div>
 
                       <p className="mt-3 text-base text-gray-600">Join leaders, parents, educators, and community builders to support the next wave of youth learning and leadership. In-person kickoff — please register to secure your attendance.</p>

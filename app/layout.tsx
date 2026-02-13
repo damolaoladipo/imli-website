@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         suppressHydrationWarning
-        className={`${useMont.className}  ${useMont.variable} antialiased`}
+        className={`${useMont.className}  ${useMont.variable} antialiased overflow-x-hidden`}
       >
         <HeroHeader />
 

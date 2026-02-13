@@ -39,7 +39,7 @@ const AboutUs = ({
   className,
 }: Feature1Props) => {
   return (
-    <section className={cn("py-32 px-50 bg-green-100", className)}>
+    <section className={cn("py-32 px-4 sm:px-50  bg-green-100", className)}>
       <div className="container  ">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
@@ -51,7 +51,7 @@ const AboutUs = ({
                 {description}
               </p>
             )}
-            <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
+            <div className="flex flex-col justify-center gap-2 sm:flex-row lg:justify-start">
               <Button asChild size="lg" className="rounded-full">
                 <Link
                   href={buttonPrimary.href}

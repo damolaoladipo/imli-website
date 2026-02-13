@@ -70,7 +70,7 @@ export const HeroHeader = () => {
                       <Button asChild variant="ghost" size="sm">
                         <Link
                           href={item.href}
-                          className="text-neutral-900 text-5xl hover:text-accent-foreground block duration-150"
+                          className="text-neutral-900 text-sm hover:text-accent-foreground block duration-150"
                         >
                           <span>{item.name}</span>
                         </Link>

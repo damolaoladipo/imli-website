@@ -165,7 +165,7 @@ export default function FoundersSection() {
                                 <CaretLeft weight="bold" className="w-6 h-6 text-gray-700" />
                             </button>
 
-                            <div className="flex overflow-x-auto gap-6 pb-4 no-scrollbar"> {/* Added no-scrollbar for visual cleanliness */}
+                            <div className="flex gap-6 pb-4 no-scrollbar"> {/* Added no-scrollbar for visual cleanliness */}
                                 {founders.map((founder, index) => (
                                     <FounderCard key={index} founder={founder} />
                                 ))}

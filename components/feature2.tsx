@@ -36,7 +36,7 @@ const Feature2 = ({
   className,
 }: Feature2Props) => {
   return (
-    <section className={cn("py-32 px-20", className)}>
+    <section className={cn("py-32 px-4 sm:px-6 lg:px-20", className)}>
       <div className="container">
         <div className="grid items-center gap-8 md:gap-16 lg:grid-cols-2">
           <Image

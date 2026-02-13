@@ -36,7 +36,7 @@ const Feature1 = ({
   className,
 }: Feature1Props) => {
   return (
-    <section className={cn("py-32 px-20 bg-green-100", className)}>
+    <section className={cn("py-32 px-4 sm:px-6 lg:px-20 bg-green-100", className)}>
       <div className="container  ">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
