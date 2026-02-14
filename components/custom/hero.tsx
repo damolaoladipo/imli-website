@@ -42,7 +42,8 @@ export default function Hero() {
                   </motion.h2>
 
            <p className="mt-6 text-white text-base md:text-lg max-w-xl text-pretty">
-         We believe every young person deserves a balanced, connected, and fulfilling experience as they navigate life in a new community.
+           This is a club for young people and those committed to building them up.
+           We believe every young person deserves a full life — balanced, connected, and fulfilling.
         </p>
 
 

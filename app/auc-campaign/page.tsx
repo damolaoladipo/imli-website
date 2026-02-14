@@ -51,7 +51,7 @@ export default function AucCampaign() {
                     <Calendar className="size-3.5 shrink-0" aria-hidden /> Feb 20–21
                   </span>
                   <span className="w-full text-center sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/20 px-3 py-1">
-                    <MapPin className="size-3.5 shrink-0" aria-hidden /> Alberta — Virtual + In-person
+                    <MapPin className="size-3.5 shrink-0" aria-hidden /> Canada — Virtual + In-person
                   </span>
                   <span className="w-full text-center sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/20 px-3 py-1">
                     <Ticket className="size-3.5 shrink-0" aria-hidden /> Registration required

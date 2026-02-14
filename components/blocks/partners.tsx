@@ -12,7 +12,7 @@ export default function Partners() {
                         <div className="flex">
                             <Image
                                 src="mide.png"
-                                alt="mide Logo"
+                                alt="Mide logo"
                                 height={60}
                                 width={120}
                                 className="object-contain"
@@ -21,7 +21,7 @@ export default function Partners() {
                         <div className="flex">
                             <Image
                                 src="toyosi.png"
-                                alt="MWF Logo"
+                                alt="Toyosi logo"
                                 height={60}
                                 width={120}
                                 className="object-contain"
@@ -31,7 +31,7 @@ export default function Partners() {
                         <div className="flex">
                             <Image
                                 src="/afr.png"
-                                alt="Corner Logo"
+                                alt="Africa Centre logo"
                                 height={60}
                                 width={120}
                                 className="object-contain"
@@ -40,7 +40,7 @@ export default function Partners() {
                         <div className="flex">
                             <Image
                                 src="/bipoc.png"
-                                alt="Pacepard Logo"
+                                alt="BIPOC logo"
                                 height={60}
                                 width={120}
                                 className="object-contain"
@@ -50,7 +50,7 @@ export default function Partners() {
                         <div className="flex">
                             <Image
                                 src="/mycity.png"
-                                alt="Corner Logo"
+                                alt="MyCity logo"
                                 height={60}
                                 width={120}
                                 className="object-contain"
@@ -59,7 +59,7 @@ export default function Partners() {
                         <div className="flex">
                             <Image
                                 src="/settle.png"
-                                alt="Pacepard Logo"
+                                alt="Settle logo"
                                 height={60}
                                 width={150}
                                 className="object-contain"
@@ -68,7 +68,7 @@ export default function Partners() {
                          <div className="flex">
                             <Image
                                 src="/crown.png"
-                                alt="Pacepard Logo"
+                                alt="Crown logo"
                                 height={60}
                                 width={120}
                                 className="object-contain"
@@ -78,21 +78,39 @@ export default function Partners() {
                                           <div className="flex">
                             <Image
                                 src="/theglobalma.svg"
-                                alt="RLC Logo"
+                                alt="The Global MA logo"
                                 height={80}
                                 width={420}
                                 className="object-contain"
                             />
                         </div>
-                                         <div className="flex h-20">
+                                         {/* <div className="flex h-20">
                             <Image
                                 src="/csc.png"
-                                alt="RLC Logo"
+                                alt="Canada Service Corps logo"
+                                height={80}
+                                width={320}
+                                className="object-contain"
+                            />
+                        </div> */}
+                        <div className="flex h-20">
+                            <Image
+                                src="/new/airi.png"
+                                alt="AIRI logo"
                                 height={80}
                                 width={120}
                                 className="object-contain"
                             />
                         </div>
+                        {/* <div className="flex h-20 ">
+                            <Image
+                                src="/new/corps.png"
+                                alt="Canada Service Corps logo"
+                                height={80}
+                                width={420}
+                                className="object-contain"
+                            />
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@ export default function Footer() {
                   AssureUs Club
                 </p>
                 <h2 className="text-5xl font-bold leading-tight md:text-5xl">
-                  Let&apos;s start creating together
+                Reinventing. Reskilling. Retaining.
                 </h2>
               </div>
 
@@ -28,7 +28,7 @@ export default function Footer() {
                   href="#contact"
                   className="group mt-12 inline-flex w-fit items-center gap-2  bg-[#22c55e] hover:bg-[#16a34a] px-6 py-3 font-medium text-white transition-colors"
                 >
-                  Join now
+                  Join the club
                   <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
                 </Link>
               </Button>
@@ -77,7 +77,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href="https://www.instagram.com/assureusclub"
+                  href="https://www.instagram.com/assureus.club"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 transition-colors hover:text-gray-300"

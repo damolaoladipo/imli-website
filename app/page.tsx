@@ -21,7 +21,7 @@ export default function Home() {
 
         <AboutUs
           title="Our Vision"
-          description="To collectively shape the learning, leadership, and lifestyle culture of international students, immigrants, and refugee youth across Canada."
+          description="To collectively shape the culture of learning, leadership, and lifestyle for young people across Canada."
           imageSrc="/new/mision.png"
           imageAlt="Diverse group of young people"
       

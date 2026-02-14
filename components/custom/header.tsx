@@ -9,8 +9,9 @@ import Logo from "@/components/custom/logo";
 
 const menuItems = [
   // { name: "Programs & Events", href: "/programs" },
-  { name: "AUC Learning Challenge", href: "/auc-campaign" },
   { name: "About", href: "/about" },
+  { name: "AUC Learning Challenge", href: "/auc-campaign" },
+ 
   // { name: "Impact", href: "/impact" },
   // { name: "FAQ", href: "/faq" },
   //{ name: "Contact", href: "/contact" },
@@ -107,7 +108,7 @@ export const HeroHeader = () => {
                     href="#contact"
                     className="group items-center gap-2 bg-[#22c55e] hover:bg-[#16a34a] px-6 py-3 font-medium text-white transition-colors"
                   >
-                    Volunteer
+                   Join the club
                     <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
                   </Link>
                 </Button>
@@ -125,7 +126,7 @@ export const HeroHeader = () => {
                     href="#"
                     className="group items-center gap-2 bg-[#22c55e] hover:bg-[#16a34a] px-6 py-3 font-medium text-white transition-colors"
                   >
-                    <span>Join now</span>
+                    <span>Join the club</span>
                     <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
                   </Link>
                 </Button>
