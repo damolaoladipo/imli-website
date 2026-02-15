@@ -102,7 +102,7 @@ export const HeroHeader = () => {
                 <Button
                   asChild
                   size="lg"
-                  className={cn("rounded-full", isScrolled && "lg:hidden")}
+                  className={cn("rounded-full", isScrolled && "hidden ")}
                 >
                   <Link
                     href="#contact"

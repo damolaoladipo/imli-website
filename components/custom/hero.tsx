@@ -62,7 +62,7 @@ export default function Hero() {
               className="group flex items-center justify-center mt-12  w-fit gap-2 bg-[#22c55e] hover:bg-[#16a34a] px-6 py-3 font-medium text-white transition-colors"
               >
                 
-                Join today
+                Join the club
                 <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
               </Link>
             </Button>

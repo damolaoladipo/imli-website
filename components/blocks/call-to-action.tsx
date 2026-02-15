@@ -54,7 +54,7 @@ export default function CallToAction() {
                 href="#join-volunteer"
                 className="group flex w-fit items-center justify-center gap-2 bg-[#22c55e] px-6 py-3.5 font-medium text-white transition-colors hover:bg-[#16a34a] sm:py-3"
               >
-                Join club
+                Join the club
                 <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
               </Link>
             </Button>

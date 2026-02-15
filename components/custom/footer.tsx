@@ -94,7 +94,7 @@ export default function Footer() {
         {/* Bottom content */}
         <div className="border-t border-neutral-800 py-8 mt-20">
           <div className="flex flex-col items-start justify-between gap-6 sm:flex-row">
-            <p className="text-sm text-neutral-500">We believe in you</p>
+            {/* <p className="text-sm text-neutral-500">We believe in you</p> */}
 
             <p className="text-sm text-neutral-500">
               © {new Date().getFullYear()}{" "}
