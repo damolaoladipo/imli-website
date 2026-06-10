@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" fill="none" preserveAspectRatio="xMidYMax meet">
+  <path d="M30 100 L160 75 L290 100 L270 110 H50 Z" stroke="white" stroke-width="1.5" stroke-linejoin="round" opacity="0.35"/>
+  <rect x="70" y="45" width="24" height="30" stroke="white" stroke-width="1.5" opacity="0.35"/>
+  <rect x="100" y="50" width="24" height="25" stroke="white" stroke-width="1.5" opacity="0.35"/>
+  <path d="M200 30v50M190 40h20M185 55h30" stroke="white" stroke-width="1.5" opacity="0.35" stroke-linecap="round"/>
+  <rect x="205" y="35" width="8" height="12" stroke="white" stroke-width="1.5" opacity="0.35"/>
+</svg>
