@@ -1,6 +1,12 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-const Logo: React.FC = () => {
+import { cn } from "@/lib/utils";
+
+type LogoProps = {
+  className?: string;
+};
+
+const Logo: React.FC<LogoProps> = ({ className }) => {
   return (
     <Image
       src="/blocks/imli-logo.svg"
@@ -8,7 +14,7 @@ const Logo: React.FC = () => {
       width={360}
       height={286}
       priority
-      className="h-auto w-56 "
+      className={cn("h-auto w-24 sm:w-28 lg:w-56", className)}
     />
   );
 };

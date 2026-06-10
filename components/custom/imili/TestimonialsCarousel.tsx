@@ -18,9 +18,16 @@ export function TestimonialsCarousel({ content }: TestimonialsCarouselProps) {
 
   useEffect(() => {
     const track = trackRef.current;
-    if (track) {
-      track.scrollLeft = INITIAL_SCROLL_OFFSET;
-    }
+    if (!track) return;
+
+    const media = window.matchMedia("(min-width: 1024px)");
+    const applyOffset = () => {
+      track.scrollLeft = media.matches ? INITIAL_SCROLL_OFFSET : 0;
+    };
+
+    applyOffset();
+    media.addEventListener("change", applyOffset);
+    return () => media.removeEventListener("change", applyOffset);
   }, []);
 
   const scroll = (direction: -1 | 1) => {
@@ -31,35 +38,35 @@ export function TestimonialsCarousel({ content }: TestimonialsCarouselProps) {
   };
 
   return (
-    <section className="bg-white pb-32 pt-32">
-      <div className="px-14">
-        <div className="flex items-start justify-between">
+    <section className="bg-white py-12 md:py-20 lg:py-32">
+      <div className="px-4 text-left sm:px-6 lg:px-14">
+        <div className="flex flex-col items-start gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div>
             <span className="inline-flex rounded-full bg-[#EBEBEB] px-3 py-1.5 text-[12px] font-medium text-[#5A5A5A]">
               {content.badge}
             </span>
-            <h2 className="mt-3 text-[51px] font-bold leading-[1.12] text-black">
+            <h2 className="mt-3 text-2xl font-bold leading-[1.12] text-black sm:text-3xl md:text-4xl lg:text-[51px]">
               {content.headingLine1}
               <br />
               {content.headingLine2}
             </h2>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 lg:shrink-0">
             <button
               type="button"
               aria-label="Previous testimonial"
               onClick={() => scroll(-1)}
-              className="flex size-[62px] items-center justify-center rounded-full bg-[#EBEBEB] text-[#111111] transition-opacity hover:opacity-80"
+              className="flex size-11 items-center justify-center rounded-full bg-[#EBEBEB] text-[#111111] transition-opacity hover:opacity-80 lg:size-[62px]"
             >
-              <ChevronLeft className="size-7" aria-hidden />
+              <ChevronLeft className="size-6 lg:size-7" aria-hidden />
             </button>
             <button
               type="button"
               aria-label="Next testimonial"
               onClick={() => scroll(1)}
-              className="flex size-[62px] items-center justify-center rounded-full bg-[#EBEBEB] text-[#111111] transition-opacity hover:opacity-80"
+              className="flex size-11 items-center justify-center rounded-full bg-[#EBEBEB] text-[#111111] transition-opacity hover:opacity-80 lg:size-[62px]"
             >
-              <ChevronRight className="size-7" aria-hidden />
+              <ChevronRight className="size-6 lg:size-7" aria-hidden />
             </button>
           </div>
         </div>
@@ -67,7 +74,7 @@ export function TestimonialsCarousel({ content }: TestimonialsCarouselProps) {
 
       <div
         ref={trackRef}
-        className="mt-11 flex gap-[23px] overflow-x-auto px-14 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="mt-11 flex snap-x snap-mandatory gap-[23px] overflow-x-auto pl-4 pr-4 [-ms-overflow-style:none] [scrollbar-width:none] sm:pl-6 sm:pr-6 [&::-webkit-scrollbar]:hidden lg:px-14"
       >
         {content.items.map((item) =>
           item.variant === "featured" ? (

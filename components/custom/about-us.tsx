@@ -36,19 +36,24 @@ const AboutUs = ({
   className,
 }: Feature1Props) => {
   return (
-    <section className={cn("py-32 px-4 sm:px-50  bg-green-100", className)}>
-      <div className="container  ">
+    <section
+      className={cn(
+        "bg-green-100 px-4 py-12 sm:px-6 md:py-20 lg:py-32",
+        className,
+      )}
+    >
+      <div className="container">
         <div className="grid items-center gap-8 lg:grid-cols-2">
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <h2 className="my-6 mt-0 text-4xl font-semibold text-balance lg:text-5xl">
+          <div className="flex flex-col items-start text-left">
+            <h2 className="my-6 mt-0 text-2xl font-semibold text-balance sm:text-3xl md:text-4xl lg:text-5xl">
               {title}
             </h2>
             {description && (
-              <p className="mb-8 max-w-xl text-muted-foreground lg:text-lg">
+              <p className="mb-8 max-w-xl text-base text-muted-foreground lg:text-lg">
                 {description}
               </p>
             )}
-            <div className="flex flex-col justify-center gap-2 sm:flex-row lg:justify-start">
+            <div className="flex flex-col justify-start gap-2 sm:flex-row">
               <CustomButton href={buttonPrimary.href}>
                 {buttonPrimary.text}
               </CustomButton>
@@ -59,7 +64,7 @@ const AboutUs = ({
             alt={imageAlt}
             width={400}
             height={400}
-            className="max-h-96 w-full rounded-md object-cover"
+            className="max-h-80 w-full rounded-md object-cover lg:max-h-96"
           />
         </div>
       </div>

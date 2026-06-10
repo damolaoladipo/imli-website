@@ -21,6 +21,47 @@ export type BentoHeroContent = {
   };
 };
 
+/** IMILI homepage hero — field lengths aligned to reference placeholders */
+export const bentoHeroHomepageContent: BentoHeroContent = {
+  headline: "Strengthen MIL for a Better Future",
+  subhead:
+    "The first international observatory for media and information literacy development and MIL research.",
+  cta: { label: "Learn More", href: "/about" },
+  feature: {
+    badgeLabel: "Official MIL institute.",
+    body: "Catalyst for sustained research on MIL social impact globally.",
+  },
+  bento: {
+    womanPhoto: {
+      src: IMILI_IMAGES.humans.src,
+      alt: IMILI_IMAGES.humans.alt,
+    },
+    classroomPhoto: {
+      src: IMILI_IMAGES.mission.src,
+      alt: IMILI_IMAGES.mission.alt,
+      overlayLabel: "Information Literacy Hub",
+    },
+    testimonial: {
+      quote:
+        "IMILI reports transformed how I approach media content and analysis.",
+      badgeLabel: "Best",
+      avatars: [
+        { src: IMILI_IMAGES.humans.src, alt: IMILI_IMAGES.humans.alt },
+        { src: IMILI_IMAGES.mission.src, alt: IMILI_IMAGES.mission.alt },
+        { src: IMILI_IMAGES.vision.src, alt: IMILI_IMAGES.vision.alt },
+      ],
+    },
+    stat: {
+      value: "1st",
+      label: "UNESCO Category 2 MIL Institute globally.",
+    },
+    manPhoto: {
+      src: IMILI_IMAGES.bgHero.src,
+      alt: IMILI_IMAGES.bgHero.alt,
+    },
+  },
+};
+
 export const bentoHeroReferenceContent: BentoHeroContent = {
   headline: "Build Skills That Shape Your Future",
   subhead:

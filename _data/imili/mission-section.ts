@@ -36,10 +36,11 @@ export const missionSectionReferenceContent: MissionSectionContent = {
 /** IMILI production mission section */
 export const missionSectionHomepageContent: MissionSectionContent = {
   badgeLabel: "Our Mission",
-  heading: "TBD",
-  description: "TBD",
-  cta: { label: "Learn more", href: "/about" },
+  heading: "Strengthen Research and Cooperation for MIL",
+  description:
+    "Strengthen research and cooperation bolstering MIL for a just, peaceful and sustainable future.",
+  cta: { label: "Learn More", href: "/about" },
   primaryPhoto: IMILI_IMAGES.mission,
-  stat: { value: "TBD", label: "TBD" },
+  stat: { value: "1st", label: "UNESCO Category 2 MIL Institute" },
   secondaryPhoto: IMILI_IMAGES.vision,
 };

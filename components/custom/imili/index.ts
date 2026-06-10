@@ -13,6 +13,7 @@ export { ServicesCarousel } from "./ServicesCarousel";
 export { TestimonialCardFeatured } from "./TestimonialCardFeatured";
 export { TestimonialCardStandard } from "./TestimonialCardStandard";
 export { TestimonialsCarousel } from "./TestimonialsCarousel";
+export { ForestFooter } from "./ForestFooter";
 export { ImiliFooter } from "./ImiliFooter";
 export { MissionPhotoTile } from "./MissionPhotoTile";
 export { MissionSection } from "./MissionSection";

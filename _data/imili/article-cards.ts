@@ -73,29 +73,62 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
     href: "https://www.unesco.org/en/articles/international-media-and-information-literacy-institute-under-auspices-unesco-launched-abuja",
     imageSrc: IMILI_IMAGES.mission.src,
     imageAlt: IMILI_IMAGES.mission.alt,
-    date: "TBD",
-    title: "TBD — UNESCO Abuja launch",
-    summary: "TBD",
-    category: "TBD",
+    date: "April 2026",
+    title: "Nigeria Gets UNESCO's First International MIL Institute",
+    summary:
+      "UNESCO formally approved the International Media and Information Literacy Institute in Abuja under its auspices.",
+    category: "News",
   },
   {
     id: "arise-tv",
     href: "https://www.arise.tv/nigeria-launches-worlds-first-media-literacy-institute-in-partnership-with-unesco/",
     imageSrc: IMILI_IMAGES.vision.src,
     imageAlt: IMILI_IMAGES.vision.alt,
-    date: "TBD",
-    title: "TBD — Arise TV coverage",
-    summary: "TBD",
-    category: "TBD",
+    date: "April 2026",
+    title: "Nigeria Launches World's First Media Literacy Institute",
+    summary:
+      "Nigeria partners with UNESCO to establish the world's first international media literacy institute.",
+    category: "News",
   },
   {
     id: "fmino",
     href: "https://fmino.gov.ng/official-launch-and-unveiling-of-the-international-media-and-information-literacy-institute-imili/",
     imageSrc: IMILI_IMAGES.bgHero.src,
     imageAlt: IMILI_IMAGES.bgHero.alt,
-    date: "TBD",
-    title: "TBD — FMINO official launch",
-    summary: "TBD",
-    category: "TBD",
+    date: "April 2026",
+    title: "Official Launch and Unveiling of IMILI in Abuja",
+    summary:
+      "The Federal Ministry unveils IMILI as Nigeria's milestone in the fight against misinformation.",
+    category: "News",
+  },
+  {
+    id: "tvc-news",
+    href: "https://www.tvcnews.tv/fg-describes-launch-of-media-literacy-institute-as-milestone-in-fight-against-misinformation/",
+    imageSrc: IMILI_IMAGES.humans.src,
+    imageAlt: IMILI_IMAGES.humans.alt,
+    date: "April 2026",
+    title: "FG Describes IMILI Launch as Milestone Against Misinformation",
+    summary:
+      "Government describes the IMILI launch as a major milestone in combating public misinformation.",
+    category: "News",
+  },
+  {
+    id: "unesco-policy",
+    href: "https://www.unesco.org/en/articles/towards-african-media-and-information-literacy-policy-framework",
+    imageSrc: IMILI_IMAGES.vision.src,
+    imageAlt: IMILI_IMAGES.vision.alt,
+    date: "2026",
+    title: "Towards African Media and Information Literacy Policy Framework",
+    summary:
+      "UNESCO advances dialogue on an African media and information literacy policy framework.",
+    category: "Publications",
   },
 ];
+
+export const articleCardGridHomepageContent: ArticleCardGridContent = {
+  badgeLabel: "Latest News",
+  heading: "News and event reports",
+  description:
+    "Coverage, launches, and publications on IMILI and media and information literacy.",
+  items: articleCardHomepageItems,
+};

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "@/_data/site-config";
 
-import FooterSection from "@/components/custom/footer";
+import ForestFooterSection from "@/components/custom/forest-footer";
 import { HeroHeader } from "@/components/custom/header";
 import { useMont } from "@/_data/fonts";
 
@@ -38,7 +38,7 @@ export default function RootLayout({
 
         <main className="overflow-x-hidden">{children}</main>
 
-        <FooterSection />
+        <ForestFooterSection />
       </body>
     </html>
   );

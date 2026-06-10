@@ -15,12 +15,13 @@ export const siteConfig = {
     linkedin: "",
     facebook: "",
     youtube: "",
-    email: "mailto:info@imili.org",
+    email: "mailto:info@imilinstitute.org",
   },
   contact: {
-    telephone: "",
-    email: "info@imili.org",
-    address: "",
+    telephone: "+234 7061380202 & +234 8023712007",
+    email: "info@imilinstitute.org",
+    address:
+      "Plot 91, University Village, Cadastral Zone, Nnamdi Azikiwe Expressway, Jabi Abuja Nigeria.",
   },
 };
 
