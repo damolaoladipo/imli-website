@@ -1,9 +1,8 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { CheckCircle, CaretRight } from '@phosphor-icons/react';
-import { Button } from '@/components/ui/button'; // Assuming Button component is available
+import { CheckCircle } from '@phosphor-icons/react';
+import { CustomButton } from '@/components/custom/custom-button';
 
 // Animation variants for staggered entrance
 const containerVariants = {
@@ -78,7 +77,7 @@ export default function BecomeMemberSection() {
                 {/* Image 1: Placeholder for large image (e.g., the one with the purple umbrella) */}
                 <div className="w-full sm:w-1/2 lg:w-full">
                     <Image
-                        src="/path-to-image1.jpg" // **Replace with actual path to large image**
+                        src="/new/humans.png" // **Replace with actual path to large image**
                         alt="Protesters holding signs for rights"
                         width={400}
                         height={600}
@@ -89,7 +88,7 @@ export default function BecomeMemberSection() {
                 <div className="flex flex-col gap-4 w-full sm:w-1/2 lg:w-full">
                     {/* Image 2: Placeholder for group image */}
                     <Image
-                        src="/path-to-image2.jpg" // **Replace with actual path to group image**
+                        src="/new/mision.png" // **Replace with actual path to group image**
                         alt="Group of members posing together"
                         width={400}
                         height={200}
@@ -97,7 +96,7 @@ export default function BecomeMemberSection() {
                     />
                     {/* Image 3: Placeholder for walking image */}
                     <Image
-                        src="/path-to-image3.jpg" // **Replace with actual path to walking image**
+                        src="/new/vision.png" // **Replace with actual path to walking image**
                         alt="People walking with signs"
                         width={400}
                         height={200}
@@ -161,16 +160,9 @@ export default function BecomeMemberSection() {
 
             {/* Button - Animated */}
             <motion.div variants={itemVariants}>
-              <Button
-                asChild
-                size="lg"
-                className="bg-yellow-400 text-gray-800 hover:bg-yellow-500 transition-colors shadow-lg shadow-yellow-200/50"
-              >
-                <Link href="#join-now">
-                  <span className="text-nowrap font-semibold">Join Now</span>
-                  <CaretRight className="w-5 h-5 ml-1" weight="bold" />
-                </Link>
-              </Button>
+              <CustomButton href="#join-now">
+                Join Now
+              </CustomButton>
             </motion.div>
           </motion.div>
         </div>

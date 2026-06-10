@@ -1,13 +1,11 @@
  "use client"
 
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-import { CaretRight } from '@phosphor-icons/react'; // Using Phosphor Icons
 
 // Assuming you have a standard Button component in your project
-import { Button } from '@/components/ui/button'; 
+import { CustomButton } from '@/components/custom/custom-button'; 
 
 // --- Framer Motion Variants ---
 const containerVariants = {
@@ -58,16 +56,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, subtitle, description,
         <p className="mb-6 line-clamp-3 text-sm text-white/90">{description}</p>
 
         {/* Learn More Button */}
-        <Button
-          asChild
-          variant="secondary"
-          className="w-fit bg-accent text-gray-900 hover:bg-gray-100"
-        >
-          <Link href="#link-to-project">
-            Learn more
-            <CaretRight size={16} className="ml-1" /> {/* Phosphor Icon */}
-          </Link>
-        </Button>
+        <CustomButton href="#link-to-project">
+          Learn more
+        </CustomButton>
       </div>
     </motion.div>
   );
@@ -85,7 +76,7 @@ The masterclass empowered over 30 youths with employability skills, Résumé wri
 
 Outstanding and accomplished facilitators were invited to train the participants. The participants were taken through practical exercises that sharpened their skills for efficient performance at work. Emphasis was also placed on soft and hard skills which are both essential for success at the workplace. 
 
-The team lead of IHTIL Coaching Ginika Obinna Okorie took the participants through some sessions and advised them to be mentally ready to achieve success at their various places of work. The coordinator of AssureUs Club, Mr. Ojo Semasa advised the participants to put into practice every bit of knowledge they've acquired during the training. He emphasised that it's not enough to attend trainings and bootcamp until the knowledge and skills acquired are put to use.
+The team lead of IHTIL Coaching Ginika Obinna Okorie took the participants through some sessions and advised them to be mentally ready to achieve success at their various places of work. The coordinator of IMILI, Mr. Ojo Semasa advised the participants to put into practice every bit of knowledge they've acquired during the training. He emphasised that it's not enough to attend trainings and bootcamp until the knowledge and skills acquired are put to use.
 
 The training ended with an assessment of each of the participants and feedback from the assessors then certification of successful participants. Members of the organising team that made the project a success are Olumide Hamzat, Adeyemi Oluwabunmi, Goldy Godfrey, Elisha Oghenekevbe Umukoro and Jesse Nosike-Imala.
 
@@ -94,7 +85,7 @@ Both organisations reiterate their commitment to keep working together to equip 
 Ojo Semasa 
 Coordinator 
 YNL.`,
-      imageSrc: '/blocks/yali-masterclass.jpeg', // Ploceholder for the middle image
+      imageSrc: '/new/humans.png', // Ploceholder for the middle image
       altText: 'Smiling children in an outdoor charity event.',
     },
     {
@@ -119,27 +110,27 @@ Kudos to our July Cohort for this inspiring effort towards a cleaner and healthi
 
 Adeyemi Oluwabunmi
 Cohort Manager 
-For Programs committee AssureUs Club`,
-      imageSrc: '/blocks/Yali-july members.jpeg', // Ploceholder for the middle image
+For Programs committee IMILI`,
+      imageSrc: '/new/mision.png', // Ploceholder for the middle image
       altText: 'Group of people on an excursion.',
     },
     {
       title: 'Community Medical outreach',
       subtitle: 'YALI Lagos medical checkups & food distribution program',
-      description: `On Saturday, 28th June 2025, AssureUs Club, in collaboration with some partner organizations, successfully held a community medical outreach in Oshodi, Lagos. The outreach aimed to provide essential health and welfare services to underserved members of the community, and it turned out to be a remarkable success.
+      description: `On Saturday, 28th June 2025, IMILI, in collaboration with some partner organizations, successfully held a community medical outreach in Oshodi, Lagos. The outreach aimed to provide essential health and welfare services to underserved members of the community, and it turned out to be a remarkable success.
 
 During the outreach, we were able to reach almost 200 individuals, offering them free medical consultations, drug prescriptions and distributions, vitals checks (such as blood pressure and temperature), as well as nutritious meals. The outreach provided critical access to healthcare for individuals who may otherwise not be able to afford or access these basic services, and it served as a platform to engage the community in conversations about wellness and preventive health.
 
-This outreach would not have been possible without the tireless commitment and support of our volunteers from AssureUs Club. From medical checkups to food distribution, our members displayed a level of dedication and passion that truly defines what it means to lead and serve. The energy, efficiency, and teamwork exhibited, especially by the medical and welfare teams, were nothing short of inspiring. As one observer aptly put it, “AssureUs Club volunteers carried the whole medical and welfare on their head like it’s a market.” That humorous expression captures the spirit, strength, and zeal with which our team served the community.
+This outreach would not have been possible without the tireless commitment and support of our volunteers from IMILI. From medical checkups to food distribution, our members displayed a level of dedication and passion that truly defines what it means to lead and serve. The energy, efficiency, and teamwork exhibited, especially by the medical and welfare teams, were nothing short of inspiring. As one observer aptly put it, “IMILI volunteers carried the whole medical and welfare on their head like it’s a market.” That humorous expression captures the spirit, strength, and zeal with which our team served the community.
 
-We deeply appreciate every single volunteer who contributed to this effort, your impact was deeply felt, and your commitment did not go unnoticed. You are the real MVPs, and your actions continue to uphold the values and vision of AssureUs Club. It’s important to remember that AssureUs Club is not a building or a brand; it is the people, it is you. Without each and every one of you, this network does not exist. You all are AssureUs Club.
+We deeply appreciate every single volunteer who contributed to this effort, your impact was deeply felt, and your commitment did not go unnoticed. You are the real MVPs, and your actions continue to uphold the values and vision of IMILI. It’s important to remember that IMILI is not a building or a brand; it is the people, it is you. Without each and every one of you, this network does not exist. You all are IMILI.
 
 As we look ahead, we are excited about the many other meaningful and transformative projects that are already in the pipeline. We will continue to count on your active involvement, your time, your skills, and your hearts. Together, we are building something powerful, a network that truly lives up to its mission of empowering young leaders and driving positive change in our communities.
 
-AssureUs Club shall never be small, and none of us shall ever be small. 
+IMILI shall never be small, and none of us shall ever be small. 
 
 Thank you once again for being part of something impactful, for showing up, and for standing up for humanity through service.`,
-      imageSrc: '/blocks/Yali-medical outreach.jpeg', // Ploceholder for the middle image
+      imageSrc: '/new/vision.png', // Ploceholder for the middle image
       altText: 'A group attending a public awareness meeting.',
     },
   ];

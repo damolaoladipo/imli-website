@@ -80,7 +80,7 @@ export default function TeamSection() {
     {
       name: 'Leonard John Davies',
       role: 'Cofounder, CEO',
-      imageUrl: '/blocks/hero-image.png',
+      imageUrl: '/new/bg-hero.png',
       facebookUrl: '#',
       twitterUrl: '#',
       linkedinUrl: '#',
@@ -88,7 +88,7 @@ export default function TeamSection() {
     {
       name: 'Francis Weber',
       role: 'Vice Chairman',
-      imageUrl: '/blocks/hero-image.png',
+      imageUrl: '/new/bg-hero.png',
       facebookUrl: '#',
       twitterUrl: '#',
       linkedinUrl: '#',
@@ -96,7 +96,7 @@ export default function TeamSection() {
     {
       name: 'Kyla Obrien',
       role: 'Head of Authority',
-      imageUrl: '/blocks/hero-image.png',
+      imageUrl: '/new/bg-hero.png',
       facebookUrl: '#',
       twitterUrl: '#',
       linkedinUrl: '#',
@@ -104,7 +104,7 @@ export default function TeamSection() {
     {
       name: 'Adrian Dixon',
       role: 'Support Executive',
-      imageUrl: '/blocks/hero-image.png',
+      imageUrl: '/new/bg-hero.png',
       facebookUrl: '#',
       twitterUrl: '#',
       linkedinUrl: '#',
@@ -112,7 +112,7 @@ export default function TeamSection() {
     {
       name: 'Freddy Busby',
       role: 'Project Manager',
-      imageUrl: '/blocks/hero-image.png',
+      imageUrl: '/new/bg-hero.png',
       facebookUrl: '#',
       twitterUrl: '#',
       linkedinUrl: '#',
@@ -120,7 +120,7 @@ export default function TeamSection() {
     {
       name: 'Dale Banks',
       role: 'Accountant, Finance',
-      imageUrl: '/blocks/hero-image.png',
+      imageUrl: '/new/bg-hero.png',
       facebookUrl: '#',
       twitterUrl: '#',
       linkedinUrl: '#',
@@ -128,7 +128,7 @@ export default function TeamSection() {
     {
       name: 'Miriam Middleton',
       role: 'Cofounder, CEO',
-      imageUrl: '/blocks/hero-image.png',
+      imageUrl: '/new/bg-hero.png',
       facebookUrl: '#',
       twitterUrl: '#',
       linkedinUrl: '#',
@@ -136,7 +136,7 @@ export default function TeamSection() {
     {
       name: 'Ellen Walton',
       role: 'Vice Chairman',
-      imageUrl: '/blocks/hero-image.png',
+      imageUrl: '/new/bg-hero.png',
       facebookUrl: '#',
       twitterUrl: '#',
       linkedinUrl: '#',

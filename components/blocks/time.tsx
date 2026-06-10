@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import { CustomButton } from '@/components/custom/custom-button';
 import Link from 'next/link';
 
 export default function TimesWeveSpent() {
@@ -58,7 +58,7 @@ export default function TimesWeveSpent() {
                         {/* The image provided is a single composite image. For individual images in a real scenario, you'd map over an array of image sources. */}
                         {/* Here, we'll use the provided image as a single illustrative element. */}
                         <Image
-                            src="/path/to/your/composite-image.jpg" // Replace with the actual path to your composite image
+                            src="/new/humans.png" // Replace with the actual path to your composite image
                             alt="People working together on projects"
                             width={1200} // Adjust width and height based on your image's aspect ratio and desired display size
                             height={600}
@@ -100,12 +100,9 @@ export default function TimesWeveSpent() {
                                 className="min-w-0 flex-auto rounded-md border-0 bg-gray-50 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6"
                                 placeholder="Enter your email"
                             />
-                            <Button
-                                type="submit"
-                                className="flex-none rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
-                            >
+                            <CustomButton type="submit">
                                 Subscribe
-                            </Button>
+                            </CustomButton>
                         </motion.form>
                     </div>
                     <motion.p

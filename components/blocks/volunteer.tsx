@@ -5,10 +5,10 @@ import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 
 // Phosphor Icons
-import { ArrowRight, Check } from '@phosphor-icons/react';
+import { Check } from '@phosphor-icons/react';
 
 // Assuming you have a Button component from your shadcn/ui setup
-import { Button } from '@/components/ui/button';
+import { CustomButton } from '@/components/custom/custom-button';
 
 // Framer Motion Animation Variants
 const containerVariants = {
@@ -72,7 +72,7 @@ export default function BecomeAVolunteerSection() {
                             variants={itemVariants}
                         >
                             <Image
-                                src="/volunteer-image-1.jpg" // Replace with actual path (e.g., hand reaching out)
+                                src="/new/humans.png" // Replace with actual path (e.g., hand reaching out)
                                 alt="A person's hand reaching out, symbolizing help"
                                 width={700}
                                 height={500}
@@ -84,7 +84,7 @@ export default function BecomeAVolunteerSection() {
                             variants={itemVariants}
                         >
                             <Image
-                                src="/volunteer-image-2.jpg" // Replace with actual path (e.g., hand reaching out)
+                                src="/new/vision.png" // Replace with actual path (e.g., hand reaching out)
                                 alt="A person's hand reaching out, symbolizing help, with more context"
                                 width={700}
                                 height={500}
@@ -211,13 +211,9 @@ export default function BecomeAVolunteerSection() {
                                 </label>
                             </motion.div>
                             <motion.div className="sm:col-span-2" variants={itemVariants}>
-                                <Button
-                                    type="submit"
-                                    className="inline-flex items-center justify-center rounded-full bg-amber-400 text-gray-900 hover:bg-amber-500 transition-colors h-12 px-6 py-3 font-semibold group"
-                                >
-                                    <span className="text-nowrap">Submit Now</span>
-                                    <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" weight="bold" />
-                                </Button>
+                                <CustomButton type="submit">
+                                    Submit Now
+                                </CustomButton>
                             </motion.div>
                         </form>
                     </motion.div>

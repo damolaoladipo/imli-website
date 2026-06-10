@@ -34,9 +34,9 @@ const imageItemVariants: Variants = {
 // --- Main Ongoing Projects Section Component ---
 export default function OngoingProjectsSection() {
   const projectImages = [
-    '/blocks/hero-image.png',
-    '/blocks/hero-image.png',
-    '/blocks/hero-image.png',
+    '/new/bg-hero.png',
+    '/new/bg-hero.png',
+    '/new/bg-hero.png',
   ];
 
   return (

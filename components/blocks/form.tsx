@@ -18,7 +18,7 @@ import {
 
 // Assuming you have Shadcn/UI components for form elements
 // You might need to adjust imports based on your actual Shadcn setup
-import { Button } from '@/components/ui/button';
+import { CustomButton } from '@/components/custom/custom-button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import {
@@ -154,9 +154,9 @@ export default function ContactUssSection() {
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900">
+                  <CustomButton type="submit" fullWidth>
                     Send Message
-                  </Button>
+                  </CustomButton>
                 </form>
               </Form>
             </motion.div>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { PlayCircle } from "@phosphor-icons/react";
-import { Button } from "@/components/ui/button";
+import { CustomButton } from "@/components/custom/custom-button";
 
 const contentVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -39,35 +39,29 @@ export default function AboutSection() {
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-8 h-px bg-gray-400"></div>
               <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest">
-                KNOW ABOUT YALI NETWORK
+                ABOUT IMILI
               </p>
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-6 max-w-lg">
-              Welcome To AssureUs Club.
+              International Media and Information Literacy Institute
             </h2>
 
             <p className="text-lg text-gray-600 mb-4 max-w-xl">
-              Inspiring Leaders. Building Tomorrow.
+              First international observatory dedicated to media and information literacy.
             </p>
 
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
-              Shaping Africa’s future through youth leadership, innovation, and civic action.
+              Supporting countries in monitoring progress, generating research, strengthening public–private partnerships, and advancing MIL policies for informed, resilient and peaceful societies.
             </p>
 
-            <Button
-              asChild
-              size="lg"
-              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900"
+            <CustomButton
+              href="/about"
+              target="_self"
+              rel="noopener noreferrer"
             >
-              <Link
-                href="https://yali.state.gov/network"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn more
-              </Link>
-            </Button>
+              Learn more
+            </CustomButton>
           </motion.div>
 
           {/* Right */}
@@ -90,7 +84,7 @@ export default function AboutSection() {
               ) : (
                 <>
                   <Image
-                    src="/blocks/yali.jpg"
+                    src="/new/humans.png"
                     alt="yali network about video"
                     width={700}
                     height={800}

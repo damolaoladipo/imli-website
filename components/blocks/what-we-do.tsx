@@ -130,7 +130,7 @@ export default function WhatwedoSection() {
                         className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl"
                     >
                         <Image
-                            src="/blocks/what we do.jpeg" // You'll need to replace this with your actual image path
+                            src="/new/mision.png" // You'll need to replace this with your actual image path
                             alt="Child with headphones"
                             layout="fill"
                             objectFit="cover"

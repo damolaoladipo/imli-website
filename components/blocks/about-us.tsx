@@ -62,7 +62,7 @@ export default function AboutUsSection() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <Image
-            src="/blocks/hero-image.png"
+            src="/new/bg-hero.png"
             alt="Group of volunteers smiling"
             width={1600}
             height={900}

@@ -84,11 +84,11 @@ const FounderCard = ({ founder }: { founder: Founder }) => {
 
 export default function FoundersSection() {
     const founders: Founder[] = [
-        { name: 'Ella Browson', image: '/founders/ella-browson.jpg' }, // Replace with actual paths
-        { name: 'James Ferell', image: '/founders/james-ferell.jpg' },
-        { name: 'Ella Browson', image: '/founders/ella-browson-2.jpg' },
-        { name: 'John Doe', image: '/founders/john-doe.jpg' },
-        { name: 'Jane Smith', image: '/founders/jane-smith.jpg' },
+        { name: 'Ella Browson', image: '/new/humans.png' },
+        { name: 'James Ferell', image: '/new/mision.png' },
+        { name: 'Ella Browson', image: '/new/vision.png' },
+        { name: 'John Doe', image: '/new/bg-hero.png' },
+        { name: 'Jane Smith', image: '/new/humans.png' },
     ];
 
     return (
@@ -114,7 +114,7 @@ export default function FoundersSection() {
                             className="relative w-[350px] h-[450px] sm:w-[450px] sm:h-[550px] rounded-[3rem] overflow-hidden z-10"
                         >
                             <Image
-                                src="/sarah-uzodimma-adewoye.jpg" // Replace with actual image path
+                                src="/new/mision.png" // Replace with actual image path
                                 alt="Sarah Uzodimma Adewoye (CEO)"
                                 layout="fill"
                                 objectFit="cover"

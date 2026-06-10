@@ -2,7 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, Variants } from 'framer-motion';
-import { CheckCircle, ArrowRight } from '@phosphor-icons/react'; // Phosphor Icons
+import { CheckCircle } from '@phosphor-icons/react';
+import { CustomButton } from '@/components/custom/custom-button';
 
 // --- Framer Motion Variants ---
 const containerVariants: Variants = {
@@ -71,7 +72,7 @@ export default function StandWithUsSection() {
             {/* Image 1 (larger, top-left) */}
             <motion.div variants={galleryItemVariants} className="col-span-2 md:col-span-1 row-span-2 relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/blocks/hero-image.png"
+                src="/new/bg-hero.png"
                 alt="Protestors holding signs for justice"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -82,7 +83,7 @@ export default function StandWithUsSection() {
             {/* Image 2 (top-right) */}
             <motion.div variants={galleryItemVariants} className="col-span-2 md:col-span-1 relative h-64 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/blocks/hero-image.png"
+                src="/new/bg-hero.png"
                 alt="Group of people with protest signs"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -93,7 +94,7 @@ export default function StandWithUsSection() {
             {/* Image 3 (bottom-right) */}
             <motion.div variants={galleryItemVariants} className="col-span-2 md:col-span-1 relative h-64 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/blocks/hero-image.png"
+                src="/new/bg-hero.png"
                 alt="People marching in a parade or protest"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -129,10 +130,9 @@ export default function StandWithUsSection() {
               </div>
 
               <motion.div variants={itemVariants}>
-                <Link href="#explore" passHref className="inline-flex items-center justify-center rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none bg-[#f4e073] text-gray-900 hover:bg-[#e0cd6b] h-12 px-6 py-3">
+                <CustomButton href="#explore">
                   Explore More
-                  <ArrowRight size={20} className="ml-2" /> {/* Phosphor Icon */}
-                </Link>
+                </CustomButton>
               </motion.div>
             </motion.div>
           </div>

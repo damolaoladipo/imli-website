@@ -2,7 +2,6 @@
  
 
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 // Phosphor Icons are not explicitly needed for this specific design,
@@ -11,7 +10,7 @@ import { motion, Variants } from 'framer-motion';
 // import { Handshake } from '@phosphor-icons/react';
 
 // Assuming you have a standard Shadcn/UI Button component
-import { Button } from '@/components/ui/button';
+import { CustomButton } from '@/components/custom/custom-button';
 
 export default function DonateSection() {
   // Framer Motion variants for text content
@@ -84,11 +83,9 @@ export default function DonateSection() {
             </motion.p>
 
             <motion.div variants={itemVariants}>
-              <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-gray-900">
-                <Link href="#donate-now">
-                  Donate now
-                </Link>
-              </Button>
+              <CustomButton href="#donate-now">
+                Donate now
+              </CustomButton>
             </motion.div>
           </motion.div>
 
@@ -102,7 +99,7 @@ export default function DonateSection() {
           >
             <div className="w-full max-w-lg overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/placeholder/donation-box.jpg" // Placeholder image path
+                src="/new/mision.png" // Placeholder image path
                 alt="Person holding a donation box"
                 width={700}
                 height={500}

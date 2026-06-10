@@ -67,7 +67,7 @@ export default function WhatwedoSectionn() {
           >
             <div className="w-full max-w-md rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/blocks/hero-image.png"
+                src="/new/bg-hero.png"
                 alt="Happy children reaching out"
                 width={500} // Adjust based on your design needs
                 height={500} // Adjust based on your design needs

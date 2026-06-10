@@ -93,7 +93,7 @@ export default function BlogPost() {
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <Image
-          src="/path-to-your-image.jpg" // Replace with the actual path to your image
+          src="/new/bg-hero.png" // Replace with the actual path to your image
           alt="Group of happy children"
           width={800} // Adjust width as needed for your layout
           height={500} // Adjust height as needed, maintaining aspect ratio

@@ -1,13 +1,11 @@
  "use client"
 
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-import { CaretRight } from '@phosphor-icons/react'; // Using Phosphor Icons for caret
 
 // Assuming you have a standard Button component in your project
-import { Button } from '@/components/ui/button'; 
+import { CustomButton } from '@/components/custom/custom-button'; 
 
 // --- Framer Motion Variants ---
 const headerVariants = {
@@ -76,19 +74,19 @@ export default function HeaderSection() {
     {
       title: 'Autism care day',
       date: '15th Nov 2022',
-      imageSrc: '/blocks/hero-image.png',
+      imageSrc: '/new/bg-hero.png',
       altText: 'Autism-related abstract image',
     },
     {
       title: 'Down syndrome outreach',
       date: '15th Nov 2022',
-      imageSrc: '/blocks/hero-image.png',
+      imageSrc: '/new/bg-hero.png',
       altText: 'Child with headphones in a quiet space',
     },
     {
       title: 'Caring for children with cerebral palsy',
       date: '15th Nov 2022',
-      imageSrc: '/blocks/hero-image.png',
+      imageSrc: '/new/bg-hero.png',
       altText: 'Child in a mobility support chair smiling',
     },
   ];
@@ -116,15 +114,9 @@ export default function HeaderSection() {
               <p className="text-lg text-gray-600 mb-10 max-w-lg">
                 Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
               </p>
-              <Button 
-                asChild 
-                className="h-12 px-6 py-3 bg-[#f3b54a] text-gray-900 hover:bg-[#e0a439] rounded-lg text-base font-semibold"
-              >
-                <Link href="#read-more">
-                  Read more
-                  <CaretRight size={16} className="ml-2" />
-                </Link>
-              </Button>
+              <CustomButton href="#read-more">
+                Read more
+              </CustomButton>
             </motion.div>
           </div>
 

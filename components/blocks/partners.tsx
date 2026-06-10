@@ -11,7 +11,7 @@ export default function Partners() {
                     <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-12 items-center justify-items-center">
                         <div className="flex">
                             <Image
-                                src="mide.png"
+                                src="/new/vision.png"
                                 alt="Mide logo"
                                 height={60}
                                 width={120}
@@ -20,7 +20,7 @@ export default function Partners() {
                         </div>
                         <div className="flex">
                             <Image
-                                src="toyosi.png"
+                                src="/new/humans.png"
                                 alt="Toyosi logo"
                                 height={60}
                                 width={120}
@@ -30,7 +30,7 @@ export default function Partners() {
        
                         <div className="flex">
                             <Image
-                                src="/afr.png"
+                                src="/new/humans.png"
                                 alt="Africa Centre logo"
                                 height={60}
                                 width={120}
@@ -39,7 +39,7 @@ export default function Partners() {
                         </div>
                         <div className="flex">
                             <Image
-                                src="/bipoc.png"
+                                src="/new/mision.png"
                                 alt="BIPOC logo"
                                 height={60}
                                 width={120}
@@ -49,7 +49,7 @@ export default function Partners() {
                         
                         <div className="flex">
                             <Image
-                                src="/mycity.png"
+                                src="/new/bg-hero.png"
                                 alt="MyCity logo"
                                 height={60}
                                 width={120}
@@ -58,7 +58,7 @@ export default function Partners() {
                         </div>
                         <div className="flex">
                             <Image
-                                src="/settle.png"
+                                src="/new/humans.png"
                                 alt="Settle logo"
                                 height={60}
                                 width={150}
@@ -67,7 +67,7 @@ export default function Partners() {
                         </div>
                          <div className="flex">
                             <Image
-                                src="/crown.png"
+                                src="/new/mision.png"
                                 alt="Crown logo"
                                 height={60}
                                 width={120}
@@ -77,7 +77,7 @@ export default function Partners() {
 
                                           <div className="flex">
                             <Image
-                                src="/theglobalma.svg"
+                                src="/new/bg-hero.png"
                                 alt="The Global MA logo"
                                 height={80}
                                 width={420}
@@ -86,7 +86,7 @@ export default function Partners() {
                         </div>
                                          {/* <div className="flex h-20">
                             <Image
-                                src="/csc.png"
+                                src="/new/vision.png"
                                 alt="Canada Service Corps logo"
                                 height={80}
                                 width={320}
@@ -95,7 +95,7 @@ export default function Partners() {
                         </div> */}
                         <div className="flex h-20">
                             <Image
-                                src="/new/airi.png"
+                                src="/new/humans.png"
                                 alt="AIRI logo"
                                 height={80}
                                 width={120}
@@ -104,7 +104,7 @@ export default function Partners() {
                         </div>
                         {/* <div className="flex h-20 ">
                             <Image
-                                src="/new/corps.png"
+                                src="/new/vision.png"
                                 alt="Canada Service Corps logo"
                                 height={80}
                                 width={420}

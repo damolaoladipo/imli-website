@@ -103,7 +103,7 @@ export default function OurJourneySection() {
           viewport={{ once: true, amount: 0.5 }}
         >
           <Image
-            src="/blocks/hero-image.png"
+            src="/new/bg-hero.png"
             alt="A diverse group of smiling people"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
