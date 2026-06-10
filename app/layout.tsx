@@ -9,6 +9,18 @@ import { useMont } from "@/_data/fonts";
 export const metadata: Metadata = {
   title: siteConfig.title,
   description: siteConfig.description,
+  icons: {
+    icon: [
+      { url: "/blocks/imli-icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/blocks/imli-icon.png", type: "image/png", sizes: "32x32" },
+      { url: "/blocks/imli-icon.png", type: "image/png", sizes: "16x16" },
+    ],
+    shortcut: "/blocks/imli-icon.png",
+    apple: [
+      { url: "/blocks/imli-icon.png", type: "image/png", sizes: "180x180" },
+      { url: "/blocks/imli-icon.png", type: "image/png", sizes: "512x512" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -20,11 +32,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         suppressHydrationWarning
-        className={`${useMont.className}  ${useMont.variable} antialiased overflow-x-hidden`}
+        className={`${useMont.className}  ${useMont.variable} antialiased`}
       >
         <HeroHeader />
 
-        {children}
+        <main className="overflow-x-hidden">{children}</main>
 
         <FooterSection />
       </body>

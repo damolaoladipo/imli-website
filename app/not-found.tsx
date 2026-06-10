@@ -1,7 +1,5 @@
-import Link from "next/link";
-
 import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { CustomButton } from "@/components/custom/custom-button";
 import { Background } from "@/components/custom/background";
 
 export default function NotFound() {
@@ -19,20 +17,13 @@ export default function NotFound() {
           </p>
 
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Button asChild size="lg" className="group min-w-[200px] gap-2 rounded-full">
-              <Link href="/">
-                <ArrowLeft className="size-5 transition-transform group-hover:-translate-x-1" />
-                Back to Home
-              </Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="min-w-[200px] rounded-full"
+            <CustomButton
+              href="/"
+              icon={<ArrowLeft className="size-5 sm:size-6" strokeWidth={1.75} />}
             >
-              <Link href="/contact">Send us a message</Link>
-            </Button>
+              Back to Home
+            </CustomButton>
+            <CustomButton href="/contact">Send us a message</CustomButton>
           </div>
         </div>
       </div>

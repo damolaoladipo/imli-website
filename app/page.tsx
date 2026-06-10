@@ -1,35 +1,43 @@
+import { articleCardGridReferenceContent } from "@/_data/imili/article-cards";
+import { bentoHeroReferenceContent } from "@/_data/imili/bento-hero";
+import { servicesReferenceContent } from "@/_data/imili/services";
+import { testimonialsReferenceContent } from "@/_data/imili/testimonials";
 import { AboutUs } from "@/components/custom/about-us";
-import CallToAction from "@/components/blocks/call-to-action";
-import Partners from "@/components/blocks/partners";
-import { Background } from "@/components/custom/background";
-import Hero from "@/components/custom/hero";
-import Impact from "@/components/custom/impact";
 
-import { Feature2 } from "@/components/feature2";
+import {
+  ArticleCardGrid,
+  BentoHeroSection,
+
+  ServicesCarousel,
+  TestimonialsCarousel,
+} from "@/components/custom/imili";
 
 export default function Home() {
   return (
     <>
-    <Hero/>
-      {/* <HeroSection /> */}
+      {/* feat-0007 — Bento hero */}
+      <BentoHeroSection content={bentoHeroReferenceContent} />
 
-      <Background>
-
-        <Impact/>
-
-        <Partners />
-
+    
         <AboutUs
-          title="Our Vision"
-          description="To collectively shape the culture of learning, leadership, and lifestyle for young people across Canada."
+          title="About the International Media and Information Literacy Institute"
+          description="First international observatory dedicated to media and information literacy. The International Institute supports countries in monitoring progress, generating research, strengthening public–private partnerships, and advancing media and information literacy policies that promote informed, resilient and peaceful societies."
           imageSrc="/new/mision.png"
-          imageAlt="Diverse group of young people"
-      
+          imageAlt="IMILI observatory"
         />
-   
 
-        <CallToAction />
-      </Background>
+
+          {/* feat-0006 — Services carousel */}
+      <ServicesCarousel content={servicesReferenceContent} />
+  
+
+      {/* feat-0003 / feat-0004 — Article card grid + News & Blog header */}
+      <ArticleCardGrid content={articleCardGridReferenceContent} />
+
+      {/* feat-0005 — Testimonials carousel */}
+      <TestimonialsCarousel content={testimonialsReferenceContent} />
+
+    
     </>
   );
 }
