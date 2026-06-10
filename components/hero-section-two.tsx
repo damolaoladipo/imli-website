@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import { CustomButton } from '@/components/custom/custom-button'
 import Image from 'next/image'
 import { HeroHeader } from './custom/header'
 import { Sparkle } from 'lucide-react'
@@ -29,22 +29,13 @@ export default function HeroSection() {
                                 <h1 className="mx-auto mt-8 max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl">Build 10x Faster with Mist</h1>
                                 <p className="text-muted-foreground mx-auto my-6 max-w-xl text-balance text-xl">Craft. Build. Ship Modern Websites With AI Support.</p>
 
-                                <div className="flex items-center justify-center gap-3">
-                                    <Button
-                                        asChild
-                                        size="lg">
-                                        <Link href="#link">
-                                            <span className="text-nowrap">Start Building</span>
-                                        </Link>
-                                    </Button>
-                                    <Button
-                                        asChild
-                                        size="lg"
-                                        variant="outline">
-                                        <Link href="#link">
-                                            <span className="text-nowrap">Watch Video</span>
-                                        </Link>
-                                    </Button>
+                                <div className="flex flex-wrap items-center justify-center gap-3">
+                                    <CustomButton href="#link">
+                                        Start Building
+                                    </CustomButton>
+                                    <CustomButton href="#link">
+                                        Watch Video
+                                    </CustomButton>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +44,7 @@ export default function HeroSection() {
                                 <div className="mt-12 md:mt-16">
                                     <div className="bg-background rounded-(--radius) relative mx-auto overflow-hidden border border-transparent shadow-lg shadow-black/10 ring-1 ring-black/10">
                                         <Image
-                                            src="/mist/tailark-2.png"
+                                            src="/new/bg-hero.png"
                                             alt="app screen"
                                             width="2880"
                                             height="1842"

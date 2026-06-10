@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 interface Feature2Props {
   title?: string;
@@ -23,8 +22,8 @@ interface Feature2Props {
 const Feature2 = ({
   title = "Blocks built with Shadcn & Tailwind",
   description = "Hundreds of finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
-  imageSrc = "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-  imageAlt = "placeholder hero",
+  imageSrc = "/new/vision.png",
+  imageAlt = "IMILI vision",
   buttonPrimary = {
     text: "Get Started",
     href: "https://shadcnblocks.com",

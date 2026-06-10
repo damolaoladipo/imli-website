@@ -2,33 +2,34 @@
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import Link from 'next/link'
+import { siteConfig } from '@/_data/site-config'
 
 export default function FAQs() {
     const faqItems = [
         {
             id: 'item-1',
-            question: 'What is AssureUs Club?',
-            answer: 'AssureUs Club is a connected, celebratory, and growth-oriented community for international students, immigrants, and refugee youth across Canada. We help young people discover their unique strengths, develop leadership potential, and contribute meaningfully to society.',
+            question: `What is ${siteConfig.name}?`,
+            answer: siteConfig.description,
         },
         {
             id: 'item-2',
-            question: 'Who can join AssureUs Club?',
-            answer: 'AssureUs Club welcomes all international students, immigrants, and refugee youth looking to build meaningful connections, develop leadership skills, and engage with a supportive community. There are no barriers to entry—everyone is welcome.',
+            question: 'What is media and information literacy (MIL)?',
+            answer: 'Media and information literacy empowers people to think critically about information and media, recognize misinformation, and participate responsibly in digital and civic life. IMILI advances MIL policies that promote informed, resilient and peaceful societies.',
         },
         {
             id: 'item-3',
-            question: 'What programs and events does the club offer?',
-            answer: 'We offer various programs including leadership development workshops, community service opportunities, social events, mentorship programs, and the AUC 100-hour Learning Challenge. Check our events page for upcoming initiatives and programs.',
+            question: 'Who does IMILI work with?',
+            answer: 'IMILI collaborates with governments, UNESCO, civil society, academia, and private-sector partners to monitor MIL progress, generate research, and strengthen national and international policy frameworks.',
         },
         {
             id: 'item-4',
-            question: 'How can I get involved as a volunteer?',
-            answer: 'We\'re always looking for passionate volunteers! You can express interest through our volunteer signup form or contact us directly. Whether you want to help organize events, mentor youth, or contribute your skills, there\'s a role for everyone.',
+            question: 'How can organizations partner with IMILI?',
+            answer: 'Organizations interested in research collaboration, policy development, or capacity building can reach out through our contact page. IMILI convenes global networks for South-South and North-South cooperation on MIL.',
         },
         {
             id: 'item-5',
-            question: 'Is there a membership fee?',
-            answer: 'No! AssureUs Club is free to join. We believe in making our community accessible to everyone. While participation is free, donations are always appreciated to help us expand our programs and reach more young people.',
+            question: 'Where is IMILI based?',
+            answer: 'IMILI was launched in Abuja, Nigeria under the auspices of UNESCO as the first international observatory dedicated to media and information literacy.',
         },
     ]
 
@@ -38,42 +39,24 @@ export default function FAQs() {
                 <div className="grid gap-8 md:grid-cols-5 md:gap-12">
                     <div className="md:col-span-2">
                         <h2 className="text-foreground text-4xl font-semibold">FAQs</h2>
-                        <p className="text-muted-foreground mt-4 text-balance text-lg">Your questions answered</p>
-                        <p className="text-muted-foreground mt-6 hidden md:block">
-                            Can't find what you're looking for? Contact our{' '}
-                            <Link
-                                href="#"
-                                className="text-primary font-medium hover:underline">
-                                customer support team
+                        <p className="text-muted-foreground mt-4 text-balance">
+                            Have a question about {siteConfig.name}? Reach out on our{' '}
+                            <Link href="/contact" className="text-primary font-medium hover:underline">
+                                contact page
                             </Link>
+                            .
                         </p>
                     </div>
-
                     <div className="md:col-span-3">
-                        <Accordion
-                            type="single"
-                            collapsible>
+                        <Accordion type="single" collapsible className="w-full">
                             {faqItems.map((item) => (
-                                <AccordionItem
-                                    key={item.id}
-                                    value={item.id}>
-                                    <AccordionTrigger className="cursor-pointer text-base hover:no-underline">{item.question}</AccordionTrigger>
-                                    <AccordionContent>
-                                        <p className="text-base">{item.answer}</p>
-                                    </AccordionContent>
+                                <AccordionItem key={item.id} value={item.id}>
+                                    <AccordionTrigger className="text-left">{item.question}</AccordionTrigger>
+                                    <AccordionContent className="text-muted-foreground">{item.answer}</AccordionContent>
                                 </AccordionItem>
                             ))}
                         </Accordion>
                     </div>
-
-                    <p className="text-muted-foreground mt-6 md:hidden">
-                        Can't find what you're looking for? Contact our{' '}
-                        <Link
-                            href="#"
-                            className="text-primary font-medium hover:underline">
-                            customer support team
-                        </Link>
-                    </p>
                 </div>
             </div>
         </section>

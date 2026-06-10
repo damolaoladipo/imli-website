@@ -3,37 +3,37 @@ const members = [
     {
         name: 'Liam Brown',
         role: 'Founder - CEO',
-        avatar:"/blocks/ojo-semasa.jpeg",
+        avatar:"/new/humans.png",
         link: '#',
     },
     {
         name: 'Elijah Jones',
         role: 'Co-Founder - CTO',
-        avatar:"/blocks/ojo-semasa.jpeg",
+        avatar:"/new/mision.png",
         link: '#',
     },
     {
         name: 'Isabella Garcia',
         role: 'Sales Manager',
-        avatar: "/blocks/ojo-semasa.jpeg",
+        avatar: "/new/vision.png",
         link: '#',
     },
     {
         name: 'Henry Lee',
         role: 'UX Engeneer',
-        avatar: "/blocks/ojo-semasa.jpeg",
+        avatar: "/new/bg-hero.png",
         link: '#',
     },
     {
         name: 'Ava Williams',
         role: 'Interaction Designer',
-        avatar: "/blocks/ojo-semasa.jpeg",
+        avatar: "/new/humans.png",
         link: '#',
     },
     {
         name: 'Olivia Miller',
         role: 'Visual Designer',
-        avatar: "/blocks/ojo-semasa.jpeg",
+        avatar: "/new/mision.png",
         link: '#',
     },
 ]

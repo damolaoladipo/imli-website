@@ -1,5 +1,6 @@
 import { Background } from "@/components/custom/background";
 import Abouts from "@/components/features-one";
+import { siteConfig } from "@/_data/site-config";
 
 
 export default function ProgramsPage() {
@@ -15,7 +16,7 @@ export default function ProgramsPage() {
                 Our Programs
               </h1>
               <p className="text-x text-gray-700">
-                Welcome to AssureUs Club. Where impact is our benchmark
+                {siteConfig.tagline}
 
               </p>
             

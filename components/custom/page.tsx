@@ -1,5 +1,6 @@
 import ContactUsSection from "@/components/blocks/contact-us";
 import { Background } from "@/components/custom/background";
+import { siteConfig } from "@/_data/site-config";
 
 
 export default function ContactPage() {
@@ -15,7 +16,7 @@ export default function ContactPage() {
                 Contact Us
               </h1>
               <p className="text-x text-gray-700">
-                Welcome to AssureUs Club. Where impact is our benchmark.
+                {siteConfig.tagline}
               </p>
             
           </div>

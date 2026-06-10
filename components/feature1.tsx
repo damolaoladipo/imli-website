@@ -2,10 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-
-import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
+import { CustomButton } from "@/components/custom/custom-button";
 
 interface Feature1Props {
   title?: string;
@@ -26,8 +23,8 @@ interface Feature1Props {
 const Feature1= ({
   title = "Blocks built with Shadcn & Tailwind",
   description = "Hundreds of finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
-  imageSrc = "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-  imageAlt = "placeholder hero",
+  imageSrc = "/new/mision.png",
+  imageAlt = "IMILI observatory",
   buttonPrimary = {
     text: "Learn More",
     href: "/about",
@@ -52,15 +49,9 @@ const Feature1= ({
               </p>
             )}
             <div className="flex flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-              {/* <Button asChild size="lg" className="rounded-full">
-                <Link
-                  href={buttonPrimary.href}
-                  className="group items-center gap-2 bg-[#22c55e] hover:bg-[#16a34a] px-6 py-3 font-medium text-white transition-colors"
-                >
-                  {buttonPrimary.text}
-                  <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
-                </Link>
-              </Button> */}
+              <CustomButton href={buttonPrimary.href}>
+                {buttonPrimary.text}
+              </CustomButton>
             </div>
           </div>
           <Image

@@ -20,7 +20,7 @@ export default function FeaturesSections() {
                         <Card className="p-4 sm:p-6">
                             <div className="relative w-full aspect-video flex items-center justify-center">
                                 <Image
-                                src="/blocks/yali-work.jpeg" // replace with your image path
+                                src="/new/humans.png" // replace with your image path
                                  alt="Marketing Campaigns"
                                  fill
                                  className="object-cover rounded-lg"
@@ -37,7 +37,7 @@ export default function FeaturesSections() {
                         <Card className="p-4 sm:p-6">
                             <div className="relative w-full aspect-video flex items-center justify-center">
                                 <Image
-                                src="/blocks/yali-work.jpeg" // replace with your image path
+                                src="/new/humans.png" // replace with your image path
                                  alt="Marketing Campaigns"
                                  fill
                                  className="object-cover rounded-lg"
@@ -74,7 +74,7 @@ export const ScheduleIllustation = ({ className, variant = 'elevated' }: Illustr
                 })}>
                 <Button
                     size="sm"
-                    className="rounded-sm">
+                    className="rounded-full">
                     <Calendar1 className="size-3" />
                     <span className="text-sm font-medium">Schedule</span>
                 </Button>
@@ -82,7 +82,7 @@ export const ScheduleIllustation = ({ className, variant = 'elevated' }: Illustr
                 <ToggleGroup
                     type="multiple"
                     size="sm"
-                    className="gap-0.5 *:rounded-md">
+                    className="gap-0.5 *:rounded-full">
                     <ToggleGroupItem
                         value="bold"
                         aria-label="Toggle bold">

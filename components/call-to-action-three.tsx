@@ -1,6 +1,4 @@
-import { Button } from '@/components/ui/button'
-import { Calendar, ChevronRight } from 'lucide-react'
-import Link from 'next/link'
+import { CustomButton } from '@/components/custom/custom-button'
 
 export default function StatsSection() {
     return (
@@ -11,30 +9,13 @@ export default function StatsSection() {
                         <span className="text-muted-foreground">Build Modern Websites.</span> Drive Results
                     </h2>
                     <p className="mt-4 text-lg">Libero sapiente aliquam quibusdam aspernatur, praesentium iusto repellendus.</p>
-                    <div className="mt-8 flex gap-3">
-                        <Button
-                            asChild
-                            className="pr-2">
-                            <Link href="#">
-                                Try Mist for Free
-                                <ChevronRight
-                                    strokeWidth={2.5}
-                                    className="size-3.5! opacity-50"
-                                />
-                            </Link>
-                        </Button>
-                        <Button
-                            asChild
-                            variant="outline"
-                            className="pl-2.5">
-                            <Link href="#">
-                                <Calendar
-                                    className="!size-3.5 opacity-50"
-                                    strokeWidth={2.5}
-                                />
-                                Request a Demo
-                            </Link>
-                        </Button>
+                    <div className="mt-8 flex flex-wrap gap-3">
+                        <CustomButton href="#">
+                            Try Mist for Free
+                        </CustomButton>
+                        <CustomButton href="#">
+                            Request a Demo
+                        </CustomButton>
                     </div>
                 </div>
             </div>

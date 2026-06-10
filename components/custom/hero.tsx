@@ -2,10 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowUpRight } from 'lucide-react';
+import { CustomButton } from '@/components/custom/custom-button';
+import { siteConfig } from '@/_data/site-config';
 
 export default function Hero() {
   return (
@@ -18,32 +17,37 @@ export default function Hero() {
            transition={{ duration: 0.8, ease: "easeOut" }}
            className="relative w-full min-h-[40vh] sm:min-h-[90vh] flex items-center justify-center text-white overflow-hidden rounded-md"
          >
-           {/* Background Image */}
            <div className="absolute inset-0">
              <Image
                src="/new/bg-hero.png"
-               alt="Children with special needs"
+               alt="IMILI launch event"
                fill
                priority
                quality={90}
                className="object-cover brightness-[0.4]"
              />
            </div>
-   
-        {/* Content */}
-            <div className="relative z-10 text-center px-4  pt-20 pb-40 flex flex-col items-center sm:px-6 max-w-full sm:max-w-2xl mx-auto">
+
+            <div className="relative z-10 text-center px-4  pt-20 pb-40 flex flex-col items-center sm:px-6 max-w-full sm:max-w-3xl mx-auto">
+                  <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2, duration: 0.7 }}
+                    className="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-300"
+                  >
+                    {siteConfig.fullName}
+                  </motion.p>
                   <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.7 }}
                     className="text-4xl  md:text-7xl font-bold mb-5 leading-tight"
                   >
-                    Join the Club.
+                    {siteConfig.name}
                   </motion.h2>
 
-           <p className="mt-6 text-white text-base md:text-lg max-w-xl text-pretty">
-           This is a club for young people and those committed to building them up.
-           We believe every young person deserves a full life — balanced, connected, and fulfilling.
+           <p className="mt-6 text-white text-base md:text-lg max-w-2xl text-pretty">
+           {siteConfig.description}
         </p>
 
 
@@ -53,19 +57,9 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.7 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
           >
-            <Button
-              asChild
-              size="lg"
-              className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg  text-gray-900 rounded-full shadow-lg"
-            >
-              <Link href="#join-volunteer" 
-              className="group flex items-center justify-center mt-12  w-fit gap-2 bg-[#22c55e] hover:bg-[#16a34a] px-6 py-3 font-medium text-white transition-colors"
-              >
-                
-                Join the club
-                <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" />
-              </Link>
-            </Button>
+            <CustomButton href="/about" className="mt-12">
+              Learn more
+            </CustomButton>
 
           </motion.div>
         </div>
