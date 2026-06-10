@@ -1,7 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-   images: {
+  async redirects() {
+    return [
+      {
+        source: "/favicon.ico",
+        destination: "/blocks/imli-icon.png",
+        permanent: true,
+      },
+    ];
+  },
+  images: {
     unoptimized: true,
     remotePatterns: [
       {
