@@ -1,0 +1,61 @@
+import { IMILI_IMAGES } from "./images";
+
+export type BentoHeroContent = {
+  headline: string;
+  subhead: string;
+  cta: { label: string; href: string };
+  feature: {
+    badgeLabel: string;
+    body: string;
+  };
+  bento: {
+    womanPhoto: { src: string; alt: string };
+    classroomPhoto: { src: string; alt: string; overlayLabel: string };
+    testimonial: {
+      quote: string;
+      badgeLabel: string;
+      avatars: { src: string; alt: string }[];
+    };
+    stat: { value: string; label: string };
+    manPhoto: { src: string; alt: string };
+  };
+};
+
+export const bentoHeroReferenceContent: BentoHeroContent = {
+  headline: "Build Skills That Shape Your Future",
+  subhead:
+    "Practical online courses designed to help you gain real-world experience and grow with confidence.",
+  cta: { label: "Explore Course", href: "/about" },
+  feature: {
+    badgeLabel: "Built for real growth.",
+    body: "Follow guided learning paths from beginner to job-ready level.",
+  },
+  bento: {
+    womanPhoto: {
+      src: IMILI_IMAGES.humans.src,
+      alt: IMILI_IMAGES.humans.alt,
+    },
+    classroomPhoto: {
+      src: IMILI_IMAGES.mission.src,
+      alt: IMILI_IMAGES.mission.alt,
+      overlayLabel: "Interactive Classrooms",
+    },
+    testimonial: {
+      quote: "Hands-on lessons that helped me apply skills right away.",
+      badgeLabel: "Best",
+      avatars: [
+        { src: IMILI_IMAGES.humans.src, alt: IMILI_IMAGES.humans.alt },
+        { src: IMILI_IMAGES.mission.src, alt: IMILI_IMAGES.mission.alt },
+        { src: IMILI_IMAGES.vision.src, alt: IMILI_IMAGES.vision.alt },
+      ],
+    },
+    stat: {
+      value: "62+",
+      label: "Courses built around real-world projects.",
+    },
+    manPhoto: {
+      src: IMILI_IMAGES.bgHero.src,
+      alt: IMILI_IMAGES.bgHero.alt,
+    },
+  },
+};

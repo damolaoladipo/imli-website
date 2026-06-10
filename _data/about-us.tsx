@@ -1,16 +1,18 @@
+import { siteConfig } from "./site-config";
+
 export const AboutUsData = {
-    heading: "We strengthen Ogbomoso startup ecosystem",
-    subheading: "We support tech founders, and Startups by facilitating access to high-quality workspaces and infrastructure, learning, incubation, investor and peer networks.",
+    heading: `About ${siteConfig.name}`,
+    subheading: siteConfig.description,
     image: {
-      src: "/blocks/imgg.png",
-      alt: "innovation image",
+      src: "/new/mision.png",
+      alt: "IMILI observatory",
       width: 1248,
       height: 765,
     },
      button: {
     id: "01",
     text: "Read About Us",
-    href: "/abou-us",
+    href: "/about",
     variant: "default" as const,
   },
 }

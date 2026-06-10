@@ -1,26 +1,25 @@
+import { siteConfig } from "./site-config";
+
 export const heroData = {
-  heading: "Èdè wa ni - Ẹ Gbe L'árugẹ",
-  subheading:
-    "The Yoruba Language Preservation Project. Preserving our heritage, empowering our future",
+  heading: siteConfig.name,
+  subheading: siteConfig.tagline,
 
   announcement: {
-    text: "Introducing the Bridgit Accelerator",
-    href: "#link"
+    text: `${siteConfig.fullName}`,
+    href: "/about"
   },
 
   button1: {
     id: "01",
-    href: "/programs",
-    text: "View Programs",
+    href: "/about",
+    text: "Learn More",
     variant: "default" as const,
   },
   button2: {
     id: "02",
-    href: "/about",
-    text: "Learn More",
+    href: "/contact",
+    text: "Contact Us",
     variant: "glow" as const,
     icon: "Arrow",
   },
 };
-
-
