@@ -8,6 +8,7 @@ import { headerNavItems } from "@/_data/imili/header-nav";
 import { CustomButton } from "@/components/custom/custom-button";
 import { HeaderMegaMenuLink } from "@/components/custom/header-mega-menu-link";
 import Logo from "@/components/custom/logo";
+import { UnescoLogo } from "@/components/custom/unesco-logo";
 import { cn } from "@/lib/utils";
 
 function slugifyNavName(name: string) {
@@ -201,8 +202,8 @@ export function MobileNavDrawer({
         }}
       >
         <div
-          className="flex shrink-0 items-center justify-between border-b border-neutral-100 px-6 py-4"
-          style={{ paddingTop: "max(1rem, env(safe-area-inset-top))" }}
+          className="flex shrink-0 items-center justify-between border-b border-neutral-100 px-6 py-6"
+          style={{ paddingTop: "max(1.5rem, env(safe-area-inset-top))" }}
         >
           <Link
             href="/"
@@ -210,17 +211,20 @@ export function MobileNavDrawer({
             onClick={onClose}
             className="inline-flex items-center"
           >
-            <Logo className="w-24" />
+            <Logo />
           </Link>
 
-          <button
-            type="button"
-            aria-label="Close menu"
-            onClick={onClose}
-            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md text-black transition-colors hover:text-[#0548bd]"
-          >
-            <X className="size-6" aria-hidden />
-          </button>
+          <div className="flex items-center gap-2">
+            <UnescoLogo />
+            <button
+              type="button"
+              aria-label="Close menu"
+              onClick={onClose}
+              className="relative inline-flex min-h-11 min-w-11 items-center justify-center p-2.5 text-black transition-colors hover:text-[#0548bd]"
+            >
+              <X className="size-6" aria-hidden />
+            </button>
+          </div>
         </div>
 
         <div className="flex-1 overflow-y-auto px-6 py-6">
