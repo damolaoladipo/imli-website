@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { motion, useReducedMotion } from "framer-motion";
+import { duration } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 type Avatar = { src: string; alt: string };
@@ -16,12 +20,16 @@ export function BentoTestimonialTile({
   avatars,
   className,
 }: BentoTestimonialTileProps) {
+  const reduced = useReducedMotion();
+
   return (
-    <div
+    <motion.div
       className={cn(
         "relative flex flex-col justify-between overflow-hidden rounded-[25px] bg-[#3CCB6A] p-6",
         className,
       )}
+      whileHover={reduced ? undefined : { scale: 1.02 }}
+      transition={{ duration: duration.hover }}
     >
       <div className="flex items-start justify-between">
         <div className="flex -space-x-2.5">
@@ -41,6 +49,6 @@ export function BentoTestimonialTile({
         </span>
       </div>
       <p className="text-[20px] leading-snug text-white">{quote}</p>
-    </div>
+    </motion.div>
   );
 }

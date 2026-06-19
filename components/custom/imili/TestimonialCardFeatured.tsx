@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import type { TestimonialItem } from "@/_data/imili/testimonials";
+import { duration } from "@/lib/motion";
 
 type TestimonialCardFeaturedProps = {
   item: TestimonialItem;
@@ -11,19 +15,23 @@ export function TestimonialCardFeatured({
   item,
   className,
 }: TestimonialCardFeaturedProps) {
+  const reduced = useReducedMotion();
+
   return (
-    <article
+    <motion.article
       className={cn(
-        "relative h-[411px] w-[422px] shrink-0 overflow-hidden rounded-[25px]",
+        "group relative h-[411px] w-[422px] shrink-0 overflow-hidden rounded-[25px]",
         className,
       )}
+      whileHover={reduced ? undefined : { scale: 1.02 }}
+      transition={{ duration: duration.hover }}
     >
       {item.photoSrc && (
         <Image
           src={item.photoSrc}
           alt={item.photoAlt ?? ""}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
           sizes="422px"
         />
       )}
@@ -35,6 +43,6 @@ export function TestimonialCardFeatured({
           <p className="text-[18px] text-white/85">{item.location}</p>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }

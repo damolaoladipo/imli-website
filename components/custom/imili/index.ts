@@ -1,5 +1,6 @@
 export { ArticleCard } from "./ArticleCard";
 export { ArticleCardGrid } from "./ArticleCardGrid";
+export { CarouselNavButton } from "./CarouselNavButton";
 export { BentoClassroomTile } from "./BentoClassroomTile";
 export { CurvedHeroSection } from "./CurvedHeroSection";
 export { BentoHeroSection } from "./BentoHeroSection";

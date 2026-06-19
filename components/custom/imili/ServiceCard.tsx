@@ -1,16 +1,35 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion, useReducedMotion } from "framer-motion";
 import type { ServiceCardItem } from "@/_data/imili/services";
+import { cardHover, fadeUp, motionVariants, viewport } from "@/lib/motion";
+import { cn } from "@/lib/utils";
 
 type ServiceCardProps = {
   item: ServiceCardItem;
+  index?: number;
 };
 
-export function ServiceCard({ item }: ServiceCardProps) {
+export function ServiceCard({ item, index = 0 }: ServiceCardProps) {
+  const reduced = useReducedMotion();
+
   return (
-    <article className="flex min-h-[394px] w-full flex-col overflow-hidden rounded-[22px] bg-[#FAF7F2] p-7 lg:shrink-0">
+    <motion.article
+      className={cn(
+        "group flex min-h-[394px] w-full flex-col overflow-visible rounded-[22px] bg-[#FAF7F2] p-7 shadow-sm transition-shadow duration-300 lg:shrink-0",
+        !reduced && "hover:shadow-md",
+      )}
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewport}
+      variants={motionVariants(reduced, fadeUp)}
+      transition={{ delay: reduced ? 0 : index * 0.06 }}
+      whileHover={reduced ? undefined : cardHover}
+    >
       <div className="flex flex-1 flex-col">
-        <div className="flex size-12 items-center justify-center rounded-xl bg-white">
+        <div className="flex size-12 items-center justify-center rounded-xl bg-white transition-transform duration-300 group-hover:scale-105">
           <Image
             src={item.iconSrc}
             alt={item.iconAlt}
@@ -27,24 +46,23 @@ export function ServiceCard({ item }: ServiceCardProps) {
 
         <Link
           href={item.href}
-          className="mt-5 inline-flex w-fit rounded-full border border-[#D1D5DB] bg-white px-5 py-2 text-[17px] text-[#111111] transition-opacity hover:opacity-90"
+          className="mt-5 inline-flex w-fit rounded-full border border-[#D1D5DB] bg-white px-5 py-2 text-[17px] text-[#111111] transition-all hover:opacity-90"
         >
-          {item.ctaLabel}
+          <span className="transition-transform duration-300 group-hover:translate-x-0.5">
+            {item.ctaLabel}
+          </span>
         </Link>
       </div>
 
-      <div
-        className="relative mt-10 h-[140px] w-full shrink-0"
-        aria-hidden
-      >
+      <div className="relative mt-10 h-[140px] w-full shrink-0" aria-hidden>
         <Image
           src={item.illustrationSrc}
           alt=""
           fill
-          className="object-contain object-bottom brightness-0 opacity-20"
+          className="object-contain object-bottom brightness-0 opacity-20 transition-opacity duration-300 group-hover:opacity-[0.28]"
           sizes="382px"
         />
       </div>
-    </article>
+    </motion.article>
   );
 }

@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import type { TestimonialItem } from "@/_data/imili/testimonials";
+import { duration } from "@/lib/motion";
 
 type TestimonialCardStandardProps = {
   item: TestimonialItem;
@@ -11,12 +15,23 @@ export function TestimonialCardStandard({
   item,
   className,
 }: TestimonialCardStandardProps) {
+  const reduced = useReducedMotion();
+
   return (
-    <article
+    <motion.article
       className={cn(
         "flex h-[371px] w-[382px] shrink-0 flex-col justify-between rounded-[25px] bg-[#F2F2F2] p-[31px]",
         className,
       )}
+      whileHover={
+        reduced
+          ? undefined
+          : {
+              y: -2,
+              backgroundColor: "#EAEAEA",
+              transition: { duration: duration.hover },
+            }
+      }
     >
       <p className="text-[21px] leading-[1.45] text-[#141414]">{item.quote}</p>
       <div>
@@ -39,6 +54,6 @@ export function TestimonialCardStandard({
           </div>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }
