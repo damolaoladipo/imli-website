@@ -52,11 +52,11 @@ const AboutUs = ({
   return (
     <section
       className={cn(
-        "overflow-visible bg-green-100 px-4 py-12 sm:px-6 md:py-20 lg:py-32",
+        "overflow-visible bg-green-100 py-12 md:py-20 lg:py-32",
         className,
       )}
     >
-      <div className="container">
+      <div className="container mx-auto px-4 text-left sm:px-6 lg:px-0">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <motion.div
             className="flex flex-col items-start text-left"
