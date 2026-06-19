@@ -1,13 +1,13 @@
 import { articleCardGridHomepageContent } from "@/_data/imili/article-cards";
-import { bentoHeroHomepageContent } from "@/_data/imili/bento-hero";
-import { imiliHomepageAbout } from "@/_data/imili/homepage";
+import { imiliHomepageAbout, imiliHomepageDocumentary } from "@/_data/imili/homepage";
 import { servicesReferenceContent } from "@/_data/imili/services";
 import { testimonialsHomepageContent } from "@/_data/imili/testimonials";
 import { AboutUs } from "@/components/custom/about-us";
 
 import {
   ArticleCardGrid,
-  BentoHeroSection,
+  DocumentarySection,
+  HomepageHeroSection,
   ServicesCarousel,
   TestimonialsCarousel,
 } from "@/components/custom/imili";
@@ -15,7 +15,7 @@ import {
 export default function Home() {
   return (
     <>
-      <BentoHeroSection content={bentoHeroHomepageContent} />
+      <HomepageHeroSection />
 
       <AboutUs
         title={imiliHomepageAbout.title}
@@ -23,6 +23,8 @@ export default function Home() {
         imageSrc={imiliHomepageAbout.imageSrc}
         imageAlt={imiliHomepageAbout.imageAlt}
       />
+
+      <DocumentarySection content={imiliHomepageDocumentary} />
 
       <ServicesCarousel content={servicesReferenceContent} />
 
