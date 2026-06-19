@@ -1,4 +1,5 @@
 import { IMILI_IMAGES } from "./images";
+import { heroHomepageCopy } from "./photo-hero";
 
 export type BentoHeroContent = {
   headline: string;
@@ -23,14 +24,7 @@ export type BentoHeroContent = {
 
 /** IMILI homepage hero — field lengths aligned to reference placeholders */
 export const bentoHeroHomepageContent: BentoHeroContent = {
-  headline: "Official MIL Institute ",
-  subhead:
-    "The first international observatory for media and information literacy development and MIL research.",
-  cta: { label: "Learn More", href: "/about" },
-  feature: {
-    badgeLabel: "Strengthen MIL for a Better Future",
-    body: "Catalyst for sustained research on MIL social impact globally.",
-  },
+  ...heroHomepageCopy,
   bento: {
     womanPhoto: {
       src: IMILI_IMAGES.humans.src,
