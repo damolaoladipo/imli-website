@@ -1,12 +1,11 @@
 import { headerNavItems } from "@/_data/imili/header-nav";
+import {
+  buildSocialLinkList,
+  type SocialPlatformId,
+} from "@/_data/imili/social-links";
 import { siteConfig } from "@/_data/site-config";
 
-export type FooterSocialId =
-  | "facebook"
-  | "twitter"
-  | "linkedin"
-  | "instagram"
-  | "youtube";
+export type FooterSocialId = SocialPlatformId;
 
 export type FooterSocialLink = {
   id: FooterSocialId;
@@ -55,10 +54,11 @@ export const footerReferenceContent: FooterContent = {
   tagline: "Built with care for a better future.",
   social: [
     { id: "facebook", href: "#" },
-    { id: "twitter", href: "#" },
-    { id: "linkedin", href: "#" },
     { id: "instagram", href: "#" },
+    { id: "linkedin", href: "#" },
+    { id: "twitter", href: "#" },
     { id: "youtube", href: "#" },
+    { id: "tiktok", href: "#" },
   ],
   newsletter: {
     heading: "Stay Connected",
@@ -105,20 +105,6 @@ export const footerReferenceContent: FooterContent = {
   ],
 };
 
-function buildSocialLinks(): FooterSocialLink[] {
-  const entries: Array<[FooterSocialId, string]> = [
-    ["facebook", siteConfig.links.facebook],
-    ["twitter", siteConfig.links.twitter],
-    ["linkedin", siteConfig.links.linkedin],
-    ["instagram", siteConfig.links.instagram],
-    ["youtube", siteConfig.links.youtube],
-  ];
-
-  return entries
-    .filter(([, href]) => href.length > 0)
-    .map(([id, href]) => ({ id, href }));
-}
-
 function buildContactLines(): FooterContactLine[] {
   const lines: FooterContactLine[] = [];
 
@@ -149,7 +135,7 @@ export const footerHomepageContent: FooterContent = {
     wordmark: siteConfig.name,
   },
   tagline: siteConfig.tagline,
-  social: buildSocialLinks(),
+  social: buildSocialLinkList<FooterSocialLink>(),
   newsletter: {
     heading: "TBD",
     description: siteConfig.tagline,

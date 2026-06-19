@@ -2,23 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Youtube } from "lucide-react";
 
 import type {
   ForestFooterContent,
   ForestFooterNavLink,
-  ForestFooterSocialId,
 } from "@/_data/imili/forest-footer";
+import { SOCIAL_ARIA_LABELS } from "@/_data/imili/social-links";
+import { SocialIcon } from "@/components/custom/imili/social-icon";
 import { cn } from "@/lib/utils";
-
-const socialIcons: Record<
-  ForestFooterSocialId,
-  React.ComponentType<{ className?: string; "aria-hidden"?: boolean }>
-> = {
-  facebook: Facebook,
-  instagram: Instagram,
-  youtube: Youtube,
-};
 
 function isNavigableHref(href: string) {
   return href.length > 0 && href !== "TBD" && href !== "#";
@@ -203,9 +194,8 @@ export function ForestFooter({ content }: ForestFooterProps) {
           </GridCell>
 
           <GridCell title={content.social.title}>
-            <div className="mt-2 flex gap-3 lg:mt-3 lg:gap-4">
+            <div className="mt-2 flex flex-wrap gap-x-3 gap-y-2 lg:mt-3 lg:gap-x-4 lg:gap-y-3">
               {content.social.links.map((social) => {
-                const Icon = socialIcons[social.id];
                 const isExternal = social.href.startsWith("http");
 
                 return (
@@ -215,10 +205,10 @@ export function ForestFooter({ content }: ForestFooterProps) {
                     {...(isExternal
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}
-                    aria-label={social.id}
-                    className="text-[#111111] transition-opacity hover:opacity-70"
+                    aria-label={SOCIAL_ARIA_LABELS[social.id]}
+                    className="inline-flex size-11 items-center justify-center text-[#111111] transition-opacity hover:opacity-70 focus-visible:ring-2 focus-visible:ring-[#111111] focus-visible:ring-offset-2 focus-visible:outline-none"
                   >
-                    <Icon className="size-5 lg:size-7" aria-hidden />
+                    <SocialIcon id={social.id} className="size-5 lg:size-7" />
                   </a>
                 );
               })}

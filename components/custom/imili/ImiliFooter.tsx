@@ -4,30 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowUp,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Twitter,
-  Youtube,
 } from "lucide-react";
 
 import type {
   FooterContent,
   FooterNavLink,
-  FooterSocialId,
 } from "@/_data/imili/footer";
+import { SOCIAL_ARIA_LABELS } from "@/_data/imili/social-links";
 import { CustomButton } from "@/components/custom/custom-button";
-
-const socialIcons: Record<
-  FooterSocialId,
-  React.ComponentType<{ className?: string; "aria-hidden"?: boolean }>
-> = {
-  facebook: Facebook,
-  twitter: Twitter,
-  linkedin: Linkedin,
-  instagram: Instagram,
-  youtube: Youtube,
-};
+import { SocialIcon } from "@/components/custom/imili/social-icon";
 
 function isNavigableHref(href: string) {
   return href.length > 0 && href !== "TBD" && href !== "#";
@@ -116,9 +101,8 @@ export function ImiliFooter({ content }: ImiliFooterProps) {
             <p className="mt-2 text-[20px] text-neutral-100">{content.tagline}</p>
 
             {content.social.length > 0 ? (
-              <div className="mt-6 flex gap-3">
+              <div className="mt-6 flex flex-wrap gap-3">
                 {content.social.map((social) => {
-                  const Icon = socialIcons[social.id];
                   const isExternal = social.href.startsWith("http");
 
                   return (
@@ -128,10 +112,10 @@ export function ImiliFooter({ content }: ImiliFooterProps) {
                       {...(isExternal
                         ? { target: "_blank", rel: "noopener noreferrer" }
                         : {})}
-                      aria-label={social.id}
-                      className="flex size-[50px] items-center justify-center rounded-full bg-neutral-800 text-white transition-opacity hover:opacity-90"
+                      aria-label={SOCIAL_ARIA_LABELS[social.id]}
+                      className="flex size-[50px] items-center justify-center rounded-full bg-neutral-800 text-white transition-opacity hover:opacity-90 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900 focus-visible:outline-none"
                     >
-                      <Icon className="size-5" aria-hidden />
+                      <SocialIcon id={social.id} className="size-5" />
                     </a>
                   );
                 })}

@@ -1,5 +1,9 @@
-import { siteConfig } from "@/_data/site-config";
 import { headerNavItems } from "@/_data/imili/header-nav";
+import {
+  buildSocialLinkList,
+  type SocialPlatformId,
+} from "@/_data/imili/social-links";
+import { siteConfig } from "@/_data/site-config";
 
 export type ForestFooterNavLink = {
   label: string;
@@ -7,7 +11,7 @@ export type ForestFooterNavLink = {
   underlined?: boolean;
 };
 
-export type ForestFooterSocialId = "facebook" | "instagram" | "youtube";
+export type ForestFooterSocialId = SocialPlatformId;
 
 export type ForestFooterSocialLink = {
   id: ForestFooterSocialId;
@@ -113,13 +117,6 @@ function splitNavIntoColumns(): [ForestFooterNavLink[], ForestFooterNavLink[]] {
   return [links.slice(0, mid), links.slice(mid)];
 }
 
-function buildSocialLinks(): ForestFooterSocialLink[] {
-  const ids: ForestFooterSocialId[] = ["facebook", "instagram", "youtube"];
-  return ids
-    .map((id) => ({ id, href: siteConfig.links[id] }))
-    .filter((link) => link.href.length > 0);
-}
-
 /** IMILI production forest footer */
 export const forestFooterHomepageContent: ForestFooterContent = {
   background: {
@@ -149,13 +146,6 @@ export const forestFooterHomepageContent: ForestFooterContent = {
   },
   social: {
     title: "Social media",
-    links:
-      buildSocialLinks().length > 0
-        ? buildSocialLinks()
-        : [
-            { id: "facebook", href: "#" },
-            { id: "instagram", href: "#" },
-            { id: "youtube", href: "#" },
-          ],
+    links: buildSocialLinkList<ForestFooterSocialLink>(),
   },
 };
