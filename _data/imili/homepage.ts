@@ -7,3 +7,20 @@ export const imiliHomepageAbout = {
   imageSrc: IMILI_IMAGES.mission.src,
   imageAlt: IMILI_IMAGES.mission.alt,
 };
+
+export type DocumentarySectionContent = {
+  heading: string;
+  subtext: string;
+  youtubeId: string;
+  watchUrl: string;
+  embedUrl: string;
+};
+
+export const imiliHomepageDocumentary: DocumentarySectionContent = {
+  heading: "IMILI Documentary",
+  subtext: "Online Version - IMILI Documentary",
+  youtubeId: "oH2s7rjl8Os",
+  watchUrl: "https://youtu.be/oH2s7rjl8Os",
+  embedUrl:
+    "https://www.youtube.com/embed/oH2s7rjl8Os?autoplay=1&mute=1&playsinline=1&rel=0",
+};
