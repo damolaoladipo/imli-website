@@ -23,12 +23,12 @@ export type BentoHeroContent = {
 
 /** IMILI homepage hero — field lengths aligned to reference placeholders */
 export const bentoHeroHomepageContent: BentoHeroContent = {
-  headline: "Strengthen MIL for a Better Future",
+  headline: "Official MIL Institute ",
   subhead:
     "The first international observatory for media and information literacy development and MIL research.",
   cta: { label: "Learn More", href: "/about" },
   feature: {
-    badgeLabel: "Official MIL institute.",
+    badgeLabel: "Strengthen MIL for a Better Future",
     body: "Catalyst for sustained research on MIL social impact globally.",
   },
   bento: {
