@@ -10,11 +10,12 @@ export const siteConfig = {
   getStartedUrl: "/contact",
   ogImage: "/new/mision.png",
   links: {
-    twitter: "",
-    instagram: "",
-    linkedin: "",
-    facebook: "",
-    youtube: "",
+    twitter: "https://x.com/IMILinstitute",
+    instagram: "https://www.instagram.com/imilinstitute",
+    linkedin: "https://www.linkedin.com/in/imil-institute-7707a3377",
+    facebook: "https://www.facebook.com/share/1E2MreeYsa/",
+    youtube: "https://www.youtube.com/@imilinstitute",
+    tiktok: "https://www.tiktok.com/@imilinstitute",
     email: "mailto:info@imilinstitute.org",
   },
   contact: {
