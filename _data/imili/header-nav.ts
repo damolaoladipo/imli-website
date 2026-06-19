@@ -172,8 +172,5 @@ export const headerNavItems: HeaderNavItem[] = [
     name: "Gallery",
     href: "/gallery",
   },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
+
 ];
