@@ -9,9 +9,9 @@ type HeaderMegaMenuPanelProps = {
 
 export function HeaderMegaMenuPanel({ dropdown }: HeaderMegaMenuPanelProps) {
   return (
-    <div className="flex w-[1000px] gap-10 rounded-2xl bg-white p-10 shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
-      <div className="w-[400px] shrink-0">
-        <ul className="space-y-2">
+    <div className="flex w-[min(920px,calc(100vw-3rem))] max-w-full flex-col gap-6 rounded-2xl bg-white p-6 text-black shadow-[0_20px_50px_rgba(0,0,0,0.08)] xl:flex-row xl:gap-10 xl:p-10">
+      <div className="min-w-0 flex-1 xl:max-w-[380px] xl:shrink-0">
+        <ul className="max-h-[min(60vh,22rem)] space-y-1 overflow-y-auto overscroll-contain pr-1 xl:max-h-[min(70vh,26rem)]">
           {dropdown.links.map((link) => (
             <li key={link.href}>
               <HeaderMegaMenuLink
@@ -26,11 +26,11 @@ export function HeaderMegaMenuPanel({ dropdown }: HeaderMegaMenuPanelProps) {
         </ul>
       </div>
 
-      <div className="flex flex-1 gap-4">
+      <div className="hidden min-w-0 flex-1 gap-4 xl:flex">
         {dropdown.images.map((image) => (
           <div
             key={image.src}
-            className="relative h-[200px] flex-1 overflow-hidden rounded-xl"
+            className="relative h-[180px] min-w-0 flex-1 overflow-hidden rounded-xl"
           >
             <Image
               src={image.src}

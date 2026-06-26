@@ -22,24 +22,34 @@ export function HeaderMegaMenuLink({
   variant = "panel",
   onNavigate,
 }: HeaderMegaMenuLinkProps) {
+  const isPanel = variant === "panel";
+
+  const linkClassName = cn(
+    "block transition-colors duration-150",
+    isPanel && "text-black hover:text-[#0548bd]",
+  );
+
   const content = (
     <div
       className={cn(
-        "group flex items-start gap-4 rounded-lg transition-colors duration-150",
-        variant === "panel" && "-mx-2 p-2 hover:bg-neutral-50",
+        "group/link flex items-start gap-4 rounded-lg transition-colors duration-150",
+        isPanel && "-mx-2 p-2 hover:bg-neutral-50",
         variant === "mobile" && "gap-3",
       )}
     >
       <div
         className={cn(
-          "flex shrink-0 items-center justify-center rounded-[10px] border border-neutral-200 bg-neutral-50 transition-colors duration-150 group-hover:border-[#0548bd] group-hover:bg-[#0548bd]/5",
-          variant === "panel" ? "size-11" : "size-9",
+          "flex shrink-0 items-center justify-center rounded-[10px] border border-neutral-200 bg-neutral-50 transition-colors duration-150 group-hover/link:border-[#0548bd] group-hover/link:bg-[#0548bd]/5",
+          isPanel ? "size-11" : "size-9",
         )}
       >
         <Icon
           className={cn(
-            "text-neutral-900 transition-colors duration-150 group-hover:text-[#0548bd]",
-            variant === "panel" ? "size-5" : "size-4",
+            "transition-colors duration-150",
+            isPanel
+              ? "text-current"
+              : "text-black group-hover/link:text-[#0548bd]",
+            isPanel ? "size-5" : "size-4",
           )}
           aria-hidden
         />
@@ -47,16 +57,22 @@ export function HeaderMegaMenuLink({
       <div className="min-w-0">
         <p
           className={cn(
-            "font-semibold text-neutral-900 transition-colors duration-150 group-hover:text-[#0548bd]",
-            variant === "panel" ? "text-base leading-6" : "text-sm leading-5",
+            "font-semibold transition-colors duration-150",
+            isPanel
+              ? "text-current"
+              : "text-black group-hover/link:text-[#0548bd]",
+            isPanel ? "text-base leading-6" : "text-sm leading-5",
           )}
         >
           {label}
         </p>
         <p
           className={cn(
-            "text-neutral-600 transition-colors duration-150 group-hover:text-[#0548bd]",
-            variant === "panel"
+            "transition-colors duration-150",
+            isPanel
+              ? "text-current"
+              : "text-neutral-600 group-hover/link:text-[#0548bd]",
+            isPanel
               ? "mt-0.5 text-sm leading-snug"
               : "mt-0.5 text-xs leading-snug",
           )}
@@ -74,7 +90,7 @@ export function HeaderMegaMenuLink({
         target="_blank"
         rel="noopener noreferrer"
         onClick={onNavigate}
-        className="block"
+        className={linkClassName}
       >
         {content}
       </a>
@@ -82,7 +98,7 @@ export function HeaderMegaMenuLink({
   }
 
   return (
-    <Link href={href} onClick={onNavigate} className="block">
+    <Link href={href} onClick={onNavigate} className={linkClassName}>
       {content}
     </Link>
   );

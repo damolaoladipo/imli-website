@@ -232,12 +232,7 @@ export function MobileNavDrawer({
         </div>
 
         <div className="shrink-0 border-t border-neutral-200 p-6">
-          <CustomButton
-            href="/contact"
-            fullWidth
-            className="min-h-11"
-            onClick={onClose}
-          >
+          <CustomButton href="/contact" fullWidth onClick={onClose}>
             Contact us
           </CustomButton>
         </div>
