@@ -15,7 +15,7 @@ export type AboutSplitSectionContent = {
   id: string;
   title: string;
   body?: string;
-  paragraphs?: string[];
+  paragraphs?: readonly string[];
   image: AboutSectionImage;
   layout: "text-first" | "image-first";
 };
@@ -24,7 +24,7 @@ export type AboutStrategicObjectivesContent = {
   id: string;
   title: string;
   intro: string;
-  objectives: string[];
+  objectives: readonly string[];
 };
 
 export const aboutUsPageContent = {
