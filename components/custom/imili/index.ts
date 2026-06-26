@@ -1,4 +1,8 @@
+export { AboutMissionSection } from "./AboutMissionSection";
+export { AboutSplitSection } from "./AboutSplitSection";
 export { AboutUsIntroSection } from "./AboutUsIntroSection";
+export { AboutVisionSection } from "./AboutVisionSection";
+export { AboutWhatWeAreSection } from "./AboutWhatWeAreSection";
 export { PageHeroSection } from "./PageHeroSection";
 export { DocumentarySection } from "./DocumentarySection";
 export { ArticleCard } from "./ArticleCard";

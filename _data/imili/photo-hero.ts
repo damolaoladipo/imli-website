@@ -3,7 +3,7 @@ export const heroHomepageCopy = {
   headline: "Official MIL Institute ",
   subhead:
     "The first international observatory for media and information literacy development and MIL research.",
-  cta: { label: "Learn More", href: "/about" },
+  cta: { label: "Learn More", href: "/about-us" },
   feature: {
     badgeLabel: "Strengthen MIL for a Better Future",
     body: "Catalyst for sustained research on MIL social impact globally.",

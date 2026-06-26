@@ -21,7 +21,7 @@ export const missionSectionReferenceContent: MissionSectionContent = {
   heading: "Our Inspiring Mission and Ambitious Goals",
   description:
     "Every cause we support is driven by real needs, real people, and real outcomes.",
-  cta: { label: "Learn More", href: "/about" },
+  cta: { label: "Learn More", href: "/about-us" },
   primaryPhoto: STOCK_IMAGES.mission.primary,
   stat: { value: "200+", label: "Dedicated Volunteers" },
   secondaryPhoto: STOCK_IMAGES.mission.secondary,
@@ -33,7 +33,7 @@ export const missionSectionHomepageContent: MissionSectionContent = {
   heading: "Strengthen Research and Cooperation for MIL",
   description:
     "Strengthen research and cooperation bolstering MIL for a just, peaceful and sustainable future.",
-  cta: { label: "Learn More", href: "/about" },
+  cta: { label: "Learn More", href: "/about-us" },
   primaryPhoto: STOCK_IMAGES.mission.primary,
   stat: { value: "1st", label: "UNESCO Category 2 MIL Institute" },
   secondaryPhoto: STOCK_IMAGES.mission.secondary,

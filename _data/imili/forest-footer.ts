@@ -72,7 +72,7 @@ export const forestFooterReferenceContent: ForestFooterContent = {
       [
         { label: "Home", href: "/", underlined: true },
         { label: "Home 2", href: "#" },
-        { label: "About", href: "/about" },
+        { label: "About", href: "/about-us" },
         { label: "Service Static", href: "#" },
         { label: "Case Studies", href: "#" },
       ],

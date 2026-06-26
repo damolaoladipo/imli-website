@@ -51,13 +51,13 @@ export type HeaderNavItem = {
 export const headerNavItems: HeaderNavItem[] = [
   {
     name: "About Us",
-    href: "/about",
+    href: "/about-us",
     dropdown: {
       links: [
         {
           label: "About IMILI",
           description: "First international MIL observatory",
-          href: "/about",
+          href: "/about-us",
           icon: Building2,
         },
         {
@@ -138,35 +138,12 @@ export const headerNavItems: HeaderNavItem[] = [
     href: "/activities",
     dropdown: {
       links: [
-        {
-          label: "Research & Analysis",
-          description: "Evidence-based MIL knowledge",
-          href: "/activities#research",
-          icon: BookOpen,
-        },
-        {
-          label: "MIL Clearinghouse",
-          description: "Best practices and policies",
-          href: "/activities#clearinghouse",
-          icon: Library,
-        },
-        {
-          label: "Events",
-          description: "Conferences, workshops and gatherings",
-          href: "/activities#events",
-          icon: CalendarDays,
-        },
+     
         {
           label: "Projects",
           description: "Research initiatives and calls for papers",
           href: "/projects",
           icon: FolderKanban,
-        },
-        {
-          label: "Combating xenophobia",
-          description: "Countering hate through MIL education",
-          href: "/projects/africa-against-xenophobia-project",
-          icon: Shield,
         },
         {
           label: "IMILI Test Series",
@@ -179,6 +156,12 @@ export const headerNavItems: HeaderNavItem[] = [
           description: "Visual storytelling for MIL learning",
           href: "/activities#imili-cartoons",
           icon: Clapperboard,
+        },
+        {
+          label: "Events",
+          description: "Conferences, workshops and gatherings",
+          href: "/activities#events",
+          icon: CalendarDays,
         },
       ],
       images: [
