@@ -212,7 +212,7 @@ export function ImiliFooter({ content, variant = "dark" }: ImiliFooterProps) {
                 type="submit"
                 icon={null}
                 className={cn(
-                  "shrink-0 rounded-full border px-8 py-3.5 text-[18px] font-medium",
+                  "shrink-0 rounded-full border font-medium",
                   theme.subscribeButton,
                 )}
               >

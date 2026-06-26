@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { customButtonIconClassName, arrowCircleButtonClassName } from "@/components/custom/custom-button";
+import { cn } from "@/lib/utils";
 import type { ArticleCardItem } from "@/_data/imili/article-cards";
 
 type ArticleCardProps = {
@@ -30,10 +32,18 @@ export function ArticleCard({ item }: ArticleCardProps) {
 
       <div className="mt-5 flex items-center justify-between">
         <span
-          className="flex size-11 items-center justify-center rounded-full border border-[#E5E5E5] bg-white transition-colors group-hover:border-[#434343] group-hover:bg-[#434343] group-focus-visible:border-[#434343] group-focus-visible:bg-[#434343]"
+          className={cn(
+            arrowCircleButtonClassName,
+            "border border-[#E5E5E5] bg-white transition-colors group-hover:border-[#434343] group-hover:bg-[#434343] group-focus-visible:border-[#434343] group-focus-visible:bg-[#434343]",
+          )}
           aria-hidden
         >
-          <ArrowRight className="size-4 text-[#111111] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:text-white group-focus-visible:translate-x-0.5 group-focus-visible:text-white" />
+          <ArrowRight
+            className={cn(
+              customButtonIconClassName,
+              "text-[#111111] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:text-white group-focus-visible:translate-x-0.5 group-focus-visible:text-white",
+            )}
+          />
         </span>
         <time className="text-[18px] text-[#6B6B6B]">{item.date}</time>
       </div>

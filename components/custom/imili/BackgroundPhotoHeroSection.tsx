@@ -56,11 +56,8 @@ export function BackgroundPhotoHeroSection({
             >
               {content.subhead}
             </motion.p>
-            <motion.div variants={motionVariants(reduced, fadeUp)}>
-              <CustomButton
-                href={content.cta.href}
-                className="mt-8 text-lg md:px-8 md:py-4 md:text-[21px]"
-              >
+            <motion.div className="mt-8" variants={motionVariants(reduced, fadeUp)}>
+              <CustomButton href={content.cta.href}>
                 {content.cta.label}
               </CustomButton>
             </motion.div>

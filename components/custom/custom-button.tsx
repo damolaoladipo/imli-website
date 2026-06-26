@@ -6,8 +6,15 @@ import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
+import {
+  arrowCircleButtonClassName,
+  customButtonIconClassName,
+} from "@/components/custom/custom-button-styles";
+
+export { arrowCircleButtonClassName, customButtonIconClassName };
+
 const buttonStyles =
-  "inline-flex items-center gap-2 rounded-full bg-[#0548bd] px-6 py-3.5 text-sm font-medium text-white transition-colors duration-150 hover:bg-[#5ce43a] focus-visible:bg-[#5ce43a] disabled:pointer-events-none disabled:opacity-50 sm:px-8 sm:py-4 sm:text-base";
+  "inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#0548bd] px-8 text-base font-medium leading-none text-white transition-colors duration-150 hover:bg-[#5ce43a] focus-visible:bg-[#5ce43a] disabled:pointer-events-none disabled:opacity-50";
 
 const spring = { type: "spring" as const, stiffness: 420, damping: 30 };
 
@@ -65,7 +72,7 @@ export function CustomButton({
     >
       {children}
       {icon === undefined ? (
-        <ArrowRight className="size-5 shrink-0 sm:size-6" strokeWidth={1.75} />
+        <ArrowRight className={customButtonIconClassName} strokeWidth={1.75} />
       ) : (
         icon
       )}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar } from "lucide-react";
+import { customButtonIconClassName } from "@/components/custom/custom-button";
 import type { NewsBlogCardItem } from "@/_data/imili/news-blog";
 
 type NewsBlogCardProps = {
@@ -41,7 +42,7 @@ export function NewsBlogCard({ item, readMoreLabel }: NewsBlogCardProps) {
 
         <span className="mt-5 inline-flex items-center gap-1.5 text-[20px] text-[#111111]">
           {readMoreLabel}
-          <ArrowRight className="size-4" aria-hidden />
+          <ArrowRight className={customButtonIconClassName} aria-hidden />
         </span>
       </div>
     </Link>

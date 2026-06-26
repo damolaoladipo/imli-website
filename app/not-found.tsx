@@ -1,5 +1,8 @@
 import { ArrowLeft } from "lucide-react";
-import { CustomButton } from "@/components/custom/custom-button";
+import {
+  CustomButton,
+} from "@/components/custom/custom-button";
+import { customButtonIconClassName } from "@/components/custom/custom-button-styles";
 import { Background } from "@/components/custom/background";
 
 export default function NotFound() {
@@ -19,7 +22,12 @@ export default function NotFound() {
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <CustomButton
               href="/"
-              icon={<ArrowLeft className="size-5 sm:size-6" strokeWidth={1.75} />}
+              icon={
+                <ArrowLeft
+                  className={customButtonIconClassName}
+                  strokeWidth={1.75}
+                />
+              }
             >
               Back to Home
             </CustomButton>

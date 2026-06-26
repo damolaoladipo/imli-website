@@ -1,5 +1,6 @@
 import { articleCardGridHomepageContent } from "@/_data/imili/article-cards";
 import { imiliHomepageAbout, imiliHomepageDocumentary } from "@/_data/imili/homepage";
+import { homepageHeroContent } from "@/_data/imili/homepage-hero";
 import { servicesReferenceContent } from "@/_data/imili/services";
 import { testimonialsHomepageContent } from "@/_data/imili/testimonials";
 import { AboutUs } from "@/components/custom/about-us";
@@ -7,7 +8,7 @@ import { AboutUs } from "@/components/custom/about-us";
 import {
   ArticleCardGrid,
   DocumentarySection,
-  HomepageHeroSection,
+  PhotoHeroSection,
   ServicesCarousel,
   TestimonialsCarousel,
 } from "@/components/custom/imili";
@@ -15,7 +16,8 @@ import {
 export default function Home() {
   return (
     <>
-      <HomepageHeroSection />
+
+      <PhotoHeroSection content={homepageHeroContent.photo} />
 
       <AboutUs
         title={imiliHomepageAbout.title}

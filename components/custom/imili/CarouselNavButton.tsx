@@ -2,6 +2,10 @@
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
+import {
+  arrowCircleButtonClassName,
+  customButtonIconClassName,
+} from "@/components/custom/custom-button";
 import { navHover, navTap } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
@@ -12,8 +16,10 @@ type CarouselNavButtonProps = {
   className?: string;
 };
 
-const navClassName =
-  "flex size-11 items-center justify-center rounded-full border border-dashed border-[#111111]/25 bg-transparent text-[#111111] transition-opacity hover:opacity-80 lg:size-[62px]";
+const navClassName = cn(
+  arrowCircleButtonClassName,
+  "border border-dashed border-[#111111]/25 bg-transparent text-[#111111] transition-opacity hover:opacity-80 lg:size-[62px]",
+);
 
 export function CarouselNavButton({
   direction,
@@ -33,9 +39,9 @@ export function CarouselNavButton({
       className={cn(navClassName, className)}
     >
       {direction === "prev" ? (
-        <ArrowLeft className="size-5" strokeWidth={1.5} aria-hidden />
+        <ArrowLeft className={customButtonIconClassName} strokeWidth={1.5} aria-hidden />
       ) : (
-        <ArrowRight className="size-5" strokeWidth={1.5} aria-hidden />
+        <ArrowRight className={customButtonIconClassName} strokeWidth={1.5} aria-hidden />
       )}
     </motion.button>
   );
