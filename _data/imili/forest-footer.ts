@@ -1,4 +1,5 @@
 import { headerNavItems } from "@/_data/imili/header-nav";
+import { STOCK_IMAGES } from "@/_data/imili/images";
 import {
   buildSocialLinkList,
   type SocialPlatformId,
@@ -51,10 +52,7 @@ export type ForestFooterContent = {
 
 /** Layout QA — reference strings from forest-footer-reference.png */
 export const forestFooterReferenceContent: ForestFooterContent = {
-  background: {
-    src: "/new/vision.png",
-    alt: "Placeholder — forest footer background QA",
-  },
+  background: STOCK_IMAGES.footer.forestBackground,
   logo: {
     src: "/blocks/imli-logo.svg",
     alt: "IMILI logo",
@@ -119,10 +117,7 @@ function splitNavIntoColumns(): [ForestFooterNavLink[], ForestFooterNavLink[]] {
 
 /** IMILI production forest footer */
 export const forestFooterHomepageContent: ForestFooterContent = {
-  background: {
-    src: "/new/vision.png",
-    alt: "IMILI footer background",
-  },
+  background: STOCK_IMAGES.footer.forestBackground,
   logo: { src: "/blocks/imli-logo.svg", alt: "IMILI logo" },
   newsletter: {
     headlineBefore: "We believe ",

@@ -1,4 +1,4 @@
-import { IMILI_IMAGES } from "@/_data/imili/images";
+import { STOCK_IMAGES } from "@/_data/imili/images";
 
 export type MissionSectionImage = {
   src: string;
@@ -22,15 +22,9 @@ export const missionSectionReferenceContent: MissionSectionContent = {
   description:
     "Every cause we support is driven by real needs, real people, and real outcomes.",
   cta: { label: "Learn More", href: "/about" },
-  primaryPhoto: {
-    src: "/new/humans.png",
-    alt: "Placeholder — primary photo layout QA",
-  },
+  primaryPhoto: STOCK_IMAGES.mission.primary,
   stat: { value: "200+", label: "Dedicated Volunteers" },
-  secondaryPhoto: {
-    src: "/new/corps.png",
-    alt: "Placeholder — secondary photo layout QA",
-  },
+  secondaryPhoto: STOCK_IMAGES.mission.secondary,
 };
 
 /** IMILI production mission section */
@@ -40,7 +34,7 @@ export const missionSectionHomepageContent: MissionSectionContent = {
   description:
     "Strengthen research and cooperation bolstering MIL for a just, peaceful and sustainable future.",
   cta: { label: "Learn More", href: "/about" },
-  primaryPhoto: IMILI_IMAGES.mission,
+  primaryPhoto: STOCK_IMAGES.mission.primary,
   stat: { value: "1st", label: "UNESCO Category 2 MIL Institute" },
-  secondaryPhoto: IMILI_IMAGES.vision,
+  secondaryPhoto: STOCK_IMAGES.mission.secondary,
 };

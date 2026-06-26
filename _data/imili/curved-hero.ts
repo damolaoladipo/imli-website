@@ -1,20 +1,18 @@
-import { IMILI_IMAGES } from "./images";
+import { STOCK_IMAGES } from "./images";
 
 export type CurvedHeroContent = {
-  headlineLine1: string;
-  headlineLine2: string;
-  body: string;
+  headline: string;
+  subhead: string;
   cta: { label: string; href: string };
   imageSrc: string;
   imageAlt: string;
 };
 
-/** Layout QA — strings from reference screenshot. */
-export const curvedHeroReferenceContent: CurvedHeroContent = {
-  headlineLine1: "Lambda – Transforming Lives",
-  headlineLine2: "with Compassion",
-  body: "Lambda is a dynamic charity donation organization committed to making a positive impact on communities around the world.",
-  cta: { label: "Donate Now", href: "#" },
-  imageSrc: IMILI_IMAGES.humans.src,
-  imageAlt: IMILI_IMAGES.humans.alt,
+export const curvedHeroHomepageContent: CurvedHeroContent = {
+  headline: "Official MIL Institute",
+  subhead:
+    "The first international observatory for media and information literacy development and MIL research.",
+  cta: { label: "Learn More", href: "/about" },
+  imageSrc: STOCK_IMAGES.curvedHero.src,
+  imageAlt: STOCK_IMAGES.curvedHero.alt,
 };

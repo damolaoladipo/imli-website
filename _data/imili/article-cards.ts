@@ -1,4 +1,4 @@
-import { IMILI_IMAGES } from "./images";
+import { STOCK_IMAGES } from "./images";
 
 export type ArticleCardItem = {
   id: string;
@@ -18,13 +18,15 @@ export type ArticleCardGridContent = {
   items: ArticleCardItem[];
 };
 
+const { articles } = STOCK_IMAGES;
+
 /** Layout QA — strings from reference screenshot. */
 export const articleCardReferenceItems: ArticleCardItem[] = [
   {
     id: "ref-1",
     href: "#",
-    imageSrc: IMILI_IMAGES.humans.src,
-    imageAlt: IMILI_IMAGES.humans.alt,
+    imageSrc: articles.unescoAbuja.src,
+    imageAlt: articles.unescoAbuja.alt,
     date: "February 3, 2026",
     title: "The Role of Volunteers in Supporting Children's Futures",
     summary:
@@ -34,8 +36,8 @@ export const articleCardReferenceItems: ArticleCardItem[] = [
   {
     id: "ref-2",
     href: "#",
-    imageSrc: IMILI_IMAGES.vision.src,
-    imageAlt: IMILI_IMAGES.vision.alt,
+    imageSrc: articles.ariseTv.src,
+    imageAlt: articles.ariseTv.alt,
     date: "February 3, 2026",
     title: "How Daily Nutrition Shapes a Child's Well-Being",
     summary:
@@ -45,8 +47,8 @@ export const articleCardReferenceItems: ArticleCardItem[] = [
   {
     id: "ref-3",
     href: "#",
-    imageSrc: IMILI_IMAGES.mission.src,
-    imageAlt: IMILI_IMAGES.mission.alt,
+    imageSrc: articles.fmino.src,
+    imageAlt: articles.fmino.alt,
     date: "February 3, 2026",
     title: "Why Staying in School Changes a Child's Future",
     summary:
@@ -63,16 +65,12 @@ export const articleCardGridReferenceContent: ArticleCardGridContent = {
   items: articleCardReferenceItems,
 };
 
-/**
- * Homepage — feat-0001 Latest Updates URLs.
- * title / summary / category: TBD until copied from articles.
- */
 export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "unesco-abuja",
     href: "https://www.unesco.org/en/articles/international-media-and-information-literacy-institute-under-auspices-unesco-launched-abuja",
-    imageSrc: IMILI_IMAGES.mission.src,
-    imageAlt: IMILI_IMAGES.mission.alt,
+    imageSrc: articles.unescoAbuja.src,
+    imageAlt: articles.unescoAbuja.alt,
     date: "April 2026",
     title: "Nigeria Gets UNESCO's First International MIL Institute",
     summary:
@@ -82,8 +80,8 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "arise-tv",
     href: "https://www.arise.tv/nigeria-launches-worlds-first-media-literacy-institute-in-partnership-with-unesco/",
-    imageSrc: IMILI_IMAGES.vision.src,
-    imageAlt: IMILI_IMAGES.vision.alt,
+    imageSrc: articles.ariseTv.src,
+    imageAlt: articles.ariseTv.alt,
     date: "April 2026",
     title: "Nigeria Launches World's First Media Literacy Institute",
     summary:
@@ -93,8 +91,8 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "fmino",
     href: "https://fmino.gov.ng/official-launch-and-unveiling-of-the-international-media-and-information-literacy-institute-imili/",
-    imageSrc: IMILI_IMAGES.bgHero.src,
-    imageAlt: IMILI_IMAGES.bgHero.alt,
+    imageSrc: articles.fmino.src,
+    imageAlt: articles.fmino.alt,
     date: "April 2026",
     title: "Official Launch and Unveiling of IMILI in Abuja",
     summary:
@@ -103,9 +101,9 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   },
   {
     id: "tvc-news",
-    href: "https://www.tvcnews.tv/fg-describes-launch-of-media-literacy-institute-as-milestone-in-fight-against-misinformation/",
-    imageSrc: IMILI_IMAGES.humans.src,
-    imageAlt: IMILI_IMAGES.humans.alt,
+    href: "/news/fg-describes-imili-launch-as-milestone-against-misinformation",
+    imageSrc: articles.tvcNews.src,
+    imageAlt: articles.tvcNews.alt,
     date: "April 2026",
     title: "FG Describes IMILI Launch as Milestone Against Misinformation",
     summary:
@@ -115,8 +113,8 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "unesco-policy",
     href: "https://www.unesco.org/en/articles/towards-african-media-and-information-literacy-policy-framework",
-    imageSrc: IMILI_IMAGES.vision.src,
-    imageAlt: IMILI_IMAGES.vision.alt,
+    imageSrc: articles.unescoPolicy.src,
+    imageAlt: articles.unescoPolicy.alt,
     date: "2026",
     title: "Towards African Media and Information Literacy Policy Framework",
     summary:
