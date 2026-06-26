@@ -1,14 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { siteConfig } from "@/_data/site-config";
+import { absoluteOgImageUrl, siteConfig } from "@/_data/site-config";
 
 import { HeroHeader } from "@/components/custom/header";
 import { useMont } from "@/_data/fonts";
 import FooterSection from "@/components/custom/footer";
 
 export const metadata: Metadata = {
-  title: siteConfig.title,
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.title,
+    template: `%s — ${siteConfig.name}`,
+  },
   description: siteConfig.description,
+  alternates: {
+    types: {
+      "application/rss+xml": `${siteConfig.url}/essays/feed`,
+    },
+  },
   icons: {
     icon: [
       { url: "/blocks/imli-icon.png", type: "image/png", sizes: "512x512" },
@@ -20,6 +29,10 @@ export const metadata: Metadata = {
       { url: "/blocks/imli-icon.png", type: "image/png", sizes: "180x180" },
       { url: "/blocks/imli-icon.png", type: "image/png", sizes: "512x512" },
     ],
+  },
+  openGraph: {
+    siteName: siteConfig.name,
+    images: [{ url: absoluteOgImageUrl() }],
   },
 };
 

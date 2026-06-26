@@ -1,3 +1,22 @@
+import { STOCK_IMAGES } from "@/_data/imili/images";
+
+function getCanonicalSiteUrl(): string {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (explicit) {
+    const withProtocol = /^https?:\/\//i.test(explicit)
+      ? explicit
+      : `https://${explicit}`;
+    try {
+      return new URL(withProtocol).origin;
+    } catch {
+      /* fall through */
+    }
+  }
+  return "https://www.imili.org";
+}
+
+const siteUrl = getCanonicalSiteUrl();
+
 export const siteConfig = {
   name: "IMILI",
   fullName: "International Media and Information Literacy Institute",
@@ -6,9 +25,17 @@ export const siteConfig = {
     "First international observatory dedicated to media and information literacy.",
   description:
     "First international observatory dedicated to media and information literacy. The International Institute supports countries in monitoring progress, generating research, strengthening public–private partnerships, and advancing media and information literacy policies that promote informed, resilient and peaceful societies.",
-  url: "https://www.imili.org",
+  url: siteUrl,
   getStartedUrl: "/contact",
-  ogImage: "/new/mision.png",
+  ogImage: STOCK_IMAGES.og.default.src,
+  baseLinks: {
+    home: "/",
+    essays: "/essays",
+    about: "/about",
+    news: "/news",
+    projects: "/projects",
+    contact: "/contact",
+  },
   links: {
     twitter: "https://x.com/IMILinstitute",
     instagram: "https://www.instagram.com/imilinstitute",
@@ -19,7 +46,7 @@ export const siteConfig = {
     email: "mailto:info@imilinstitute.org",
   },
   contact: {
-    telephone: "+234 7061380202 & +234 8023712007",
+    telephone: "+234 803 490 2904",
     email: "info@imilinstitute.org",
     address:
       "Plot 91, University Village, Cadastral Zone, Nnamdi Azikiwe Expressway, Jabi Abuja Nigeria.",
@@ -27,3 +54,10 @@ export const siteConfig = {
 };
 
 export type SiteConfig = typeof siteConfig;
+
+export function absoluteOgImageUrl(path?: string): string {
+  const imagePath = path ?? siteConfig.ogImage;
+  const base = siteConfig.url.replace(/\/$/, "");
+  if (imagePath.startsWith("http")) return imagePath;
+  return `${base}${imagePath.startsWith("/") ? imagePath : `/${imagePath}`}`;
+}
