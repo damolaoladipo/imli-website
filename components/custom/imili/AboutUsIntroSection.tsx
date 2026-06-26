@@ -1,9 +1,16 @@
 import { Sparkles } from "lucide-react";
 
-import type { aboutUsPageContent } from "@/_data/imili/about-us-page";
 import { cn } from "@/lib/utils";
 
-type AboutUsIntroContent = (typeof aboutUsPageContent)["intro"];
+export type AboutUsIntroContent = {
+  badgeLabel: string;
+  headline: {
+    before: string;
+    emphasis: string;
+    after: string;
+  };
+  description: string;
+};
 
 type AboutUsIntroSectionProps = {
   content: AboutUsIntroContent;
