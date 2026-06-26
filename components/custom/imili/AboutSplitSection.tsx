@@ -15,6 +15,8 @@ export function AboutSplitSection({
   const textFirst = content.layout === "text-first";
   const headingId = `${content.id}-heading`;
 
+  const bodyParagraphs = content.paragraphs ?? (content.body ? [content.body] : []);
+
   const textColumn = (
     <div className="flex flex-col justify-center">
       <h2
@@ -23,9 +25,11 @@ export function AboutSplitSection({
       >
         {content.title}
       </h2>
-      <p className="mt-4 text-base leading-relaxed text-neutral-600 md:mt-6 md:text-lg">
-        {content.body}
-      </p>
+      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-600 md:mt-6 md:text-lg">
+        {bodyParagraphs.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
     </div>
   );
 

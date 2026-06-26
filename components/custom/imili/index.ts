@@ -1,5 +1,7 @@
+export { AboutInstituteSection } from "./AboutInstituteSection";
 export { AboutMissionSection } from "./AboutMissionSection";
 export { AboutSplitSection } from "./AboutSplitSection";
+export { AboutStrategicObjectivesSection } from "./AboutStrategicObjectivesSection";
 export { AboutUsIntroSection } from "./AboutUsIntroSection";
 export { AboutVisionSection } from "./AboutVisionSection";
 export { AboutWhatWeAreSection } from "./AboutWhatWeAreSection";
