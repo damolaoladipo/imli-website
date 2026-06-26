@@ -55,14 +55,12 @@ export function CurvedHeroSection({ content }: CurvedHeroSectionProps) {
           style={{ clipPath: `url(#${PANEL_CLIP_ID})` }}
         >
           <h1 className="text-3xl font-bold leading-[1.1] text-[#1E3D3D] sm:text-4xl lg:text-[51px]">
-            {content.headlineLine1}
-            <br />
-            {content.headlineLine2}
+            {content.headline}
           </h1>
 
           <div className="mt-5 flex flex-col items-start gap-4 lg:mt-7 lg:flex-row lg:items-center lg:justify-between lg:gap-6">
             <p className="text-base leading-relaxed text-[#1E3D3D] lg:max-w-[55%] lg:text-[21px]">
-              {content.body}
+              {content.subhead}
             </p>
             <Link
               href={content.cta.href}
