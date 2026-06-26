@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
+import { STOCK_IMAGES } from "@/_data/imili/images";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { CustomButton } from "@/components/custom/custom-button";
@@ -35,8 +36,8 @@ const fadeUpFromRight = {
 const AboutUs = ({
   title = "Blocks built with Shadcn & Tailwind",
   description = "Hundreds of finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
-  imageSrc = "/new/mision.png",
-  imageAlt = "IMILI observatory",
+  imageSrc = STOCK_IMAGES.home.about.src,
+  imageAlt = STOCK_IMAGES.home.about.alt,
   buttonPrimary = {
     text: "Learn More",
     href: "/about",
