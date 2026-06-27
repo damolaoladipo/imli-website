@@ -58,7 +58,7 @@ export default async function Essays({
             <h1 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
               Essays
             </h1>
-            <p className="text-lg leading-relaxed text-muted-foreground">
+            <p className="text-xl leading-relaxed text-muted-foreground">
               Research, explainers, and institute perspectives on media and
               information literacy — written for educators, policymakers, and
               partners worldwide.
@@ -81,7 +81,7 @@ export default async function Essays({
             }
           >
             {filteredEssays.length === 0 ? (
-              <p className="text-muted-foreground">
+              <p className="text-body-muted">
                 {sortedEssays.length === 0
                   ? "No essays published yet."
                   : "No essays in this category."}

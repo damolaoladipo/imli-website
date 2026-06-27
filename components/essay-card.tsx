@@ -25,11 +25,11 @@ export function EssayCard({
     >
       <div className="flex min-w-0 flex-1 flex-col justify-between">
         <div className="flex flex-col gap-2">
-          <p className="text-xs text-muted-foreground">{date}</p>
+          <p className="text-sm text-muted-foreground md:text-base">{date}</p>
           <h3 className="text-base font-semibold leading-snug text-foreground underline-offset-4 group-hover:underline md:text-lg">
             {title}
           </h3>
-          <p className="line-clamp-2 text-sm leading-relaxed text-muted-foreground md:line-clamp-3 md:text-base">
+          <p className="line-clamp-2 text-lg leading-relaxed text-muted-foreground md:line-clamp-3 md:text-xl">
             {description}
           </p>
         </div>

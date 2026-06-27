@@ -51,7 +51,7 @@ export function ArticleCard({ item }: ArticleCardProps) {
       <h3 className="mt-3.5 text-[25px] font-bold leading-snug text-[#111111] transition-colors group-hover:text-[#0548bd] group-focus-visible:text-[#0548bd]">
         {item.title}
       </h3>
-      <p className="mt-5 text-[20px] leading-relaxed text-[#5C5C5C]">
+      <p className="mt-5 text-[22px] leading-relaxed text-[#5C5C5C]">
         {item.summary}
       </p>
       <span className="mt-5 inline-flex w-fit rounded-full bg-[#B8E4FA] px-3 py-1.5 text-[17px] font-medium text-[#0B4F7A]">

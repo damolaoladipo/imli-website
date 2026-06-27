@@ -35,7 +35,7 @@ export function ProjectSubmissionSidebar({ data }: ProjectSubmissionSidebarProps
         Submit your abstract
       </h2>
       {mailtoHref && data.submissionEmail && (
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+        <p className="mt-2 text-lg leading-relaxed text-muted-foreground md:text-xl">
           Send your abstract to{" "}
           <a
             href={mailtoHref}
@@ -56,7 +56,7 @@ export function ProjectSubmissionSidebar({ data }: ProjectSubmissionSidebarProps
         </p>
       )}
 
-      <dl className="mt-6 space-y-4 text-sm">
+      <dl className="mt-6 space-y-4 text-base md:text-lg">
         {data.abstractDeadline && (
           <div>
             <dt className="font-medium text-muted-foreground">
@@ -97,7 +97,7 @@ export function ProjectSubmissionSidebar({ data }: ProjectSubmissionSidebarProps
         )}
       </dl>
 
-      <p className="mt-6 text-sm text-muted-foreground">
+      <p className="mt-6 text-base text-muted-foreground md:text-lg">
         Only authors of accepted abstracts will be contacted.
       </p>
     </div>

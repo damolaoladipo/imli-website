@@ -25,14 +25,14 @@ export function ProjectsIndexSection() {
           <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             Projects
           </h1>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-xl text-muted-foreground">
             Institute programmes, research initiatives, and calls for papers
             across Africa.
           </p>
         </div>
 
         {projects.length === 0 ? (
-          <p className="text-muted-foreground">
+          <p className="text-body-muted">
             No projects published yet.
           </p>
         ) : (
@@ -56,7 +56,7 @@ export function ProjectsIndexSection() {
                   </div>
                   <div className="flex flex-col gap-2">
                     <ProjectStatusLabel status={data.status} />
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-2 text-base text-muted-foreground md:text-lg">
                       <Calendar className="h-4 w-4" aria-hidden />
                       <time>{formatDate(data.date)}</time>
                     </div>
@@ -64,7 +64,7 @@ export function ProjectsIndexSection() {
                       {data.acronym ? `${data.acronym} — ${data.title}` : data.title}
                     </h2>
                     {data.description && (
-                      <p className="line-clamp-3 text-muted-foreground">
+                      <p className="line-clamp-3 text-body-muted">
                         {data.description}
                       </p>
                     )}

@@ -22,14 +22,14 @@ export function NewsIndexSection() {
           <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             News
           </h1>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-xl text-muted-foreground">
             Press coverage, launches, and event reports on IMILI and media and
             information literacy.
           </p>
         </div>
 
         {articles.length === 0 ? (
-          <p className="text-muted-foreground">
+          <p className="text-body-muted">
             No news articles published yet.
           </p>
         ) : (
@@ -50,7 +50,7 @@ export function NewsIndexSection() {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2 text-base text-muted-foreground md:text-lg">
                     <Calendar className="h-4 w-4" aria-hidden />
                     <time>{formatDate(article.data.date)}</time>
                   </div>
@@ -58,7 +58,7 @@ export function NewsIndexSection() {
                     {article.data.title}
                   </h2>
                   {article.data.description && (
-                    <p className="line-clamp-3 text-muted-foreground">
+                    <p className="line-clamp-3 text-body-muted">
                       {article.data.description}
                     </p>
                   )}

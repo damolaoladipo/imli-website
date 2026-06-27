@@ -34,12 +34,12 @@ export function ProjectDetailLayout({
             </h1>
 
             {data.subtitle && (
-              <p className="mt-2 text-lg text-muted-foreground">
+              <p className="mt-2 text-xl text-muted-foreground">
                 {data.subtitle}
               </p>
             )}
 
-            <div className="prose prose-lg prose-neutral mt-8 max-w-none prose-headings:scroll-mt-28 prose-a:text-primary prose-a:underline">
+            <div className="prose-imili mt-8">
               {children}
             </div>
           </div>

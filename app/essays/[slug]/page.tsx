@@ -111,7 +111,7 @@ export default async function EssayPost({
           <EssayShareButtons title={data.title} url={shareUrl} />
 
           {data.description && (
-            <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            <p className="max-w-3xl text-xl leading-relaxed text-muted-foreground">
               {data.description}
             </p>
           )}
@@ -149,7 +149,7 @@ export default async function EssayPost({
       <div className="mx-auto flex max-w-5xl items-start gap-12 px-6 py-10">
         <main className="min-w-0 flex-1">
           <article
-            className="prose prose-lg prose-neutral max-w-none prose-headings:scroll-mt-28 prose-a:text-primary prose-a:underline"
+            className="prose-imili"
           >
             <MDX />
           </article>

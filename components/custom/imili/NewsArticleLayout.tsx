@@ -21,7 +21,7 @@ export function NewsArticleLayout({ data, slug, children }: Props) {
       <div className="mx-auto max-w-7xl px-6 py-16 md:py-24">
         <div className="lg:grid lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-7">
-            <time className="text-sm font-medium text-muted-foreground">
+            <time className="text-base font-medium text-muted-foreground md:text-lg">
               {formattedDate}
             </time>
 
@@ -40,12 +40,12 @@ export function NewsArticleLayout({ data, slug, children }: Props) {
               {data.title}
             </h1>
 
-            <div className="prose prose-lg prose-neutral mt-8 max-w-none prose-a:text-primary prose-a:underline prose-headings:scroll-mt-28">
+            <div className="prose-imili mt-8">
               {children}
             </div>
 
             {data.externalSourceUrl && (
-              <p className="mt-10 border-t border-border pt-6 text-sm text-muted-foreground">
+              <p className="mt-10 border-t border-border pt-6 text-base text-muted-foreground md:text-lg">
                 Source:{" "}
                 <Link
                   href={data.externalSourceUrl}

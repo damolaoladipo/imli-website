@@ -79,7 +79,7 @@ export function ReadMoreSection({
                 </div>
               )}
               <div className="flex flex-col gap-1.5">
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground md:text-lg">
                   {tag && <>{tag} · </>}
                   {formatDate(post.date)}
                 </p>
@@ -87,7 +87,7 @@ export function ReadMoreSection({
                   {post.data.title}
                 </h3>
                 {post.data.description && (
-                  <p className="line-clamp-2 text-sm text-muted-foreground">
+                  <p className="line-clamp-2 text-base text-muted-foreground md:text-lg">
                     {post.data.description}
                   </p>
                 )}

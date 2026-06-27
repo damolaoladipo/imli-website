@@ -121,6 +121,24 @@
 
 }
 
+@layer components {
+  .prose-imili {
+    @apply prose prose-lg prose-neutral max-w-none prose-headings:scroll-mt-28 prose-a:text-primary prose-a:underline;
+  }
+
+  .prose-imili :where(p, li, blockquote, td) {
+    @apply text-xl leading-relaxed;
+  }
+
+  .text-body {
+    @apply text-lg leading-relaxed md:text-xl;
+  }
+
+  .text-body-muted {
+    @apply text-lg leading-relaxed text-muted-foreground md:text-xl;
+  }
+}
+
 
 /* 03A904 → oklch(0.503 0.234 136.5)
 FBAF4B → oklch(0.731 0.288 77.2)
