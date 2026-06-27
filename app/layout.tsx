@@ -19,12 +19,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [
-      { url: "/blocks/imli-icon.png", type: "image/png", sizes: "512x512" },
-      { url: "/blocks/imli-icon.png", type: "image/png", sizes: "32x32" },
-      { url: "/blocks/imli-icon.png", type: "image/png", sizes: "16x16" },
-    ],
-    shortcut: "/blocks/imli-icon.png",
+    icon: [{ url: "/blocks/imili-icon.svg", type: "image/svg+xml" }],
+    shortcut: "/blocks/imili-icon.svg",
     apple: [
       { url: "/blocks/imli-icon.png", type: "image/png", sizes: "180x180" },
       { url: "/blocks/imli-icon.png", type: "image/png", sizes: "512x512" },

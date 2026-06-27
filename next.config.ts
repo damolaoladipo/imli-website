@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/favicon.ico",
-        destination: "/blocks/imli-icon.png",
+        destination: "/blocks/imili-icon.svg",
         permanent: true,
       },
     ];
