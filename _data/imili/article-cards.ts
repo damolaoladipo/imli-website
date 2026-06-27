@@ -25,8 +25,9 @@ export const articleCardReferenceItems: ArticleCardItem[] = [
   {
     id: "ref-1",
     href: "#",
-    imageSrc: articles.unescoAbuja.src,
-    imageAlt: articles.unescoAbuja.alt,
+    imageSrc: "/blocks/img.jpeg",
+    imageAlt:
+      "Official ribbon-cutting ceremony at an IMILI inauguration event in Abuja",
     date: "February 3, 2026",
     title: "The Role of Volunteers in Supporting Children's Futures",
     summary:
@@ -69,8 +70,9 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "unesco-abuja",
     href: "https://www.unesco.org/en/articles/international-media-and-information-literacy-institute-under-auspices-unesco-launched-abuja",
-    imageSrc: articles.unescoAbuja.src,
-    imageAlt: articles.unescoAbuja.alt,
+    imageSrc: "/blocks/img.jpeg",
+    imageAlt:
+      "Official ribbon-cutting ceremony at an IMILI inauguration event in Abuja",
     date: "April 2026",
     title: "Nigeria Gets UNESCO's First International MIL Institute",
     summary:
@@ -80,8 +82,9 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "arise-tv",
     href: "https://www.arise.tv/nigeria-launches-worlds-first-media-literacy-institute-in-partnership-with-unesco/",
-    imageSrc: articles.ariseTv.src,
-    imageAlt: articles.ariseTv.alt,
+    imageSrc: "/blocks/about.jpeg",
+    imageAlt:
+      "Official launch of the International Media and Information Literacy Institute with partners and dignitaries in Abuja",
     date: "April 2026",
     title: "Nigeria Launches World's First Media Literacy Institute",
     summary:
@@ -91,8 +94,9 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "fmino",
     href: "https://fmino.gov.ng/official-launch-and-unveiling-of-the-international-media-and-information-literacy-institute-imili/",
-    imageSrc: articles.fmino.src,
-    imageAlt: articles.fmino.alt,
+    imageSrc: "/blocks/imili-launch.jpeg",
+    imageAlt:
+      "Promotional poster for the launch of the International Media and Information Literacy Institute in Abuja",
     date: "April 2026",
     title: "Official Launch and Unveiling of IMILI in Abuja",
     summary:
@@ -102,25 +106,16 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "tvc-news",
     href: "/news/fg-describes-imili-launch-as-milestone-against-misinformation",
-    imageSrc: articles.tvcNews.src,
-    imageAlt: articles.tvcNews.alt,
+    imageSrc: "/blocks/fg.jpeg",
+    imageAlt:
+      "Federal Government official speaking at the IMILI launch ceremony in Abuja",
     date: "April 2026",
     title: "FG Describes IMILI Launch as Milestone Against Misinformation",
     summary:
       "Government describes the IMILI launch as a major milestone in combating public misinformation.",
     category: "News",
   },
-  {
-    id: "unesco-policy",
-    href: "https://www.unesco.org/en/articles/towards-african-media-and-information-literacy-policy-framework",
-    imageSrc: articles.unescoPolicy.src,
-    imageAlt: articles.unescoPolicy.alt,
-    date: "2026",
-    title: "Towards African Media and Information Literacy Policy Framework",
-    summary:
-      "UNESCO advances dialogue on an African media and information literacy policy framework.",
-    category: "Publications",
-  },
+
 ];
 
 export const articleCardGridHomepageContent: ArticleCardGridContent = {
