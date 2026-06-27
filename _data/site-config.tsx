@@ -32,6 +32,7 @@ export const siteConfig = {
     home: "/",
     essays: "/essays",
     about: "/about-us",
+    whatWeDo: "/what-we-do",
     news: "/news",
     projects: "/projects",
     contact: "/contact",
