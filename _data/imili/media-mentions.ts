@@ -1,15 +1,13 @@
-import { STOCK_IMAGES } from "./images";
 import type { MediaMention } from "@/types/news";
-
-const { mentions } = STOCK_IMAGES;
 
 export const mediaMentions: MediaMention[] = [
   {
     id: "unesco-abuja",
     outlet: "UNESCO",
     href: "https://www.unesco.org/en/articles/international-media-and-information-literacy-institute-under-auspices-unesco-launched-abuja",
-    imageSrc: mentions.unescoAbuja.src,
-    imageAlt: mentions.unescoAbuja.alt,
+    imageSrc: "/blocks/img.jpeg",
+    imageAlt:
+      "Official ribbon-cutting ceremony at an IMILI inauguration event in Abuja",
     headline: "IMILI launched in Abuja under UNESCO auspices",
     excerpt:
       "UNESCO formally welcomed the International Media and Information Literacy Institute as a Category 2 centre.",
@@ -18,8 +16,9 @@ export const mediaMentions: MediaMention[] = [
     id: "arise-tv",
     outlet: "Arise TV",
     href: "https://www.arise.tv/nigeria-launches-worlds-first-media-literacy-institute-in-partnership-with-unesco/",
-    imageSrc: mentions.ariseTv.src,
-    imageAlt: mentions.ariseTv.alt,
+    imageSrc: "/blocks/about.jpeg",
+    imageAlt:
+      "Official launch of the International Media and Information Literacy Institute with partners and dignitaries in Abuja",
     headline: "Nigeria launches world's first media literacy institute",
     excerpt:
       "Coverage of Nigeria's partnership with UNESCO to establish the international institute.",
@@ -28,8 +27,9 @@ export const mediaMentions: MediaMention[] = [
     id: "fmino",
     outlet: "FMINO",
     href: "https://fmino.gov.ng/official-launch-and-unveiling-of-the-international-media-and-information-literacy-institute-imili/",
-    imageSrc: mentions.fmino.src,
-    imageAlt: mentions.fmino.alt,
+    imageSrc: "/blocks/imili-launch.jpeg",
+    imageAlt:
+      "Promotional poster for the launch of the International Media and Information Literacy Institute in Abuja",
     headline: "Official launch and unveiling of IMILI",
     excerpt:
       "Federal Ministry of Information and National Orientation unveils the institute.",
@@ -38,8 +38,8 @@ export const mediaMentions: MediaMention[] = [
     id: "unesco-policy",
     outlet: "UNESCO",
     href: "https://www.unesco.org/en/articles/towards-african-media-and-information-literacy-policy-framework",
-    imageSrc: mentions.unescoPolicy.src,
-    imageAlt: mentions.unescoPolicy.alt,
+    imageSrc: "/blocks/unesco.jpeg",
+    imageAlt: "UNESCO media and information literacy policy framework discussion",
     headline: "Towards African MIL policy framework",
     excerpt:
       "UNESCO advances dialogue on a regional media and information literacy policy framework.",
