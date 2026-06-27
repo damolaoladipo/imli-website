@@ -51,7 +51,7 @@ export function AboutUsIntroSection({
               </span>
               {content.headline.after}
             </h2>
-            <p className="mt-8 max-w-xl text-base leading-relaxed text-neutral-500 md:mt-10 md:text-lg">
+            <p className="mt-8 max-w-xl text-lg leading-relaxed text-neutral-500 md:mt-10 md:text-xl">
               {content.description}
             </p>
           </div>

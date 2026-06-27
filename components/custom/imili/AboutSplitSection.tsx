@@ -25,7 +25,7 @@ export function AboutSplitSection({
       >
         {content.title}
       </h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-600 md:mt-6 md:text-lg">
+      <div className="mt-4 space-y-4 text-lg leading-relaxed text-neutral-600 md:mt-6 md:text-xl">
         {bodyParagraphs.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}

@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 
 import { aboutUsPageContent } from "@/_data/imili/about-us-page";
 import { AboutInstituteSection } from "@/components/custom/imili/AboutInstituteSection";
-import { AboutMissionSection } from "@/components/custom/imili/AboutMissionSection";
 import { AboutStrategicObjectivesSection } from "@/components/custom/imili/AboutStrategicObjectivesSection";
-import { AboutVisionSection } from "@/components/custom/imili/AboutVisionSection";
+import { AboutVisionMissionSection } from "@/components/custom/imili/AboutVisionMissionSection";
 import { AboutWhatWeAreSection } from "@/components/custom/imili/AboutWhatWeAreSection";
 import { PageHeroSection } from "@/components/custom/imili/PageHeroSection";
 import { siteConfig } from "@/_data/site-config";
@@ -26,13 +25,19 @@ export default function AboutUsPage() {
         title={aboutUsPageContent.hero.title}
         description={aboutUsPageContent.hero.description}
       />
-      <AboutWhatWeAreSection content={aboutUsPageContent.whatWeAre} />
-      <AboutVisionSection content={aboutUsPageContent.vision} />
-      <AboutMissionSection content={aboutUsPageContent.mission} />
-      <AboutStrategicObjectivesSection
+      <AboutInstituteSection content={aboutUsPageContent.aboutInstitute} />
+      <AboutVisionMissionSection
+        vision={aboutUsPageContent.vision}
+        mission={aboutUsPageContent.mission}
+      />
+       <AboutWhatWeAreSection content={aboutUsPageContent.whatWeAre} />
+    
+       <AboutStrategicObjectivesSection
         content={aboutUsPageContent.strategicObjectives}
       />
-      <AboutInstituteSection content={aboutUsPageContent.aboutInstitute} />
+     
+     
+      
     </>
   );
 }
