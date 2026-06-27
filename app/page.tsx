@@ -22,13 +22,12 @@ export default function Home() {
       <AboutUs
         title={imiliHomepageAbout.title}
         description={imiliHomepageAbout.description}
-        imageSrc={imiliHomepageAbout.imageSrc}
-        imageAlt={imiliHomepageAbout.imageAlt}
+        images={imiliHomepageAbout.images}
       />
 
       <DocumentarySection content={imiliHomepageDocumentary} />
 
-      <ServicesCarousel content={servicesReferenceContent} />
+      {/* <ServicesCarousel content={servicesReferenceContent} /> */}
 
       <ArticleCardGrid content={articleCardGridHomepageContent} />
 

@@ -7,11 +7,15 @@ import Image from "next/image";
 import { CustomButton } from "@/components/custom/custom-button";
 import { fadeUp, motionVariants, viewport, duration, easeOut } from "@/lib/motion";
 
+type AboutUsImage = {
+  src: string;
+  alt: string;
+};
+
 interface Feature1Props {
   title?: string;
   description?: string;
-  imageSrc?: string;
-  imageAlt?: string;
+  images?: readonly AboutUsImage[];
   buttonPrimary?: {
     text: string;
     href: string;
@@ -22,6 +26,12 @@ interface Feature1Props {
   };
   className?: string;
 }
+
+const defaultImages: readonly AboutUsImage[] = [
+  STOCK_IMAGES.home.about,
+  STOCK_IMAGES.mission.primary,
+  STOCK_IMAGES.mission.secondary,
+];
 
 const fadeUpFromRight = {
   hidden: { opacity: 0, y: 20, x: 24 },
@@ -36,11 +46,10 @@ const fadeUpFromRight = {
 const AboutUs = ({
   title = "Blocks built with Shadcn & Tailwind",
   description = "Hundreds of finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
-  imageSrc = STOCK_IMAGES.home.about.src,
-  imageAlt = STOCK_IMAGES.home.about.alt,
+  images = defaultImages,
   buttonPrimary = {
     text: "Learn More",
-    href: "/about",
+    href: "/about-us",
   },
   buttonSecondary = {
     text: "Learn More",
@@ -49,6 +58,7 @@ const AboutUs = ({
   className,
 }: Feature1Props) => {
   const reduced = useReducedMotion();
+  const [primary, secondary, tertiary] = images;
 
   return (
     <section
@@ -77,7 +87,7 @@ const AboutUs = ({
             </motion.h2>
             {description && (
               <motion.p
-                className="mb-8 max-w-xl text-base text-muted-foreground lg:text-lg"
+                className="mb-8 max-w-xl text-lg text-muted-foreground lg:text-xl"
                 variants={motionVariants(reduced, fadeUp)}
               >
                 {description}
@@ -93,20 +103,46 @@ const AboutUs = ({
             </motion.div>
           </motion.div>
           <motion.div
-            className="overflow-hidden rounded-md"
+            className="grid h-[320px] grid-cols-2 grid-rows-2 gap-3 sm:h-[360px] lg:h-[400px] lg:gap-4"
             initial="hidden"
             whileInView="visible"
             viewport={viewport}
             variants={motionVariants(reduced, fadeUpFromRight)}
             transition={{ delay: reduced ? 0 : 0.1 }}
           >
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              width={400}
-              height={400}
-              className="max-h-80 w-full rounded-md object-cover transition-transform duration-500 hover:scale-[1.02] lg:max-h-96"
-            />
+            {primary && (
+              <div className="relative col-start-1 row-span-2 row-start-1 overflow-hidden rounded-md">
+                <Image
+                  src={primary.src}
+                  alt={primary.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+            )}
+            {secondary && (
+              <div className="relative col-start-2 row-start-1 overflow-hidden rounded-md">
+                <Image
+                  src={secondary.src}
+                  alt={secondary.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+            )}
+            {tertiary && (
+              <div className="relative col-start-2 row-start-2 overflow-hidden rounded-md">
+                <Image
+                  src={tertiary.src}
+                  alt={tertiary.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+            )}
           </motion.div>
         </div>
       </div>
@@ -115,3 +151,4 @@ const AboutUs = ({
 };
 
 export { AboutUs };
+export type { AboutUsImage };
