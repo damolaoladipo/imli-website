@@ -74,12 +74,12 @@ function StrategicObjectivesGridCard({
       )}
     >
       <StrategicObjectivesIcon icon={Icon} variant={card.variant} />
-      <h3 className="mt-6 text-[20px] font-semibold leading-snug tracking-tight text-[#111111] lg:text-[22px]">
+      {/* <h3 className="mt-6 text-[20px] font-semibold leading-snug tracking-tight text-[#111111] lg:text-[22px]">
         {card.title}
-      </h3>
+      </h3> */}
       <p
         className={cn(
-          "mt-3 text-lg leading-relaxed lg:text-xl",
+          "mt-3 text-lg font-semibold leading-relaxed lg:text-xl",
           isAccent ? "text-[#111111]/80" : "text-[#6B7280]",
         )}
       >
