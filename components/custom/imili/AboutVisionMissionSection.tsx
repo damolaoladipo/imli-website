@@ -22,7 +22,7 @@ function SectionImage({ content }: { content: AboutSplitSectionContent }) {
             src={content.image.src}
             alt={content.image.alt}
             fill
-            className="object-cover"
+            className="object-contain object-center"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>

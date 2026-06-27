@@ -43,6 +43,20 @@ export function AboutInstituteSection({
         </h2>
 
         <ScrollRevealStagger className="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-10">
+          <ScrollRevealItem className="flex min-h-[480px] flex-col rounded-[32px] bg-blue-300 p-8 sm:p-10 lg:min-h-[520px] lg:px-12 lg:py-4">
+      
+            <div className="my-auto space-y-6 pt-8 lg:space-y-8 lg:pt-10">
+              {content.card.paragraphs.map((paragraph, index) => (
+                <p
+                  key={index}
+                  className="text-lg leading-[1.75] text-neutral-900/90 lg:text-xl"
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </ScrollRevealItem>
+
           <ScrollRevealItem className="flex flex-col">
             <QuoteMark />
             <p className="mt-6 max-w-xl text-lg leading-[1.65] text-[#333333] md:text-xl md:leading-[1.7]">
@@ -56,33 +70,6 @@ export function AboutInstituteSection({
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-            </div>
-          </ScrollRevealItem>
-
-          <ScrollRevealItem className="flex min-h-[480px] flex-col rounded-[32px] bg-[#3B4BB3] p-8 sm:p-10 lg:min-h-[520px] lg:p-12">
-            <div className="flex items-center justify-end gap-3">
-              <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#00D1B2] lg:text-[15px]">
-                {content.card.badgeLabel}
-              </span>
-              <Image
-                src="/blocks/imli-icon.png"
-                alt=""
-                width={36}
-                height={36}
-                className="size-9 shrink-0"
-                aria-hidden
-              />
-            </div>
-
-            <div className="my-auto space-y-6 pt-8 lg:space-y-8 lg:pt-10">
-              {content.card.paragraphs.map((paragraph, index) => (
-                <p
-                  key={index}
-                  className="text-lg leading-[1.75] text-white/90 lg:text-xl"
-                >
-                  {paragraph}
-                </p>
-              ))}
             </div>
           </ScrollRevealItem>
         </ScrollRevealStagger>
