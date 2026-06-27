@@ -4,8 +4,11 @@ export const imiliHomepageAbout = {
   title: "About the International Media and Information Literacy Institute",
   description:
     "The International Media and Information Literacy Institute (IMILI), being the first of its kind, aims to serve as an international observatory for Media and Information Literacy development and catalyst for sustained research that offer empirical evidence on the social impact of MIL globally.",
-  imageSrc: STOCK_IMAGES.home.about.src,
-  imageAlt: STOCK_IMAGES.home.about.alt,
+  images: [
+    STOCK_IMAGES.home.about,
+    STOCK_IMAGES.mission.primary,
+    STOCK_IMAGES.mission.secondary,
+  ],
 };
 
 export type DocumentarySectionContent = {
@@ -22,5 +25,5 @@ export const imiliHomepageDocumentary: DocumentarySectionContent = {
   youtubeId: "oH2s7rjl8Os",
   watchUrl: "https://youtu.be/oH2s7rjl8Os",
   embedUrl:
-    "https://www.youtube.com/embed/oH2s7rjl8Os?autoplay=1&mute=1&playsinline=1&rel=0",
+    "https://www.youtube.com/embed/oH2s7rjl8Os?autoplay=1&playsinline=1&rel=0&enablejsapi=1",
 };
