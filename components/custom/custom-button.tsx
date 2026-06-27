@@ -8,13 +8,18 @@ import { cn } from "@/lib/utils";
 
 import {
   arrowCircleButtonClassName,
+  customButtonBaseClassName,
+  customButtonCircleClassName,
   customButtonIconClassName,
+  customButtonVariantStyles,
+  type CustomButtonVariant,
 } from "@/components/custom/custom-button-styles";
 
-export { arrowCircleButtonClassName, customButtonIconClassName };
-
-const buttonStyles =
-  "inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#0548bd] px-8 text-base font-medium leading-none text-white transition-colors duration-150 hover:bg-[#5ce43a] focus-visible:bg-[#5ce43a] disabled:pointer-events-none disabled:opacity-50";
+export {
+  arrowCircleButtonClassName,
+  customButtonIconClassName,
+  type CustomButtonVariant,
+};
 
 const spring = { type: "spring" as const, stiffness: 420, damping: 30 };
 
@@ -24,10 +29,23 @@ const buttonVariants = {
   tap: { scale: 0.98 },
 };
 
+const arrowCircleVariants = {
+  rest: { scale: 1 },
+  hover: { scale: 1.08 },
+  tap: { scale: 0.94 },
+};
+
+const arrowIconVariants = {
+  rest: { x: 0, rotate: 0 },
+  hover: { x: 0, rotate: -45 },
+  tap: { x: 0, rotate: -45 },
+};
+
 type CustomButtonBaseProps = {
   children: React.ReactNode;
   className?: string;
   icon?: React.ReactNode;
+  variant?: CustomButtonVariant;
   fullWidth?: boolean;
   disabled?: boolean;
 };
@@ -44,15 +62,38 @@ type CustomButtonAsButton = CustomButtonBaseProps &
 
 type CustomButtonProps = CustomButtonAsLink | CustomButtonAsButton;
 
+function CustomButtonArrow({ variant }: { variant: CustomButtonVariant }) {
+  const styles = customButtonVariantStyles[variant];
+
+  return (
+    <motion.span
+      className={cn(customButtonCircleClassName, styles.circle)}
+      variants={arrowCircleVariants}
+      transition={spring}
+      aria-hidden
+    >
+      <motion.span
+        className="flex items-center justify-center"
+        variants={arrowIconVariants}
+        transition={spring}
+      >
+        <ArrowRight className={customButtonIconClassName} strokeWidth={2} />
+      </motion.span>
+    </motion.span>
+  );
+}
+
 export function CustomButton({
   children,
   href,
   className,
   icon,
+  variant = "primary",
   fullWidth = false,
   disabled,
   ...props
 }: CustomButtonProps) {
+  const styles = customButtonVariantStyles[variant];
   const interactionProps = disabled
     ? {}
     : {
@@ -62,19 +103,33 @@ export function CustomButton({
         whileTap: "tap" as const,
       };
 
+  const focusClassName = cn(
+    "inline-flex outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
+    styles.focusRing,
+  );
+
   const content = (
     <span
       className={cn(
-        buttonStyles,
-        fullWidth && "w-full justify-center",
+        customButtonBaseClassName,
+        styles.button,
+        fullWidth && "w-full",
+        fullWidth && icon === undefined && "justify-between",
+        fullWidth && icon === null && "justify-center px-8",
         className,
       )}
     >
-      {children}
-      {icon === undefined ? (
-        <ArrowRight className={customButtonIconClassName} strokeWidth={1.75} />
+      {icon === null ? (
+        children
       ) : (
-        icon
+        <>
+          <span>{children}</span>
+          {icon === undefined ? (
+            <CustomButtonArrow variant={variant} />
+          ) : (
+            icon
+          )}
+        </>
       )}
     </span>
   );
@@ -92,7 +147,7 @@ export function CustomButton({
         transition={spring}
         {...interactionProps}
       >
-        <Link href={href} className="inline-flex outline-none focus-visible:ring-2 focus-visible:ring-[#0548bd]/40 focus-visible:ring-offset-2" {...linkProps}>
+        <Link href={href} className={focusClassName} {...linkProps}>
           {content}
         </Link>
       </motion.div>
@@ -111,7 +166,7 @@ export function CustomButton({
       <button
         type={type}
         disabled={disabled}
-        className="inline-flex outline-none focus-visible:ring-2 focus-visible:ring-[#0548bd]/40 focus-visible:ring-offset-2"
+        className={focusClassName}
         {...buttonProps}
       >
         {content}
