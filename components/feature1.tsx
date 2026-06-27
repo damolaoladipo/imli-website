@@ -27,7 +27,7 @@ const Feature1= ({
   imageAlt = "IMILI observatory",
   buttonPrimary = {
     text: "Learn More",
-    href: "/about",
+    href: "/about-us",
   },
   buttonSecondary = {
     text: "Learn More",

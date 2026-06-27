@@ -51,7 +51,7 @@ export const bentoHeroReferenceContent: BentoHeroContent = {
   headline: "Build Skills That Shape Your Future",
   subhead:
     "Practical online courses designed to help you gain real-world experience and grow with confidence.",
-  cta: { label: "Explore Course", href: "/about" },
+  cta: { label: "Explore Course", href: "/about-us" },
   feature: {
     badgeLabel: "Built for real growth.",
     body: "Follow guided learning paths from beginner to job-ready level.",

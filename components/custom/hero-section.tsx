@@ -11,11 +11,11 @@ export function HeroSection() {
         <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold text-white max-w-4xl leading-tight text-balance  bg-neutral-950">
           {siteConfig.name}
         </h1>
-        <p className="mt-6 text-white text-base md:text-lg max-w-2xl text-pretty">
+        <p className="mt-6 text-white text-lg md:text-xl max-w-2xl text-pretty">
           {siteConfig.tagline}
         </p>
 
-        <CustomButton href="/about" className="mt-12">
+        <CustomButton href="/about-us" className="mt-12">
           Learn more
         </CustomButton>
       </div>

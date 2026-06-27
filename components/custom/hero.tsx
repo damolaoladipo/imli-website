@@ -46,7 +46,7 @@ export default function Hero() {
                     {siteConfig.name}
                   </motion.h2>
 
-           <p className="mt-6 text-white text-base md:text-lg max-w-2xl text-pretty">
+           <p className="mt-6 text-white text-lg md:text-xl max-w-2xl text-pretty">
            {siteConfig.description}
         </p>
 
@@ -57,7 +57,7 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.7 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
           >
-            <CustomButton href="/about" className="mt-12">
+            <CustomButton href="/about-us" className="mt-12">
               Learn more
             </CustomButton>
 

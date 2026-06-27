@@ -63,19 +63,19 @@ export const headerNavItems: HeaderNavItem[] = [
         {
           label: "The Board",
           description: "Governance and institutional leadership",
-          href: "/about/board",
+          href: "/about-us/board",
           icon: Landmark,
         },
         {
           label: "The Team",
           description: "People behind our mission",
-          href: "/about/team",
+          href: "/about-us/team",
           icon: UsersRound,
         },
         {
           label: "Scientific Advisory Committee",
           description: "Expert guidance and research counsel",
-          href: "/about/scientific-advisory-committee",
+          href: "/about-us/scientific-advisory-committee",
           icon: GraduationCap,
         },
         {

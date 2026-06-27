@@ -6,12 +6,12 @@ export const heroData = {
 
   announcement: {
     text: `${siteConfig.fullName}`,
-    href: "/about"
+    href: "/about-us"
   },
 
   button1: {
     id: "01",
-    href: "/about",
+    href: "/about-us",
     text: "Learn More",
     variant: "default" as const,
   },

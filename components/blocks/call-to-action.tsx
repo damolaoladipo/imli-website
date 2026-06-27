@@ -55,7 +55,7 @@ export default function CallToAction() {
               Contact us
             </CustomButton>
 
-            <CustomButton href="/about">
+            <CustomButton href="/about-us">
               Learn more
             </CustomButton>
           </motion.div>

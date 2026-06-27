@@ -13,7 +13,7 @@ export const AboutUsData = {
   button: {
     id: "01",
     text: "Read About Us",
-    href: "/about",
+    href: "/about-us",
     variant: "default" as const,
   },
 };

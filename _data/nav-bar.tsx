@@ -1,19 +1,19 @@
 export const Navigation = [
   {
     label: "About Us",
-    href: "/about",
+    href: "/about-us",
     dropdown: [
       {
         label: "Our Mission",
-        href: "/about/mission",
+        href: "/about-us",
       },
       {
         label: "Our Team",
-        href: "/about/team",
+        href: "/about-us/team",
       },
       {
         label: "Our History",
-        href: "/about/history",
+        href: "/about-us",
       },
     ],
   },

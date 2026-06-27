@@ -56,7 +56,7 @@ export default function AboutSection() {
             </p>
 
             <CustomButton
-              href="/about"
+              href="/about-us"
               target="_self"
               rel="noopener noreferrer"
             >
