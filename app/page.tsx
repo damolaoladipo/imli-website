@@ -31,7 +31,7 @@ export default function Home() {
 
       <ArticleCardGrid content={articleCardGridHomepageContent} />
 
-      <TestimonialsCarousel content={testimonialsHomepageContent} />
+      {/* <TestimonialsCarousel content={testimonialsHomepageContent} /> */}
     </>
   );
 }

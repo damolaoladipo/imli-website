@@ -16,7 +16,7 @@ export function DocumentarySection({ content }: DocumentarySectionProps) {
         <div className="mt-8 lg:mt-10">
           <DocumentaryVideo
             youtubeId={content.youtubeId}
-            title="IMILI Documentary"
+            title="IMILI at Glance"
           />
         </div>
       </div>

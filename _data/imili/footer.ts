@@ -134,11 +134,11 @@ export const footerHomepageContent: FooterContent = {
     alt: "IMILI logo",
     wordmark: siteConfig.name,
   },
-  tagline: siteConfig.tagline,
+  tagline: '',
   social: buildSocialLinkList<FooterSocialLink>(),
   newsletter: {
     heading: "TBD",
-    description: siteConfig.tagline,
+    description: 'Newsletter',
     placeholder: "Enter email address",
     buttonLabel: "Subscribe",
   },
