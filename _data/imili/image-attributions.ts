@@ -72,7 +72,13 @@ export const imageAttributions: ImageAttribution[] = [
   {
     path: "https://images.unsplash.com/photo-1562774053-701939374585",
     photographer: "Aaron Burden",
-    unsplashUrl: "https://images.unsplash.com/photo-1562774053-701939374585",
+    unsplashUrl: "https://unsplash.com/photos/photo-1562774053-701939374585",
+    downloadedAt: "2026-06-26",
+  },
+  {
+    path: "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
+    photographer: "Headway",
+    unsplashUrl: "https://unsplash.com/photos/people-sitting-on-chair-in-front-of-projector-screen-FO7JIlwjYlU",
     downloadedAt: "2026-06-26",
   },
 ];
