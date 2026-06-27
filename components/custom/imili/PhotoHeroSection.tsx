@@ -47,7 +47,7 @@ export function PhotoHeroSection({ content }: PhotoHeroSectionProps) {
               {content.headline}
             </motion.h1>
             <motion.p
-              className="mt-6 max-w-[534px] text-lg text-[#5C5C5C] md:text-[21px]"
+              className="mt-6 max-w-[534px] text-xl text-[#5C5C5C] md:text-[23px]"
               variants={motionVariants(reduced, fadeUp)}
             >
               {content.subhead}
@@ -68,7 +68,7 @@ export function PhotoHeroSection({ content }: PhotoHeroSectionProps) {
               </span>
               {content.feature.badgeLabel}
             </span>
-            <p className="mt-3.5 text-[18px] text-[#4A4A4A]">{content.feature.body}</p>
+            <p className="mt-3.5 text-xl text-[#4A4A4A]">{content.feature.body}</p>
           </motion.div>
         </motion.div>
 

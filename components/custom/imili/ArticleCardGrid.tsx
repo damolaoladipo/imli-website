@@ -44,7 +44,7 @@ export function ArticleCardGrid({ content }: ArticleCardGridProps) {
               {content.heading}
             </motion.h2>
             <motion.p
-              className="text-base leading-relaxed text-[#6B7280] lg:text-right lg:text-[20px]"
+              className="text-lg leading-relaxed text-[#6B7280] lg:text-right lg:text-xl"
               variants={motionVariants(reduced, fadeUp)}
             >
               {content.description}

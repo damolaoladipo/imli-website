@@ -17,7 +17,7 @@ function isNavigableHref(href: string) {
 
 function ForestNavLink({ link }: { link: ForestFooterNavLink }) {
   const className = cn(
-    "block text-[13px] text-[#6B7280] transition-opacity hover:opacity-70 lg:text-[18px]",
+    "block text-[15px] text-[#6B7280] transition-opacity hover:opacity-70 lg:text-[20px]",
     link.underlined && "underline",
   );
 
@@ -99,7 +99,7 @@ export function ForestFooter({ content }: ForestFooterProps) {
             <span className="font-bold">{content.newsletter.headlineAfter}</span>
           </h2>
 
-          <p className="mt-3 text-sm text-[#6B7280] lg:mt-4 lg:text-[20px]">
+          <p className="mt-3 text-lg text-[#6B7280] lg:mt-4 lg:text-[22px]">
             {content.newsletter.subtext}
           </p>
 
@@ -113,7 +113,7 @@ export function ForestFooter({ content }: ForestFooterProps) {
               required
               autoComplete="email"
               placeholder={content.newsletter.placeholder}
-              className="min-w-0 flex-1 bg-transparent px-4 py-3 text-base outline-none placeholder:text-[#9CA3AF] lg:px-6 lg:py-4 lg:text-[18px]"
+              className="min-w-0 flex-1 bg-transparent px-4 py-3 text-lg outline-none placeholder:text-[#9CA3AF] lg:px-6 lg:py-4 lg:text-[20px]"
             />
             <button
               type="submit"
@@ -161,7 +161,7 @@ export function ForestFooter({ content }: ForestFooterProps) {
               {content.address.blocks.map((block) => (
                 <p
                   key={block}
-                  className="text-[13px] leading-snug text-[#6B7280] lg:text-[18px]"
+                  className="text-[15px] leading-snug text-[#6B7280] lg:text-[20px]"
                 >
                   {block}
                 </p>
@@ -177,7 +177,7 @@ export function ForestFooter({ content }: ForestFooterProps) {
               {content.contact.email ? (
                 <a
                   href={`mailto:${content.contact.email}`}
-                  className="block text-[13px] text-[#6B7280] transition-opacity hover:opacity-70 lg:text-[18px]"
+                  className="block text-[15px] text-[#6B7280] transition-opacity hover:opacity-70 lg:text-[20px]"
                 >
                   {content.contact.email}
                 </a>
@@ -185,7 +185,7 @@ export function ForestFooter({ content }: ForestFooterProps) {
               {content.contact.phone ? (
                 <a
                   href={`tel:${content.contact.phone.replace(/\s/g, "")}`}
-                  className="block text-[13px] text-[#6B7280] transition-opacity hover:opacity-70 lg:text-[18px]"
+                  className="block text-[15px] text-[#6B7280] transition-opacity hover:opacity-70 lg:text-[20px]"
                 >
                   {content.contact.phone}
                 </a>

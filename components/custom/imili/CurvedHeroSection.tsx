@@ -59,7 +59,7 @@ export function CurvedHeroSection({ content }: CurvedHeroSectionProps) {
           </h1>
 
           <div className="mt-5 flex flex-col items-start gap-4 lg:mt-7 lg:flex-row lg:items-center lg:justify-between lg:gap-6">
-            <p className="text-base leading-relaxed text-[#1E3D3D] lg:max-w-[55%] lg:text-[21px]">
+            <p className="text-lg leading-relaxed text-[#1E3D3D] md:text-xl lg:max-w-[55%] lg:text-[23px]">
               {content.subhead}
             </p>
             <Link

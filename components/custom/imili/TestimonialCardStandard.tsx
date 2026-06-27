@@ -33,7 +33,7 @@ export function TestimonialCardStandard({
             }
       }
     >
-      <p className="text-[21px] leading-[1.45] text-[#141414]">{item.quote}</p>
+      <p className="text-[23px] leading-[1.45] text-[#141414]">{item.quote}</p>
       <div>
         <div className="border-t border-dotted border-[#D4D4D4]" />
         <div className="mt-5 flex items-center gap-3">
@@ -50,7 +50,7 @@ export function TestimonialCardStandard({
             <p className="text-[20px] font-semibold text-[#111111]">
               {item.name}
             </p>
-            <p className="text-[18px] text-[#6B6B6B]">{item.location}</p>
+            <p className="text-[20px] text-[#6B6B6B]">{item.location}</p>
           </div>
         </div>
       </div>

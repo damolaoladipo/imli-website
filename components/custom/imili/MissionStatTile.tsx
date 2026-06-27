@@ -19,7 +19,7 @@ export function MissionStatTile({ value, label, className }: MissionStatTileProp
       <p className="mt-3 text-[51px] font-bold leading-none text-[#111111]">
         {value}
       </p>
-      <p className="mt-2 text-[18px] text-[#6B7280]">{label}</p>
+      <p className="mt-2 text-xl text-[#6B7280]">{label}</p>
     </div>
   );
 }

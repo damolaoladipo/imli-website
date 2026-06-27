@@ -40,7 +40,7 @@ export function ServiceCard({ item, index = 0 }: ServiceCardProps) {
         </div>
 
         <h3 className="mt-4 text-[22px] font-bold text-[#111111]">{item.title}</h3>
-        <p className="mt-3 max-w-[90%] text-[18px] leading-relaxed text-[#6B7280]">
+        <p className="mt-3 max-w-[90%] text-xl leading-relaxed text-[#6B7280]">
           {item.description}
         </p>
 

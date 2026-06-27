@@ -26,7 +26,7 @@ export function MediaMentionCard({ mention }: { mention: MediaMention }) {
         <h3 className="mt-1 text-base font-bold leading-snug text-foreground group-hover:text-primary">
           {mention.headline}
         </h3>
-        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+        <p className="mt-2 line-clamp-3 text-base leading-relaxed text-muted-foreground md:text-lg">
           {mention.excerpt}
         </p>
       </div>

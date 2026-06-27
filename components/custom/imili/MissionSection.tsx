@@ -27,7 +27,7 @@ export function MissionSection({ content }: MissionSectionProps) {
             {content.heading}
           </h2>
 
-          <p className="mt-5 text-[21px] leading-relaxed text-[#6B7280]">
+          <p className="mt-5 text-[23px] leading-relaxed text-[#6B7280]">
             {content.description}
           </p>
 

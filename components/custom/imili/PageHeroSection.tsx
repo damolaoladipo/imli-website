@@ -26,7 +26,7 @@ export function PageHeroSection({
         >
           {title}
         </h1>
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600 md:mt-6 md:text-lg">
+        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-neutral-600 md:mt-6 md:text-xl">
           {description}
         </p>
       </div>

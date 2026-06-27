@@ -73,8 +73,8 @@ export function HeaderMegaMenuLink({
               ? "text-current"
               : "text-neutral-600 group-hover/link:text-[#0548bd]",
             isPanel
-              ? "mt-0.5 text-sm leading-snug"
-              : "mt-0.5 text-xs leading-snug",
+              ? "mt-0.5 text-base leading-snug md:text-lg"
+              : "mt-0.5 text-sm leading-snug md:text-base",
           )}
         >
           {description}

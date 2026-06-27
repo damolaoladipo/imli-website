@@ -79,7 +79,7 @@ function FooterLink({
   underlined?: boolean;
 }) {
   const className = cn(
-    "block text-[21px] transition-opacity hover:opacity-70",
+    "block text-[23px] transition-opacity hover:opacity-70",
     linkClassName,
     underlined && "underline",
   );
@@ -147,7 +147,7 @@ export function ImiliFooter({ content, variant = "dark" }: ImiliFooterProps) {
                 imageClassName="h-14 w-auto lg:h-16"
               />
             </div>
-            <p className={cn("mt-2 text-[20px]", theme.text)}>
+            <p className={cn("mt-2 text-[22px]", theme.text)}>
               {content.tagline}
             </p>
 
@@ -184,12 +184,7 @@ export function ImiliFooter({ content, variant = "dark" }: ImiliFooterProps) {
               </h2>
             ) : null}
             {showNewsletterDescription ? (
-              <p
-                className={cn(
-                  "mt-2 text-[20px] leading-relaxed",
-                  theme.text,
-                )}
-              >
+              <p className={cn("mt-2 text-[22px] leading-relaxed", theme.text)}>
                 {content.newsletter.description}
               </p>
             ) : null}
@@ -204,7 +199,7 @@ export function ImiliFooter({ content, variant = "dark" }: ImiliFooterProps) {
                 autoComplete="email"
                 placeholder={content.newsletter.placeholder}
                 className={cn(
-                  "w-full flex-1 rounded-full border bg-transparent px-6 py-3.5 text-[18px] outline-none focus-visible:ring-2",
+                  "w-full flex-1 rounded-full border bg-transparent px-6 py-3.5 text-[20px] outline-none focus-visible:ring-2",
                   theme.input,
                 )}
               />
@@ -260,14 +255,14 @@ export function ImiliFooter({ content, variant = "dark" }: ImiliFooterProps) {
                     <a
                       href={line.href}
                       className={cn(
-                        "block text-[21px] transition-opacity hover:opacity-70",
+                        "block text-[23px] transition-opacity hover:opacity-70",
                         theme.link,
                       )}
                     >
                       {line.value}
                     </a>
                   ) : (
-                    <span className={cn("block text-[21px]", theme.link)}>
+                    <span className={cn("block text-[23px]", theme.link)}>
                       {line.value}
                     </span>
                   )}
@@ -279,7 +274,7 @@ export function ImiliFooter({ content, variant = "dark" }: ImiliFooterProps) {
 
         <div className={cn("mt-12 border-t pt-7", theme.divider)}>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className={cn("text-[18px]", theme.muted)}>
+            <p className={cn("text-[20px]", theme.muted)}>
               {content.copyright}
             </p>
 
