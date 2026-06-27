@@ -1,6 +1,5 @@
 import type { LucideIcon } from "lucide-react";
 
-import { STOCK_IMAGES } from "./images";
 import {
   BookMarked,
   BookOpen,
@@ -48,6 +47,25 @@ export type HeaderNavItem = {
   dropdown?: HeaderNavDropdown;
 };
 
+const headerNavImages = {
+  house: {
+    src: "/blocks/imili-house.jpg",
+    alt: "Staff and participants at the IMILI headquarters in Abuja",
+  },
+  head: {
+    src: "/blocks/IMILI-head.png",
+    alt: "IMILI header graphic on media and information literacy",
+  },
+  meet: {
+    src: "/blocks/Imili-meet.jpeg",
+    alt: "IMILI stakeholders at an international conference",
+  },
+  launch: {
+    src: "/blocks/img5.jpg",
+    alt: "IMILI launch event with participants and SDG-themed posters",
+  },
+} as const satisfies Record<string, HeaderNavImage>;
+
 export const headerNavItems: HeaderNavItem[] = [
   {
     name: "About Us",
@@ -85,10 +103,7 @@ export const headerNavItems: HeaderNavItem[] = [
           icon: Mail,
         },
       ],
-      images: [
-        STOCK_IMAGES.nav.about[0],
-        STOCK_IMAGES.nav.about[1],
-      ],
+      images: [headerNavImages.house, headerNavImages.head],
     },
   },
   {
@@ -127,10 +142,7 @@ export const headerNavItems: HeaderNavItem[] = [
           icon: Globe2,
         },
       ],
-      images: [
-        STOCK_IMAGES.nav.whatWeDo[0],
-        STOCK_IMAGES.nav.whatWeDo[1],
-      ],
+      images: [headerNavImages.head, headerNavImages.launch],
     },
   },
   {
@@ -152,22 +164,19 @@ export const headerNavItems: HeaderNavItem[] = [
           icon: ClipboardList,
         },
         {
-          label: "IMILI Cartoons",
+          label: "IMILI Visual Platform",
           description: "Visual storytelling for MIL learning",
           href: "/activities#imili-cartoons",
           icon: Clapperboard,
         },
         {
           label: "Events",
-          description: "Conferences, workshops and gatherings",
+          description: "Conferences, amd workshops",
           href: "/activities#events",
           icon: CalendarDays,
         },
       ],
-      images: [
-        STOCK_IMAGES.nav.activities[0],
-        STOCK_IMAGES.nav.activities[1],
-      ],
+      images: [headerNavImages.meet, headerNavImages.launch],
     },
   },
   {
@@ -206,10 +215,7 @@ export const headerNavItems: HeaderNavItem[] = [
           icon: Newspaper,
         },
       ],
-      images: [
-        STOCK_IMAGES.nav.resources[0],
-        STOCK_IMAGES.nav.resources[1],
-      ],
+      images: [headerNavImages.meet, headerNavImages.house],
     },
   },
   
