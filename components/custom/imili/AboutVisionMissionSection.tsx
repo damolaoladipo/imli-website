@@ -31,20 +31,36 @@ function SectionImage({ content }: { content: AboutSplitSectionContent }) {
   );
 }
 
-function TextBlock({ content }: { content: AboutSplitSectionContent }) {
+function TextBlock({
+  content,
+  align = "left",
+}: {
+  content: AboutSplitSectionContent;
+  align?: "left" | "right";
+}) {
   const headingId = `${content.id}-heading`;
   const bodyParagraphs =
     content.paragraphs ?? (content.body ? [content.body] : []);
 
   return (
-    <div className="flex flex-col justify-center">
+    <div
+      className={cn(
+        "flex flex-col justify-center",
+        align === "right" && "lg:items-end lg:text-right",
+      )}
+    >
       <h2
         id={headingId}
         className="text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl"
       >
         {content.title}
       </h2>
-      <div className="mt-4 space-y-4 text-lg leading-relaxed text-neutral-600 md:mt-6 md:text-xl">
+      <div
+        className={cn(
+          "mt-4 space-y-4 text-lg leading-relaxed text-neutral-600 md:mt-6 md:text-xl",
+          align === "right" && "lg:max-w-xl",
+        )}
+      >
         {bodyParagraphs.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
@@ -75,11 +91,11 @@ export function AboutVisionMissionSection({
           </div>
 
           <div id={mission.id} className="flex flex-col gap-8 lg:gap-10">
-            <ScrollRevealItem>
+            <ScrollRevealItem className="order-2 lg:order-1">
               <SectionImage content={mission} />
             </ScrollRevealItem>
-            <ScrollRevealItem>
-              <TextBlock content={mission} />
+            <ScrollRevealItem className="order-1 lg:order-2">
+              <TextBlock content={mission} align="right" />
             </ScrollRevealItem>
           </div>
         </ScrollRevealStagger>

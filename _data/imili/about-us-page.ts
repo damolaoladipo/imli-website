@@ -94,7 +94,7 @@ export const aboutUsPageContent = {
     title: "Mission",
     body: "To strengthen research and cooperation that bolster Media and Information Literacy for all for a just, peaceful, and sustainable future.",
     image: {
-      src: "/blocks/what-we-are.jpeg",
+      src: "/blocks/mission.jpeg",
       alt: "IMILI mission infographic on developing and advocating forward-looking media and information literacy policies",
     },
     layout: "text-first",
