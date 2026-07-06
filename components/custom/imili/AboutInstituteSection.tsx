@@ -43,7 +43,7 @@ export function AboutInstituteSection({
         </h2>
 
         <ScrollRevealStagger className="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-10">
-          <ScrollRevealItem className="flex min-h-[480px] flex-col rounded-[32px] bg-blue-300 p-8 sm:p-10 lg:min-h-[520px] lg:px-12 lg:py-4">
+          <ScrollRevealItem className="flex min-h-[480px] flex-col rounded-[32px] bg-green-100 p-8 sm:p-10 lg:min-h-[520px] lg:px-12 lg:py-4">
       
             <div className="my-auto space-y-6 pt-8 lg:space-y-8 lg:pt-10">
               {content.card.paragraphs.map((paragraph, index) => (
