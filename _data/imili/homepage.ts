@@ -19,7 +19,7 @@ export const imiliHomepageAbout = {
       "Signing ceremony at the IMILI official launch and unveiling in Abuja",
     ),
     block(
-      "about3.jpeg",
+      "img5.jpeg",
       "IMILI launch representatives presenting signed partnership documents",
     ),
   ],
