@@ -43,7 +43,7 @@ function StrategicObjectivesIcon({
     <span
       className={cn(
         "flex size-12 shrink-0 items-center justify-center rounded-full",
-        isAccent ? "bg-[#0F172A]" : "bg-[#ECEEF2]",
+        isAccent ? "bg-[#0F172A]" : "bg-green-100",
       )}
     >
       <Icon
@@ -70,7 +70,7 @@ function StrategicObjectivesGridCard({
     <article
       className={cn(
         "flex h-full min-h-[220px] flex-col rounded-[40px] p-8 lg:min-h-[240px] lg:p-10",
-        isAccent ? "bg-[#C5FF7C]" : "bg-white",
+        isAccent ? "bg-green-100" : "bg-white",
       )}
     >
       <StrategicObjectivesIcon icon={Icon} variant={card.variant} />
@@ -102,7 +102,7 @@ function StrategicObjectivesFeatureCard({
         src={feature.image.src}
         alt={feature.image.alt}
         fill
-        className="object-cover"
+        className="object-cover object-right"
         sizes="(max-width: 1024px) 100vw, 42vw"
       />
       <div
@@ -110,9 +110,7 @@ function StrategicObjectivesFeatureCard({
         aria-hidden
       />
       <div className="relative flex h-full min-h-[480px] flex-col justify-between p-8 lg:min-h-full lg:p-10">
-        <span className="inline-flex w-fit rounded-full border border-white/90 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.14em] text-white">
-          {feature.badgeLabel}
-        </span>
+      
         <div className="mt-auto max-w-md pt-10">
           <h2
             id={headingId}

@@ -109,7 +109,7 @@ export const aboutUsPageContent = {
       summary:
         "Serve as a global observatory for tracking and evaluating Media and Information Literacy development and impact.",
       image: {
-        src: "/blocks/objectives.jpeg",
+        src: "/blocks/imili-head.png",
         alt: "IMILI launch ceremony in an auditorium with UNESCO branding and audience",
       },
     },
