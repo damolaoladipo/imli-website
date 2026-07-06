@@ -175,6 +175,12 @@ export const headerNavItems: HeaderNavItem[] = [
           href: "/activities#events",
           icon: CalendarDays,
         },
+        {
+          label: "Certificate Programmes",
+          description: "Producing MIL literate world",
+          href: "/certificate-programmes",
+          icon: GraduationCap,
+        },
       ],
       images: [headerNavImages.meet, headerNavImages.launch],
     },
