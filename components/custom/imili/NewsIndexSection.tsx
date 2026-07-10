@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Calendar } from "lucide-react";
+import { articleCardHomepageItems } from "@/_data/imili/article-cards";
 import { getPublishedNewsPages } from "@/lib/news-source";
 
 const formatDate = (date: string) =>
@@ -10,9 +11,50 @@ const formatDate = (date: string) =>
     day: "numeric",
   });
 
+const parseDate = (date: string) => new Date(date).getTime();
+
+type NewsListEntry = {
+  key: string;
+  href: string;
+  external: boolean;
+  date: string;
+  title: string;
+  description?: string;
+  heroImage: string;
+  heroImageAlt: string;
+};
+
+function getExternalPressEntries(): NewsListEntry[] {
+  return articleCardHomepageItems
+    .filter((item) => item.href.startsWith("http"))
+    .map((item) => ({
+      key: item.id,
+      href: item.href,
+      external: true,
+      date: item.date,
+      title: item.title,
+      description: item.summary,
+      heroImage: item.imageSrc,
+      heroImageAlt: item.imageAlt,
+    }));
+}
+
+function getOwnedNewsEntries(): NewsListEntry[] {
+  return getPublishedNewsPages().map((article) => ({
+    key: article.url,
+    href: article.url,
+    external: false,
+    date: article.data.date,
+    title: article.data.title,
+    description: article.data.description,
+    heroImage: article.data.heroImage,
+    heroImageAlt: article.data.heroImageAlt,
+  }));
+}
+
 export function NewsIndexSection() {
-  const articles = [...getPublishedNewsPages()].sort(
-    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  const articles = [...getOwnedNewsEntries(), ...getExternalPressEntries()].sort(
+    (a, b) => parseDate(b.date) - parseDate(a.date),
   );
 
   return (
@@ -29,21 +71,22 @@ export function NewsIndexSection() {
         </div>
 
         {articles.length === 0 ? (
-          <p className="text-body-muted">
-            No news articles published yet.
-          </p>
+          <p className="text-body-muted">No news articles published yet.</p>
         ) : (
           <div className="flex flex-col gap-8">
             {articles.map((article) => (
               <Link
-                key={article.url}
-                href={article.url}
+                key={article.key}
+                href={article.href}
                 className="group flex flex-col gap-6 border-b border-border pb-8 sm:flex-row"
+                {...(article.external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
               >
                 <div className="relative aspect-[16/10] w-full shrink-0 overflow-hidden sm:w-72">
                   <Image
-                    src={article.data.heroImage}
-                    alt={article.data.heroImageAlt}
+                    src={article.heroImage}
+                    alt={article.heroImageAlt}
                     fill
                     className="object-cover transition-transform group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, 18rem"
@@ -52,14 +95,14 @@ export function NewsIndexSection() {
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center gap-2 text-base text-muted-foreground md:text-lg">
                     <Calendar className="h-4 w-4" aria-hidden />
-                    <time>{formatDate(article.data.date)}</time>
+                    <time>{formatDate(article.date)}</time>
                   </div>
                   <h2 className="text-xl font-bold text-foreground group-hover:text-primary md:text-2xl">
-                    {article.data.title}
+                    {article.title}
                   </h2>
-                  {article.data.description && (
+                  {article.description && (
                     <p className="line-clamp-3 text-body-muted">
-                      {article.data.description}
+                      {article.description}
                     </p>
                   )}
                 </div>

@@ -2,6 +2,28 @@ import type { MediaMention } from "@/types/news";
 
 export const mediaMentions: MediaMention[] = [
   {
+    id: "peoples-daily-afax-p",
+    outlet: "Peoples Daily",
+    href: "https://peoplesdaily.ng/imili-launches-africa-against-xenophobia-project/",
+    imageSrc: "/blocks/xenophobi-paper-call.jpeg",
+    imageAlt:
+      "Call for Papers poster — Africa Against Xenophobia Project (AfAX-P)",
+    headline: "IMILI launches Africa Against Xenophobia Project",
+    excerpt:
+      "IMILI announced the virtual launch of AfAX-P on the International Day for Countering Hate Speech.",
+  },
+  {
+    id: "leadership-afax-p",
+    outlet: "Leadership",
+    href: "https://leadership.ng/international-media-institute-move-against-xenophobia-in-africa/",
+    imageSrc: "/blocks/xenophobia.jpg",
+    imageAlt:
+      "Anti-xenophobia graphic with Africa silhouette and #NOTOXENOPHOBIA hashtag",
+    headline: "International Media Institute Move Against Xenophobia In Africa",
+    excerpt:
+      "Coverage of IMILI's AfAX-P launch to combat xenophobia, hate speech, and misinformation across Africa.",
+  },
+  {
     id: "unesco-abuja",
     outlet: "UNESCO",
     href: "https://www.unesco.org/en/articles/international-media-and-information-literacy-institute-under-auspices-unesco-launched-abuja",
