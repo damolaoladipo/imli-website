@@ -53,7 +53,7 @@ const headerNavImages = {
     alt: "Staff and participants at the IMILI headquarters in Abuja",
   },
   head: {
-    src: "/blocks/IMILI-head.png",
+    src: "/blocks/imilinstitute-head.png",
     alt: "IMILI header graphic on media and information literacy",
   },
   meet: {
