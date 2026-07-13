@@ -75,7 +75,7 @@ export function WhatWeDoPillarsSection({
                         src={pillar.image.src}
                         alt={pillar.image.alt}
                         fill
-                        className="object-cover"
+                        className="object-contain p-2 sm:p-4"
                         sizes="(max-width: 1024px) 100vw, 42vw"
                       />
                     </div>
