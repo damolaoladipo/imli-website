@@ -152,6 +152,12 @@ export const headerNavItems: HeaderNavItem[] = [
       links: [
      
         {
+          label: "AFAX-P",
+          description: "Africa Against Xenophobia programmes",
+          href: "/afax-p",
+          icon: Shield,
+        },
+        {
           label: "Projects",
           description: "Research initiatives and calls for papers",
           href: "/projects",
@@ -160,13 +166,13 @@ export const headerNavItems: HeaderNavItem[] = [
         {
           label: "IMILI Test Series",
           description: "Assessments and literacy evaluations",
-          href: "/activities#imili-test-series",
+          href: "/projects/imili-test-series",
           icon: ClipboardList,
         },
         {
           label: "IMILI Visual Platform",
           description: "Visual storytelling for MIL learning",
-          href: "/activities#imili-cartoons",
+          href: "/projects/imili-visual-platform",
           icon: Clapperboard,
         },
         {
@@ -178,7 +184,7 @@ export const headerNavItems: HeaderNavItem[] = [
         {
           label: "Certificate Programmes",
           description: "Producing MIL literate world",
-          href: "/certificate-programmes",
+          href: "/projects/certificates-programmes",
           icon: GraduationCap,
         },
       ],
