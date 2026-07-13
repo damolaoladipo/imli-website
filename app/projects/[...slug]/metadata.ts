@@ -6,7 +6,7 @@ import type { ProjectData } from "@/types/project";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string[] }>;
 }): Promise<Metadata> {
   const { slug } = await params;
   const page = getPublishedProjectPage(slug);
@@ -19,7 +19,7 @@ export async function generateMetadata({
   }
 
   const data = page.data as ProjectData;
-  const canonical = `${siteConfig.url}/projects/${slug}`;
+  const canonical = `${siteConfig.url}${page.url}`;
   const ogImage = absoluteOgImageUrl(data.heroImage);
   const title = data.acronym
     ? `${data.acronym} — ${data.title}`

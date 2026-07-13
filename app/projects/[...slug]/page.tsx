@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { ProjectDetailLayout } from "@/components/custom/imili/ProjectDetailLayout";
 import {
+  getProjectSlugSegments,
   getPublishedProjectPage,
   getPublishedProjectPages,
 } from "@/lib/project-source";
@@ -46,14 +47,14 @@ function ProjectJsonLd({
 
 export function generateStaticParams() {
   return getPublishedProjectPages().map((page) => ({
-    slug: page.url.replace("/projects/", ""),
+    slug: getProjectSlugSegments(page),
   }));
 }
 
 export default async function ProjectPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string[] }>;
 }) {
   const { slug } = await params;
   const page = getPublishedProjectPage(slug);
@@ -61,7 +62,7 @@ export default async function ProjectPage({
 
   const data = page.data as ProjectData;
   const MDX = data.body;
-  const shareUrl = `${siteConfig.url}/projects/${slug}`;
+  const shareUrl = `${siteConfig.url}${page.url}`;
 
   return (
     <>

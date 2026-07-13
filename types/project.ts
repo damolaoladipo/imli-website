@@ -1,6 +1,10 @@
 import type { ComponentType } from "react";
 
-export type ProjectStatus = "call-for-papers" | "active" | "completed";
+export type ProjectStatus =
+  | "call-for-papers"
+  | "call-for-participation"
+  | "active"
+  | "completed";
 
 export interface ProjectData {
   title: string;
@@ -13,9 +17,16 @@ export interface ProjectData {
   heroImageAlt: string;
   abstractDeadline?: string;
   firstDraftDeadline?: string;
+  submissionDeadlineStart?: string;
+  submissionDeadlineEnd?: string;
+  finalistsAnnouncementDate?: string;
+  winnersAnnouncementDate?: string;
+  socialHashtags?: readonly string[];
   submissionEmail?: string;
   submissionEmailSubject?: string;
   abstractWordLimit?: number;
+  sortOrder?: number;
+  listOnProjectsIndex?: boolean;
   draft?: boolean;
   body: ComponentType;
 }
