@@ -1,3 +1,5 @@
+import { STOCK_IMAGES } from "./images";
+
 export type WhatWeDoPillarIconName =
   | "book-open"
   | "presentation"
@@ -5,11 +7,17 @@ export type WhatWeDoPillarIconName =
   | "book-marked"
   | "globe-2";
 
+export type WhatWeDoPillarImage = {
+  src: string;
+  alt: string;
+};
+
 export type WhatWeDoPillar = {
   id: string;
   title: string;
   description: string;
   icon: WhatWeDoPillarIconName;
+  image: WhatWeDoPillarImage;
 };
 
 export type WhatWeDoPageContent = {
@@ -19,6 +27,8 @@ export type WhatWeDoPageContent = {
   };
   pillars: readonly WhatWeDoPillar[];
 };
+
+const { nav, bento, mentions } = STOCK_IMAGES;
 
 export const whatWeDoPageContent: WhatWeDoPageContent = {
   hero: {
@@ -33,6 +43,7 @@ export const whatWeDoPageContent: WhatWeDoPageContent = {
       description:
         "Conducts and promotes rigorous research on Media and Information Literacy, information integrity, artificial intelligence, digital citizenship, misinformation, disinformation, and hate speech to generate reliable evidence, identify emerging trends, and inform effective MIL practices and strategies.",
       icon: "book-open",
+      image: nav.about[0],
     },
     {
       id: "capacity-development",
@@ -40,6 +51,7 @@ export const whatWeDoPageContent: WhatWeDoPageContent = {
       description:
         "Strengthen the knowledge, skills and competencies of educators, information professionals, communicators, and community leaders to advance effective Media and Information Literacy education and initiative.",
       icon: "presentation",
+      image: bento.classroom,
     },
     {
       id: "policy-innovation",
@@ -47,6 +59,7 @@ export const whatWeDoPageContent: WhatWeDoPageContent = {
       description:
         "Develop and advocate for forward-looking policies that embed Media and Information Literacy in national priorities and support sustainable MIL environments.",
       icon: "lightbulb",
+      image: nav.resources[0],
     },
     {
       id: "curriculum-integration",
@@ -54,6 +67,7 @@ export const whatWeDoPageContent: WhatWeDoPageContent = {
       description:
         "Promote the integration of Media and Information Literacy across formal and non-formal education systems to empower learners to critically access, evaluate, and create information responsibly.",
       icon: "book-marked",
+      image: nav.activities[1],
     },
     {
       id: "global-cooperation",
@@ -61,6 +75,7 @@ export const whatWeDoPageContent: WhatWeDoPageContent = {
       description:
         "Foster international collaboration and knowledge exchange to advance Media and Information Literacy and build a global community committed to informed, inclusive, and democratic societies.",
       icon: "globe-2",
+      image: mentions.unescoAbuja,
     },
   ],
 };
