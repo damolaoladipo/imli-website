@@ -3,12 +3,14 @@ import type { ProjectStatus } from "@/types/project";
 
 const statusLabels: Record<ProjectStatus, string> = {
   "call-for-papers": "Call for papers",
+  "call-for-participation": "Call for participation",
   active: "Active",
   completed: "Completed",
 };
 
 const statusStyles: Record<ProjectStatus, string> = {
   "call-for-papers": "bg-[#4FAF50] text-white",
+  "call-for-participation": "bg-[#4FAF50] text-white",
   active: "bg-[#B8E4FA] text-[#0B4F7A]",
   completed: "bg-muted text-muted-foreground",
 };

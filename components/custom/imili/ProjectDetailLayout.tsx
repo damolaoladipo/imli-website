@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ProjectData } from "@/types/project";
 import { ProjectStatusLabel } from "./ProjectStatusLabel";
+import { ProjectParticipationSidebar } from "./ProjectParticipationSidebar";
 import { ProjectSubmissionSidebar } from "./ProjectSubmissionSidebar";
 
 type ProjectDetailLayoutProps = {
@@ -44,10 +45,9 @@ export function ProjectDetailLayout({
             </div>
           </div>
 
-          <aside className="mt-8 lg:col-span-4 lg:mt-0">
-            <div className="lg:sticky lg:top-28">
-              <ProjectSubmissionSidebar data={data} />
-            </div>
+          <aside className="mt-8 self-start lg:sticky lg:top-28 lg:col-span-4 lg:mt-0 lg:z-10">
+            <ProjectParticipationSidebar data={data} />
+            <ProjectSubmissionSidebar data={data} />
           </aside>
         </div>
       </div>

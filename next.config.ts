@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
         destination: "/blocks/imili-icon.svg",
         permanent: true,
       },
+      {
+        source: "/projects/africa-against-xenophobia-project",
+        destination: "/projects/Afax-p/africa-against-xenophobia-project",
+        permanent: true,
+      },
     ];
   },
   images: {

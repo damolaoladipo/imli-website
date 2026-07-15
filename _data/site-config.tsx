@@ -35,6 +35,7 @@ export const siteConfig = {
     whatWeDo: "/what-we-do",
     news: "/news",
     projects: "/projects",
+    afaxP: "/afax-p",
     contact: "/contact",
   },
   links: {

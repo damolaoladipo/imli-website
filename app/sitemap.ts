@@ -35,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/essays`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/news`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/projects`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${base}/afax-p`, changeFrequency: "weekly", priority: 0.8 },
+    {
+      url: `${base}/afax-p/digital-storytelling-for-peace-building`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
     ...essays,
     ...news,
     ...projects,

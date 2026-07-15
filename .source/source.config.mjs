@@ -47,14 +47,26 @@ var { docs: projectDocs, meta: projectMeta } = defineDocs({
       date: z.string(),
       subtitle: z.string().optional(),
       acronym: z.string().optional(),
-      status: z.enum(["call-for-papers", "active", "completed"]).default("active"),
+      status: z.enum([
+        "call-for-papers",
+        "call-for-participation",
+        "active",
+        "completed"
+      ]).default("active"),
       heroImage: z.string(),
       heroImageAlt: z.string(),
       abstractDeadline: z.string().optional(),
       firstDraftDeadline: z.string().optional(),
+      submissionDeadlineStart: z.string().optional(),
+      submissionDeadlineEnd: z.string().optional(),
+      finalistsAnnouncementDate: z.string().optional(),
+      winnersAnnouncementDate: z.string().optional(),
+      socialHashtags: z.array(z.string()).optional(),
       submissionEmail: z.string().optional(),
       submissionEmailSubject: z.string().optional(),
       abstractWordLimit: z.number().optional(),
+      sortOrder: z.number().optional(),
+      listOnProjectsIndex: z.boolean().optional().default(true),
       draft: z.boolean().optional().default(false)
     })
   }

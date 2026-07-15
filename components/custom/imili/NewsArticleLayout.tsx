@@ -19,7 +19,7 @@ export function NewsArticleLayout({ data, slug, children }: Props) {
   return (
     <article className="bg-background">
       <div className="mx-auto max-w-7xl px-6 py-16 md:py-24">
-        <div className="lg:grid lg:grid-cols-12 lg:gap-12">
+        <div className="lg:grid lg:grid-cols-12 lg:items-start lg:gap-12">
           <div className="lg:col-span-7">
             <time className="text-base font-medium text-muted-foreground md:text-lg">
               {formattedDate}
@@ -59,10 +59,8 @@ export function NewsArticleLayout({ data, slug, children }: Props) {
             )}
           </div>
 
-          <aside className="mt-12 lg:col-span-5 lg:mt-0">
-            <div className="lg:sticky lg:top-28">
-              <MediaMentionsSidebar slug={slug} />
-            </div>
+          <aside className="mt-12 self-start lg:sticky lg:top-28 lg:col-span-5 lg:mt-0 lg:z-10">
+            <MediaMentionsSidebar slug={slug} />
           </aside>
         </div>
       </div>

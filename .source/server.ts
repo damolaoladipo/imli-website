@@ -1,5 +1,9 @@
 // @ts-nocheck
-import * as __fd_glob_2 from "../projects/content/africa-against-xenophobia-project.mdx?collection=projectDocs"
+import * as __fd_glob_6 from "../projects/content/Afax-p/digital-storytelling-for-peace-building.mdx?collection=projectDocs"
+import * as __fd_glob_5 from "../projects/content/Afax-p/africa-against-xenophobia-project.mdx?collection=projectDocs"
+import * as __fd_glob_4 from "../projects/content/imili-visual-platform.mdx?collection=projectDocs"
+import * as __fd_glob_3 from "../projects/content/imili-test-series.mdx?collection=projectDocs"
+import * as __fd_glob_2 from "../projects/content/certificates-programmes.mdx?collection=projectDocs"
 import * as __fd_glob_1 from "../news/content/fg-describes-imili-launch-as-milestone-against-misinformation.mdx?collection=newsDocs"
 import * as __fd_glob_0 from "../essays/content/who-is-imili.mdx?collection=essayDocs"
 import { server } from 'fumadocs-mdx/runtime/server';
@@ -18,6 +22,6 @@ export const newsDocs = await create.doc("newsDocs", "news/content", {"fg-descri
 
 export const newsMeta = await create.meta("newsMeta", "news/content", {});
 
-export const projectDocs = await create.doc("projectDocs", "projects/content", {"africa-against-xenophobia-project.mdx": __fd_glob_2, });
+export const projectDocs = await create.doc("projectDocs", "projects/content", {"certificates-programmes.mdx": __fd_glob_2, "imili-test-series.mdx": __fd_glob_3, "imili-visual-platform.mdx": __fd_glob_4, "Afax-p/africa-against-xenophobia-project.mdx": __fd_glob_5, "Afax-p/digital-storytelling-for-peace-building.mdx": __fd_glob_6, });
 
 export const projectMeta = await create.meta("projectMeta", "projects/content", {});
