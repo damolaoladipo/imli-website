@@ -45,7 +45,7 @@ export default function RootLayout({
       >
         <HeroHeader />
 
-        <main className="overflow-x-hidden">{children}</main>
+        <main className="overflow-x-clip">{children}</main>
 
         <FooterSection />
       </body>
