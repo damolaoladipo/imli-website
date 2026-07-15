@@ -18,7 +18,7 @@ Add an **AFAX-P programme hub** at `/afax-p` listing two initiatives, and ship t
 
 1. Storytelling content lives in `projects/content/Afax-p/digital-storytelling-for-peace-building.mdx` (same fumadocs collection as projects).
 2. Canonical URL for storytelling is **`/afax-p/digital-storytelling-for-peace-building`**; call for papers stays at **`/projects/Afax-p/africa-against-xenophobia-project`**.
-3. Online submission portal URL is **not yet available** — copy retains placeholder `(……..)`; no fabricated link.
+3. Online submission portal is **https://tally.so/r/q4pj1g** (Tally form: Digital Story-telling for Peacebuilding).
 4. Hero image for storytelling uses **`/blocks/capacity.jpeg`** until a dedicated asset is supplied.
 5. Contact email **`info@imilinstitute.org`**; website **`www.imilinstitute.org`**.
 
