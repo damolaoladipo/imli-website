@@ -32,6 +32,19 @@ export function ProjectParticipationSidebar({
     <div className="rounded-sm border border-border bg-muted/30 p-6">
       <h2 className="text-lg font-semibold text-foreground">How to participate</h2>
 
+      <p className="mt-2 text-lg leading-relaxed text-muted-foreground md:text-xl">
+        Submit online via the{" "}
+        <a
+          href="https://tally.so/r/q4pj1g"
+          className="font-medium text-primary underline hover:text-primary/80"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Digital Storytelling for Peacebuilding form
+        </a>
+        .
+      </p>
+
       {mailtoHref && data.submissionEmail && (
         <p className="mt-2 text-lg leading-relaxed text-muted-foreground md:text-xl">
           For inquiries, contact{" "}
