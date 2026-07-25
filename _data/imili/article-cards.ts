@@ -68,6 +68,18 @@ export const articleCardGridReferenceContent: ArticleCardGridContent = {
 
 export const articleCardHomepageItems: ArticleCardItem[] = [
   {
+    id: "director-speaks-xenophobia",
+    href: "https://youtu.be/iwXqV5gnok4",
+    imageSrc: "/blocks/director-xenophobia.jpg",
+    imageAlt:
+      "News Central TV interview — IMILI's Director speaks on xenophobia",
+    date: "July 25, 2026",
+    title: "IMILI's Director speaks on Xenophobia",
+    summary:
+      "IMILI's Director discusses xenophobia and related challenges in an interview on News Central TV.",
+    category: "News",
+  },
+  {
     id: "peoples-daily-afax-p",
     href: "https://peoplesdaily.ng/imili-launches-africa-against-xenophobia-project/",
     imageSrc: "/blocks/xenophobi-paper-call.jpeg",
