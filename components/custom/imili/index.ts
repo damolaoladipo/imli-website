@@ -44,3 +44,6 @@ export { ProjectParticipationSidebar } from "./ProjectParticipationSidebar";
 export { ProjectStatusLabel } from "./ProjectStatusLabel";
 export { ProjectSubmissionSidebar } from "./ProjectSubmissionSidebar";
 export { ProjectsIndexSection } from "./ProjectsIndexSection";
+export { NewsletterIndexSection } from "./NewsletterIndexSection";
+export { NewsletterDetailSection } from "./NewsletterDetailSection";
+export { NewsletterShareButton } from "./NewsletterShareButton";
