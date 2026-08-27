@@ -9,13 +9,13 @@ export const globalMilWeekPageContent = {
   title: "Global Media and Information Literacy Week 2026",
   theme: "We All Play a Part",
   tagline: "Media and Information Literacy for the People",
-  dateLabel: "24–30 October 2026",
+  dateLabel: "24–31 October 2026",
   commemorativeDates: "24–31 October 2026",
   description:
     "UNESCO celebrates Global Media and Information Literacy Week 2026 under the theme “We All Play a Part – Media and Information Literacy for the People.”",
   heroImage: {
     src: "/blocks/mil-2026.png",
-    alt: "UNESCO Global MIL Week 2026 banner: We All Play a Part — Media and Information Literacy for the People, 24–30 October",
+    alt: "UNESCO Global MIL Week 2026 banner: We All Play a Part — Media and Information Literacy for the People, 24–31 October",
     width: 1500,
     height: 500,
   },

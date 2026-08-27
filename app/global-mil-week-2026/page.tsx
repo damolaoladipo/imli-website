@@ -42,7 +42,7 @@ function EventJsonLd() {
     name: globalMilWeekPageContent.title,
     description: globalMilWeekPageContent.description,
     startDate: "2026-10-24",
-    endDate: "2026-10-30",
+    endDate: "2026-10-31",
     eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
     eventStatus: "https://schema.org/EventScheduled",
     url: pageUrl,
