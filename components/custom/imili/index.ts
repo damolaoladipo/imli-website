@@ -5,6 +5,7 @@ export { AboutStrategicObjectivesSection } from "./AboutStrategicObjectivesSecti
 export { AboutUsIntroSection } from "./AboutUsIntroSection";
 export { AboutVisionMissionSection } from "./AboutVisionMissionSection";
 export { AboutWhatWeAreSection } from "./AboutWhatWeAreSection";
+export { GlobalMilWeekLayout } from "./GlobalMilWeekLayout";
 export { PageHeroSection } from "./PageHeroSection";
 export { WhatWeDoPillarsSection } from "./WhatWeDoPillarsSection";
 export { DocumentarySection } from "./DocumentarySection";
