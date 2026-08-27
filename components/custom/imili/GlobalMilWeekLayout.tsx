@@ -264,7 +264,7 @@ export function GlobalMilWeekLayout() {
             </section>
           </div>
 
-          <aside className="mt-12 self-start lg:sticky lg:top-28 lg:z-10 lg:col-span-4 lg:mt-0">
+          <aside className="mt-12 hidden self-start lg:sticky lg:top-28 lg:z-10 lg:col-span-4 lg:mt-0 lg:block">
             <div className="space-y-8 rounded-sm border border-border bg-muted/30 p-6">
               <OnThisPage className="hidden lg:block" />
               <KeyFacts />
