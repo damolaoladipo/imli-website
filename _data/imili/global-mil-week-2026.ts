@@ -34,12 +34,6 @@ export const globalMilWeekPageContent = {
     href: UNESCO_MIL_WEEK_URL,
     actionLabel: "Visit UNESCO",
   },
-  overview: {
-    id: "overview",
-    title: "Overview",
-    lead: "The sixth annual Global Media and Information Literacy week gets underway today, running from Wednesday 25th October – Wednesday, 1 November.",
-    kicker: "UNESCO outlines the benefit of Media and Information Literacy.",
-  },
   about: {
     id: "about",
     title: "Global Media and Information Literacy Week 2026: We All Play a Part",
@@ -64,7 +58,6 @@ export const globalMilWeekPageContent = {
     body: "Register to join Media and Information Literacy Week event and follow the celebrations as UNESCO and partners convene stakeholders worldwide.",
   },
   toc: [
-    { id: "overview", label: "Overview" },
     { id: "about", label: "About the week" },
     { id: "initiatives", label: "How to take part" },
     { id: "take-action", label: "Take action" },

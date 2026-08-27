@@ -187,19 +187,7 @@ export function GlobalMilWeekLayout() {
               </ul>
             </details>
 
-            <section aria-labelledby={content.overview.id}>
-              <SectionHeading id={content.overview.id}>
-                {content.overview.title}
-              </SectionHeading>
-              <p className="mt-6 max-w-3xl text-xl leading-relaxed text-foreground">
-                {content.overview.lead}
-              </p>
-              <p className="mt-4 max-w-3xl text-lg font-medium text-muted-foreground md:text-xl">
-                {content.overview.kicker}
-              </p>
-            </section>
-
-            <section className="mt-12" aria-labelledby={content.about.id}>
+            <section aria-labelledby={content.about.id}>
               <SectionHeading id={content.about.id}>
                 {content.about.title}
               </SectionHeading>
