@@ -225,27 +225,16 @@ export function GlobalMilWeekLayout() {
               <SectionHeading id={content.initiatives.id}>
                 {content.initiatives.title}
               </SectionHeading>
-              <p className="mt-6 max-w-3xl text-xl leading-relaxed text-foreground">
-                {content.initiatives.intro}
-              </p>
-              <ul className="mt-6 grid gap-4 sm:grid-cols-2">
-                {content.initiatives.items.map((item) => (
-                  <li
-                    key={item.title}
-                    className="rounded-sm border border-border bg-muted/30 p-5"
+              <div className="mt-6 max-w-3xl space-y-5">
+                {content.initiatives.paragraphs.map((paragraph) => (
+                  <p
+                    key={paragraph.slice(0, 48)}
+                    className="text-xl leading-relaxed text-foreground"
                   >
-                    <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">
-                      {item.label}
-                    </p>
-                    <p className="mt-2 text-lg font-semibold text-foreground">
-                      {item.title}
-                    </p>
-                    <p className="mt-1 text-base leading-relaxed text-muted-foreground">
-                      {item.description}
-                    </p>
-                  </li>
+                    {paragraph}
+                  </p>
                 ))}
-              </ul>
+              </div>
             </section>
 
             <section

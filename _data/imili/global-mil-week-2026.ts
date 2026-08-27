@@ -53,21 +53,9 @@ export const globalMilWeekPageContent = {
   initiatives: {
     id: "initiatives",
     title: "How to take part",
-    intro:
-      "UNESCO is inviting communities worldwide to contribute through a youth hackathon and a global campaign.",
-    items: [
-      {
-        label: "Youth Hackathon",
-        title: "Play Your Part",
-        description:
-          "Youth Designing the Future of Media and Information Literacy.",
-      },
-      {
-        label: "Global Campaign",
-        title: "#WeAllPlayAPart",
-        description:
-          "Join the movement for Media and Information Literacy.",
-      },
+    paragraphs: [
+      "What can you do to promote Media and Information Literacy? How can you make Media and Information Literacy happen where you live, study or work?",
+      "We invite stakeholders around the world to organize online/offline local events or activities related to Media and Information Literacy in their community or region, taking place around the period of Global Media and Information Literacy Week 2026.",
     ],
   },
   takeAction: {
