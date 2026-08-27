@@ -182,6 +182,12 @@ export const headerNavItems: HeaderNavItem[] = [
           icon: CalendarDays,
         },
         {
+          label: "Global MIL Week 2026",
+          description: "We All Play a Part",
+          href: "/global-mil-week-2026",
+          icon: Globe2,
+        },
+        {
           label: "Certificate Programmes",
           description: "Producing MIL literate world",
           href: "/projects/certificates-programmes",
