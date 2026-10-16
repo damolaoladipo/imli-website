@@ -133,25 +133,68 @@ export function GlobalMilWeekLayout() {
     <article className="bg-background">
       <HashScrollHandler />
 
-      <header className="border-b border-border bg-muted/30">
+      <section className="border-b border-border bg-muted/30">
         <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
-          <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">
-            {content.eyebrow}
-          </p>
-          <h1 className="mt-3 max-w-4xl text-3xl font-bold tracking-tight text-foreground md:text-5xl">
-            {content.title}
-          </h1>
-          <p className="mt-4 max-w-2xl text-2xl font-semibold text-primary md:text-3xl">
-            {content.theme}
-          </p>
-          <p className="mt-2 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-            {content.tagline}
-          </p>
-          <p className="mt-4 text-lg font-medium text-foreground">
-            {content.dateLabel}
-          </p>
-          <div className="mt-8">
-            <ActionButtons />
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-primary">
+                <span className="inline-block h-2 w-2 rounded-full bg-primary" />
+                Celebrate with us…
+              </p>
+              <p className="mt-4 text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+                The 2026 Global MIL Week provides a platform for{' '}
+                <span className="font-semibold">governments, academia, media organizations, civil society, youth groups, and development partners</span>{' '}
+                to raise awareness of the importance of critical thinking, responsible information consumption, and active participation in knowledge societies.
+              </p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="overflow-hidden rounded-sm">
+                <Image
+                  src="/services/image-1.jpeg"
+                  alt="2026 Global Media and Information Literacy Week - Stakeholders' Dinner"
+                  width={1080}
+                  height={1080}
+                  className="aspect-[4/5] h-full w-full object-cover"
+                  sizes="(max-width: 1024px) 50vw, 600px"
+                />
+              </div>
+              <div className="overflow-hidden rounded-sm">
+                <Image
+                  src="/services/image-2.jpeg"
+                  alt="2026 Global Media and Information Literacy Week - We All Play a Part"
+                  width={1080}
+                  height={1080}
+                  className="aspect-[4/5] h-full w-full object-cover"
+                  sizes="(max-width: 1024px) 50vw, 600px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <header className="relative overflow-hidden border-b border-border bg-gradient-to-br from-primary/10 via-background to-background">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+          <div className="max-w-3xl">
+            <p className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
+              {content.eyebrow}
+            </p>
+            <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight text-foreground md:text-6xl">
+              {content.title}
+            </h1>
+            <p className="mt-4 text-2xl font-bold text-primary md:text-4xl">
+              {content.theme}
+            </p>
+            <p className="mt-3 text-lg leading-relaxed text-muted-foreground md:text-xl">
+              {content.tagline}
+            </p>
+            <p className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-foreground">
+              <span className="inline-block h-2 w-2 rounded-full bg-primary" />
+              {content.dateLabel}
+            </p>
+            <div className="mt-10">
+              <ActionButtons />
+            </div>
           </div>
         </div>
       </header>

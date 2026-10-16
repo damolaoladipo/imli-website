@@ -27,6 +27,43 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  turbopack: {
+    rules: {
+      "*.json": {
+        loaders: [
+          {
+            loader: "fumadocs-mdx/webpack/meta",
+            options: {
+              type: "turbopack",
+              configPath: "./source.config.ts",
+              outDir: ".source",
+              compiledConfigPath: ".source/source.config.mjs",
+              isDev: true,
+              macro: true,
+            },
+          },
+        ],
+        as: "*.js",
+      },
+      "*.yaml": {
+        loaders: [
+          {
+            loader: "fumadocs-mdx/webpack/meta",
+            options: {
+              type: "turbopack",
+              configPath: "./source.config.ts",
+              outDir: ".source",
+              compiledConfigPath: ".source/source.config.mjs",
+              isDev: true,
+              macro: true,
+            },
+          },
+        ],
+        as: "*.js",
+      },
+    },
+  },
+
 };
 
 export default withMDX(nextConfig);
