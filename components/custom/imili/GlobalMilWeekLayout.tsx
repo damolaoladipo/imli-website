@@ -154,7 +154,7 @@ export function GlobalMilWeekLayout() {
                   alt="2026 Global Media and Information Literacy Week - Stakeholders' Dinner"
                   width={1080}
                   height={1080}
-                  className="aspect-[4/5] h-full w-full object-cover"
+                  className="h-auto w-full object-cover"
                   sizes="(max-width: 1024px) 50vw, 600px"
                 />
               </div>
@@ -164,7 +164,7 @@ export function GlobalMilWeekLayout() {
                   alt="2026 Global Media and Information Literacy Week - We All Play a Part"
                   width={1080}
                   height={1080}
-                  className="aspect-[4/5] h-full w-full object-cover"
+                  className="h-auto w-full object-cover"
                   sizes="(max-width: 1024px) 50vw, 600px"
                 />
               </div>
