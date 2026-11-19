@@ -68,6 +68,30 @@ export const articleCardGridReferenceContent: ArticleCardGridContent = {
 
 export const articleCardHomepageItems: ArticleCardItem[] = [
   {
+    id: "media-literacy-week-2026",
+    href: "/news/media-literacy-week-2026-unesco-imili-promo",
+    imageSrc: "/blocks/fg.jpeg",
+    imageAlt:
+      "Federal Government official speaking at the IMILI launch ceremony in Abuja",
+    date: "November 18, 2026",
+    title: "Media Literacy Week 2026: UNESCO, IMILI promote responsible digital use",
+    summary:
+      "UNESCO and IMILI promote responsible digital use during Media Literacy Week 2026.",
+    category: "News",
+  },
+  {
+    id: "fighting-information-disorder",
+    href: "/news/fighting-information-disorder-imili-director",
+    imageSrc: "/blocks/fg.jpeg",
+    imageAlt:
+      "Federal Government official speaking at the IMILI launch ceremony in Abuja",
+    date: "November 12, 2026",
+    title: "Fighting Information Disorder: Why IMILI Focuses on Building a More Informed Society - Director",
+    summary:
+      "Dr. Sharon Idris discusses IMILI's evolution from NOUN's Department of Mass Communication to a UNESCO Category 2 Institute, its global partnerships addressing information disorder, and its programs promoting media and information literacy across Africa and worldwide.",
+    category: "News",
+  },
+  {
     id: "director-speaks-xenophobia",
     href: "https://youtu.be/iwXqV5gnok4",
     imageSrc: "/blocks/director-xenophobia.jpg",
@@ -151,7 +175,6 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
       "Government describes the IMILI launch as a major milestone in combating public misinformation.",
     category: "News",
   },
-
 ];
 
 export const articleCardGridHomepageContent: ArticleCardGridContent = {
@@ -159,23 +182,5 @@ export const articleCardGridHomepageContent: ArticleCardGridContent = {
   heading: "News and event reports",
   description:
     "Coverage, launches, and publications on IMILI and media and information literacy.",
-  items: [...articleCardHomepageItems, {
-    id: "media-literacy-week-2026",
-    href: "/news/media-literacy-week-2026-unesco-imili-promo",
-    imageSrc: "/blocks/fg.jpeg",
-    imageAlt: "Federal Government official speaking at the IMILI launch ceremony in Abuja",
-    date: "2026-11-18",
-    title: "Media Literacy Week 2026: UNESCO, IMILI promote responsible digital use",
-    summary: "UNESCO and IMILI promote responsible digital use during Media Literacy Week 2026",
-    category: "News",
-  }, {
-    id: "fighting-information-disorder",
-    href: "/news/fighting-information-disorder-imili-director",
-    imageSrc: "/blocks/fg.jpeg",
-    imageAlt: "Federal Government official speaking at the IMILI launch ceremony in Abuja",
-    date: "2026-11-12",
-    title: "Fighting Information Disorder: Why IMILI Focuses on Building a More Informed Society - Director",
-    summary: "Dr. Sharon Omotoso discusses IMILI's evolution from NOUN's Department of Mass Communication to a UNESCO Category 2 Institute",
-    category: "News",
-  }],
+  items: articleCardHomepageItems,
 };
