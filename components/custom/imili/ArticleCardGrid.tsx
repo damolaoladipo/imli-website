@@ -53,7 +53,7 @@ export function ArticleCardGrid({ content }: ArticleCardGridProps) {
         </motion.div>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-14 lg:grid-cols-3 lg:gap-7">
-          {content.items.map((item, index) => (
+          {content.items.slice(0, 6).map((item, index) => (
             <motion.div
               key={item.id}
               className="h-full rounded-[20px] bg-[#FAF7F2] p-5"

@@ -70,7 +70,7 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "media-literacy-week-2026",
     href: "/news/media-literacy-week-2026-unesco-imili-promo",
-    imageSrc: "/blocks/fg.jpeg",
+    imageSrc: "/blocks/mil-wek-2026.png",
     imageAlt:
       "Federal Government official speaking at the IMILI launch ceremony in Abuja",
     date: "November 18, 2026",
