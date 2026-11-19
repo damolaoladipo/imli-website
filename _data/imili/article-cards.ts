@@ -76,13 +76,13 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
     date: "November 18, 2026",
     title: "Media Literacy Week 2026: UNESCO, IMILI promote responsible digital use",
     summary:
-      "UNESCO and IMILI promote responsible digital use during Media Literacy Week 2026.",
+      "UNESCO and IMILI promotes responsible digital use during Media Literacy Week 2026.",
     category: "News",
   },
   {
     id: "fighting-information-disorder",
     href: "/news/fighting-information-disorder-imili-director",
-    imageSrc: "/blocks/fg.jpeg",
+    imageSrc: "/blocks/mil-wek-2026.png",
     imageAlt:
       "Federal Government official speaking at the IMILI launch ceremony in Abuja",
     date: "November 12, 2026",
