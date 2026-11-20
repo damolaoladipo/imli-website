@@ -82,7 +82,7 @@ export const articleCardHomepageItems: ArticleCardItem[] = [
   {
     id: "fighting-information-disorder",
     href: "/news/fighting-information-disorder-imili-director",
-    imageSrc: "/blocks/mil-wek-2026.png",
+    imageSrc: "/blocks/play-a-part.jpeg",
     imageAlt:
       "Federal Government official speaking at the IMILI launch ceremony in Abuja",
     date: "November 12, 2026",
