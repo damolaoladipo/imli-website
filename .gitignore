@@ -28,3 +28,6 @@ coverage/
 # vercel
 .vercel
 .source/
+
+next-env.d.ts
+tsconfig.tsbuildinfo
