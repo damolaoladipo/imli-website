@@ -30,6 +30,7 @@ const nextConfig: NextConfig = {
   turbopack: {
     rules: {
       "*.json": {
+        as: "*.js",
         loaders: [
           {
             loader: "fumadocs-mdx/webpack/meta",
@@ -38,14 +39,14 @@ const nextConfig: NextConfig = {
               configPath: "./source.config.ts",
               outDir: ".source",
               compiledConfigPath: ".source/source.config.mjs",
-              isDev: true,
-              macro: true,
+              isDev: false,
+              macro: false,
             },
           },
         ],
-        as: "*.js",
       },
       "*.yaml": {
+        as: "*.js",
         loaders: [
           {
             loader: "fumadocs-mdx/webpack/meta",
@@ -54,12 +55,11 @@ const nextConfig: NextConfig = {
               configPath: "./source.config.ts",
               outDir: ".source",
               compiledConfigPath: ".source/source.config.mjs",
-              isDev: true,
-              macro: true,
+              isDev: false,
+              macro: false,
             },
           },
         ],
-        as: "*.js",
       },
     },
   },
