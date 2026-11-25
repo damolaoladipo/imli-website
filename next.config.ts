@@ -28,40 +28,9 @@ const nextConfig: NextConfig = {
     ],
   },
   turbopack: {
-    rules: {
-      "*.json": {
-        // Remove `condition` field injected by fumadocs-mdx that Next.js 16 doesn't support
-        loaders: [
-          {
-            loader: "fumadocs-mdx/webpack/meta",
-            options: {
-              type: "turbopack",
-              configPath: "./source.config.ts",
-              outDir: ".source",
-              compiledConfigPath: ".source/source.config.mjs",
-              isDev: false,
-              macro: false,
-            },
-          },
-        ],
-      },
-      "*.yaml": {
-        // Remove `condition` field injected by fumadocs-mdx that Next.js 16 doesn't support
-        loaders: [
-          {
-            loader: "fumadocs-mdx/webpack/meta",
-            options: {
-              type: "turbopack",
-              configPath: "./source.config.ts",
-              outDir: ".source",
-              compiledConfigPath: ".source/source.config.mjs",
-              isDev: false,
-              macro: false,
-            },
-          },
-        ],
-      },
-    },
+    // Disable turbopack rules that fumadocs-mdx injects condition field into
+    // Next.js 16.0.10 doesn't support the `condition: { query: {} }` key
+    rules: {},
   },
 
 };
