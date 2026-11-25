@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
   turbopack: {
     rules: {
       "*.json": {
-        as: "*.js",
+        // Remove `condition` field injected by fumadocs-mdx that Next.js 16 doesn't support
         loaders: [
           {
             loader: "fumadocs-mdx/webpack/meta",
@@ -46,7 +46,7 @@ const nextConfig: NextConfig = {
         ],
       },
       "*.yaml": {
-        as: "*.js",
+        // Remove `condition` field injected by fumadocs-mdx that Next.js 16 doesn't support
         loaders: [
           {
             loader: "fumadocs-mdx/webpack/meta",
