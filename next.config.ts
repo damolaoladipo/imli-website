@@ -1,3 +1,4 @@
+
 import type { NextConfig } from "next";
 import { createMDX } from "fumadocs-mdx/next";
 
@@ -27,12 +28,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  turbopack: {
-    // Disable turbopack rules that fumadocs-mdx injects condition field into
-    // Next.js 16.0.10 doesn't support the `condition: { query: {} }` key
-    rules: {},
-  },
-
 };
 
 export default withMDX(nextConfig);
