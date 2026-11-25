@@ -10,19 +10,16 @@ import type { ProjectData } from "@/types/project";
 
 export { generateMetadata } from "./metadata";
 
-function ProjectJsonLd({
-  title,
-  description,
-  date,
-  url,
-  image,
-}: {
+export interface IProject {
   title: string;
   description?: string;
   date: string;
   url: string;
   image: string;
-}) {
+}
+
+function ProjectJsonLd(data: IProject) {
+  const { title, description, date, url, image } = data;
   const json = {
     "@context": "https://schema.org",
     "@type": "Article",
